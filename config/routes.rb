@@ -11,4 +11,8 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace(:admin) do |admin|
     admin.resources :categories
   end
+
+  # Categories: using globbed routes since I'm not sure how many categories deep this could go
+  # and I would like a breadcrumb-like url.
+  map.category '*categories/:id', :controller => 'categories', :action => 'show'
 end
