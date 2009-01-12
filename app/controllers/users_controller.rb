@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_filter :login_required
+
   def new
     @user = User.new
   end
@@ -18,6 +20,28 @@ class UsersController < ApplicationController
     else
       flash[:error]  = "We couldn't set up that account, sorry.  Please try again, or contact an admin (link is above)."
       render :action => 'new'
+    end
+  end
+
+  def show
+    @user = current_user
+  end
+
+  def edit
+    @user = current_user
+  end
+
+  def update
+    @user = current_user
+    respond_to do |format|
+      if @user.update_attributes(params[:user])
+        flash[:notice] = 'User was successfully updated.'
+        format.html { redirect_to(@user) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @category.errors, :status => :unprocessable_entity }
+      end
     end
   end
 end

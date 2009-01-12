@@ -1,0 +1,10 @@
+<h1>Editing user</h1>
+
+<% form_for(@user) do |f| %>
+  <fieldset>
+    <%= render :partial => 'form', :locals => { :f => f } %>
+    <p>
+      <%= f.submit "Update" %>
+    </p>
+  </fieldset>
+<% end %>
