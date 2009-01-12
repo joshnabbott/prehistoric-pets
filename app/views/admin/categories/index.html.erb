@@ -2,18 +2,13 @@
 
 <table>
   <tr>
-    <th>Parent</th>
     <th>Name</th>
     <th>Description</th>
-    <th>Position</th>
   </tr>
-
 <% for category in @categories %>
   <tr>
-    <td><%=h category.parent %></td>
     <td><%=h category.name %></td>
     <td><%=h category.description %></td>
-    <td><%=h category.position %></td>
     <td><%= link_to 'Show', [:admin,category] %></td>
     <td><%= link_to 'Edit', edit_admin_category_path(category) %></td>
     <td><%= link_to 'Destroy', [:admin,category], :confirm => 'Are you sure?', :method => :delete %></td>
