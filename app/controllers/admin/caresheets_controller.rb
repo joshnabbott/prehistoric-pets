@@ -1,4 +1,4 @@
-class CaresheetsController < Admin::AdminController
+class Admin::CaresheetsController < Admin::AdminController
   # GET /admin/caresheets
   # GET /admin/caresheets.xml
   def index

@@ -9,7 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090112231212) do
+ActiveRecord::Schema.define(:version => 20090113041151) do
+
+  create_table "caresheets", :force => true do |t|
+    t.string   "name"
+    t.string   "scientific_name"
+    t.string   "permalink"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "categories", :force => true do |t|
     t.integer  "parent_id"
@@ -25,8 +34,10 @@ ActiveRecord::Schema.define(:version => 20090112231212) do
 
   create_table "products", :force => true do |t|
     t.integer  "category_id"
+    t.integer  "caresheet_id"
     t.string   "name"
     t.string   "scientific_name"
+    t.string   "permalink"
     t.string   "sku",             :limit => 10,                                                  :null => false
     t.text     "description"
     t.text     "comments"

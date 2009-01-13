@@ -1,27 +1,10 @@
 <h1>New caresheet</h1>
 
-<% form_for(@caresheet) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :scientific_name %><br />
-    <%= f.text_field :scientific_name %>
-  </p>
-  <p>
-    <%= f.label :permalink %><br />
-    <%= f.text_field :permalink %>
-  </p>
-  <p>
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
-  </p>
-  <p>
-    <%= f.submit "Create" %>
-  </p>
+<% form_for([:admin, @caresheet]) do |f| %>
+  <fieldset>
+    <%= render :partial => 'form', :locals => { :f => f } %>
+    <p>
+      <%= f.submit "Cancel" %> - or - <%= link_to 'Cancel', admin_caresheets_path %>
+    </p>
+  </fieldset>
 <% end %>
-
-<%= link_to 'Back', caresheets_path %>

@@ -14,13 +14,13 @@
     <td><%=h caresheet.scientific_name %></td>
     <td><%=h caresheet.permalink %></td>
     <td><%=h caresheet.body %></td>
-    <td><%= link_to 'Show', caresheet %></td>
-    <td><%= link_to 'Edit', edit_caresheet_path(caresheet) %></td>
-    <td><%= link_to 'Destroy', caresheet, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', [:admin, caresheet] %></td>
+    <td><%= link_to 'Edit', edit_admin_caresheet_path(caresheet) %></td>
+    <td><%= link_to 'Destroy', [:admin, caresheet], :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New caresheet', new_caresheet_path %>
+<%= link_to 'New caresheet', new_admin_caresheet_path %>
