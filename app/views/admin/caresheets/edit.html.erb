@@ -1,0 +1,28 @@
+<h1>Editing caresheet</h1>
+
+<% form_for(@caresheet) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :scientific_name %><br />
+    <%= f.text_field :scientific_name %>
+  </p>
+  <p>
+    <%= f.label :permalink %><br />
+    <%= f.text_field :permalink %>
+  </p>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @caresheet %> |
+<%= link_to 'Back', caresheets_path %>

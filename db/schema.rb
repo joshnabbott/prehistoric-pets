@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090112072944) do
+ActiveRecord::Schema.define(:version => 20090112231212) do
 
   create_table "categories", :force => true do |t|
     t.integer  "parent_id"
@@ -22,6 +22,22 @@ ActiveRecord::Schema.define(:version => 20090112072944) do
   end
 
   add_index "categories", ["permalink"], :name => "index_categories_on_permalink", :unique => true
+
+  create_table "products", :force => true do |t|
+    t.integer  "category_id"
+    t.string   "name"
+    t.string   "scientific_name"
+    t.string   "sku",             :limit => 10,                                                  :null => false
+    t.text     "description"
+    t.text     "comments"
+    t.decimal  "price",                         :precision => 8, :scale => 2, :default => 0.0,   :null => false
+    t.boolean  "is_featured",                                                 :default => false, :null => false
+    t.boolean  "has_caresheet",                                               :default => false, :null => false
+    t.boolean  "override",                                                    :default => false, :null => false
+    t.boolean  "is_active",                                                   :default => false, :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "login",                     :limit => 40

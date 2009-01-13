@@ -1,0 +1,46 @@
+<%= f.error_messages %>
+
+<p>
+  <%= f.label :category %><br />
+  <%= f.collection_select :category_id, Category.find(:all), :id, :name %>
+</p>
+<p>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+</p>
+<p>
+  <%= f.label :scientific_name %><br />
+  <%= f.text_field :scientific_name %>
+</p>
+<p>
+  <%= f.label :sku %><br />
+  <%= f.text_field :sku %>
+</p>
+<p>
+  <%= f.label :description %><br />
+  <%= f.text_area :description %>
+</p>
+<p>
+  <%= f.label :comments %><br />
+  <%= f.text_area :comments %>
+</p>
+<p>
+  <%= f.label :price %><br />
+  <%= f.text_field :price %>
+</p>
+<p>
+  <%= f.label :override %><br />
+  <%= f.check_box :override %>
+</p>
+<p>
+  <%= f.label :is_active %><br />
+  <%= f.check_box :is_active %>
+</p>
+<p>
+  <%= f.label :has_caresheet %><br />
+  <%= f.check_box :has_caresheet %>
+</p>
+<p>
+  <%= f.label :is_featured %><br />
+  <%= f.check_box :is_featured %>
+</p>

@@ -1,0 +1,26 @@
+<h1>Listing caresheets</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Scientific name</th>
+    <th>Permalink</th>
+    <th>Body</th>
+  </tr>
+
+<% for caresheet in @caresheets %>
+  <tr>
+    <td><%=h caresheet.name %></td>
+    <td><%=h caresheet.scientific_name %></td>
+    <td><%=h caresheet.permalink %></td>
+    <td><%=h caresheet.body %></td>
+    <td><%= link_to 'Show', caresheet %></td>
+    <td><%= link_to 'Edit', edit_caresheet_path(caresheet) %></td>
+    <td><%= link_to 'Destroy', caresheet, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New caresheet', new_caresheet_path %>

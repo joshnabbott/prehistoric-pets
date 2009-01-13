@@ -1,0 +1,58 @@
+<p>
+  <b>Category:</b>
+  <%=h @product.category.name %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @product.name %>
+</p>
+
+<p>
+  <b>Scientific name:</b>
+  <%=h @product.scientific_name %>
+</p>
+
+<p>
+  <b>Sku:</b>
+  <%=h @product.sku %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @product.description %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%=h @product.comments %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @product.price %>
+</p>
+
+<p>
+  <b>Override:</b>
+  <%=h @product.override %>
+</p>
+
+<p>
+  <b>Is active:</b>
+  <%=h @product.is_active %>
+</p>
+
+<p>
+  <b>Has caresheet:</b>
+  <%=h @product.has_caresheet %>
+</p>
+
+<p>
+  <b>Is featured:</b>
+  <%=h @product.is_featured %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_product_path(@product) %> |
+<%= link_to 'Back', admin_products_path %>

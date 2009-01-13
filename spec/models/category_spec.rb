@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe Category do
   before(:each) do
     @valid_attributes = {
-      :parent => ,
+      :parent => mock_model(Category),
       :name => "value for name",
       :description => "value for description",
       :position => "1"
