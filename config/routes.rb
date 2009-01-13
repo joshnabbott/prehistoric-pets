@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
 
   # Admin
-  map.admin 'admin/', :controller => 'products'
+  map.admin 'admin/', :controller => 'admin/products'
   map.namespace(:admin) do |admin|
     admin.resources :categories
     admin.resources :caresheets

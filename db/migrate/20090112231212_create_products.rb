@@ -7,11 +7,11 @@ class CreateProducts < ActiveRecord::Migration
       t.text :description, :comments
       t.decimal :price, :precision       => 8, :scale => 2, :default => 0.0, :null => false
       t.boolean :is_featured, :default   => false, :null => false
-      t.boolean :has_caresheet, :default => false, :null => false
       t.boolean :override, :default      => false, :null => false
       t.boolean :is_active, :default     => false, :null => false
       t.timestamps
     end
+    add_index :products, :permalink, :unique => true
   end
 
   def self.down

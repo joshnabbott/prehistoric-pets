@@ -6,6 +6,6 @@ class Category < ActiveRecord::Base
   validates_uniqueness_of :name, :permalink, :scope => :parent_id, :allow_nil => true
 private
   def create_permalink
-    self.permalink = self.name.to_permalink
+    self.permalink = self.name.to_permalink unless self.permalink
   end
 end

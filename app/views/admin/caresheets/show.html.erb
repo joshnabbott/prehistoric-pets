@@ -18,6 +18,11 @@
   <%=h @caresheet.body %>
 </p>
 
+<p>
+  <b>Is active:</b>
+  <%=h @caresheet.is_active %>
+</p>
+
 
 <%= link_to 'Edit', edit_admin_caresheet_path(@caresheet) %> |
 <%= link_to 'Back', admin_caresheets_path %>

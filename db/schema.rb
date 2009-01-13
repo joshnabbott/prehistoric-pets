@@ -16,9 +16,12 @@ ActiveRecord::Schema.define(:version => 20090113041151) do
     t.string   "scientific_name"
     t.string   "permalink"
     t.text     "body"
+    t.boolean  "is_active",       :default => false, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "caresheets", ["permalink"], :name => "index_caresheets_on_permalink", :unique => true
 
   create_table "categories", :force => true do |t|
     t.integer  "parent_id"
@@ -43,12 +46,13 @@ ActiveRecord::Schema.define(:version => 20090113041151) do
     t.text     "comments"
     t.decimal  "price",                         :precision => 8, :scale => 2, :default => 0.0,   :null => false
     t.boolean  "is_featured",                                                 :default => false, :null => false
-    t.boolean  "has_caresheet",                                               :default => false, :null => false
     t.boolean  "override",                                                    :default => false, :null => false
     t.boolean  "is_active",                                                   :default => false, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "products", ["permalink"], :name => "index_products_on_permalink", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "login",                     :limit => 40
