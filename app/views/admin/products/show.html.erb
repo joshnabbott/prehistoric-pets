@@ -44,8 +44,8 @@
 </p>
 
 <p>
-  <b>Has caresheet:</b>
-  <%=h @product.has_caresheet %>
+  <b>Caresheet:</b>
+  <%=h @product.caresheet.name if @product.caresheet %>
 </p>
 
 <p>

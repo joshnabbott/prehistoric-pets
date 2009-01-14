@@ -9,7 +9,7 @@
     <th>Price</th>
     <th>Override</th>
     <th>Is active</th>
-    <th>Has caresheet</th>
+    <th>Caresheet</th>
     <th>Is featured</th>
   </tr>
 
@@ -22,7 +22,7 @@
     <td><%=h product.price %></td>
     <td><%=h product.override %></td>
     <td><%=h product.is_active %></td>
-    <td><%=h product.has_caresheet %></td>
+    <td><%=h product.caresheet.name if product.caresheet %></td>
     <td><%=h product.is_featured %></td>
     <td><%= link_to 'Show', [:admin, product] %></td>
     <td><%= link_to 'Edit', edit_admin_product_path(product) %></td>
