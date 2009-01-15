@@ -1,0 +1,26 @@
+<%- @page_title = 'Home' -%>
+<div id="left_column_blocks">
+  <h1><span>Featured</span></h1>
+  <div id="featured">
+    <%= render :partial => 'featured_product', :collection => @featured_products %>
+  </div>
+
+  <h1><span>Announcements</span></h1>
+  <div id="announcements">
+    <%= render :partial => 'featured_announcement', :collection => @featured_announcements %>
+  </div>
+</div>
+<div id="right_column_blocks">
+  <div id="photo_gallery">
+    <p><%= link_to image_tag('photo_gallery.jpg', :width => 320, :alt => 'Photo Gallery'), nil, :title => 'Photo Gallery' %></p>
+  </div>
+
+  <h1><span>Videos</span></h1>
+  <div id="videos">
+    <embed width="320" height="254" type="application/x-shockwave-flash" flashvars="m=20814372&v=2&type=video" src="http://lads.myspace.com/videos/vplayer.swf"/>
+  </div>
+
+  <div id="map">
+    <p><%= link_to image_tag('google_map.jpg', :width => 320, :alt => 'Map of our location.'), "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=18822+Brookhurst+Street,+Fountain+Valley+CA&sll=33.689781,-117.95248&sspn=0.01123,0.019934&ie=UTF8&ll=33.70235,-117.954454&spn=0.043272,0.079737&z=14", :title => 'Map us on google.' %></p>
+  </div>
+</div>

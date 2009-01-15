@@ -9,7 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090113041151) do
+ActiveRecord::Schema.define(:version => 20090115042734) do
+
+  create_table "announcements", :force => true do |t|
+    t.string   "title_short"
+    t.text     "body_short"
+    t.string   "title_long"
+    t.text     "body_long"
+    t.boolean  "is_featured", :default => false, :null => false
+    t.boolean  "is_active",   :default => false, :null => false
+    t.string   "permalink",                      :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "caresheets", :force => true do |t|
     t.string   "name"

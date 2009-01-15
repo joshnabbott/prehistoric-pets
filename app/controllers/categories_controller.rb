@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   def show
     @category = Category.find_by_permalink(params[:categories].last) || raise(ActiveRecord::RecordNotFound, 'Record not found.')
-    render :text => @category.to_yaml
+    @products = @category.products.active
   end
 end
