@@ -22,4 +22,13 @@ module ApplicationHelper
       end
     end
   end
+
+  def category_active_state(category)
+    if @product
+      active_state = 'active' if @product.category.eql?(category) || @product.category.ancestors.include?(category)
+    elsif params[:categories]
+      active_state = 'active' if params[:categories].include?(category.permalink)
+    end
+    active_state
+  end
 end

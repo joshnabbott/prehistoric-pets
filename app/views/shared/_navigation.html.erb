@@ -2,8 +2,7 @@
   <h1><span>Categories</span></h1>
   <%=
     content_tag(:ul, categories_nested_for_list do |category|
-      active_state = params[:categories] ? ('active' if params[:categories].include?(category.permalink)) : nil
-      content_tag(:li, link_to(category.name, category_path(category.path)), :class => active_state)
+      content_tag(:li, link_to(category.name, category_path(category.path)), :class => category_active_state(category))
     end)
   %>
 </div>
