@@ -1,0 +1,30 @@
+<h1>Listing announcements</h1>
+
+<table>
+  <tr>
+    <th>Title short</th>
+    <th>Body short</th>
+    <th>Title long</th>
+    <th>Body long</th>
+    <th>Is featured</th>
+    <th>Is active</th>
+  </tr>
+
+<% for announcement in @announcements %>
+  <tr>
+    <td><%=h announcement.title_short %></td>
+    <td><%=h announcement.body_short %></td>
+    <td><%=h announcement.title_long %></td>
+    <td><%=h announcement.body_long %></td>
+    <td><%=h announcement.is_featured %></td>
+    <td><%=h announcement.is_active %></td>
+    <td><%= link_to 'Show', [:admin, announcement] %></td>
+    <td><%= link_to 'Edit', edit_admin_announcement_path(announcement) %></td>
+    <td><%= link_to 'Destroy', [:admin, announcement], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New announcement', new_admin_announcement_path %>

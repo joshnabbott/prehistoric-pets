@@ -1,0 +1,5 @@
+<%- @page_title = @category.name -%>
+<div id="products">
+  <%- @count = 0 -%>
+  <%= render :partial => 'product', :collection => @products %>
+</div>

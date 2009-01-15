@@ -1,0 +1,5 @@
+<%- @page_title = @announcement.title_short -%>
+<div class="announcement">
+  <h2><%= @announcement.title_long %></h2>
+  <%= textilize(@announcement.body_long) %>
+</div>

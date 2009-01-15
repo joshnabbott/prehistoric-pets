@@ -1,0 +1,7 @@
+<div class="product<%= ((@count % 3) == 2) ? ' last' : ''  %>">
+  <p class="name"><%= link_to product.name, product_path(product) %></p>
+  <p class="scientific_name"><%= product.scientific_name %></p>
+  <p class="price"><%= number_to_currency(product.price) %></p>
+  <p><%= link_to 'Click for details', product_path(product) %></p>
+</div>
+<%- @count += 1 -%>

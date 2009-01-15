@@ -1,0 +1,5 @@
+<div class="featured">
+  <h3><%= featured_announcement.title_short %></h3>
+  <%= textilize(featured_announcement.body_short) %>
+  <p class="more_info"><%= link_to 'Read more', announcement_path(featured_announcement) %></p>
+</div>

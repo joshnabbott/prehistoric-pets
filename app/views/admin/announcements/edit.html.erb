@@ -1,0 +1,10 @@
+<h1>Editing announcement</h1>
+
+<% form_for([:admin, @announcement]) do |f| %>
+  <fieldset>
+    <%= render :partial => 'form', :locals => { :f => f } %>
+    <p>
+      <%= f.submit "Update" %> - or - <%= link_to 'Cancel', admin_announcements_path %>
+    </p>
+  </fieldset>
+<% end %>

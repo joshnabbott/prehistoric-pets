@@ -1,0 +1,6 @@
+<%- @page_title = @product.name -%>
+<div class="product">
+  <h2><%= @product.name %></h2>
+  <%= textilize(@product.description) %>
+  <p class="price"><%= number_to_currency(@product.price) %></p>
+</div>

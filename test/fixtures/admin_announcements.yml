@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title_short: MyString
+  body_short: MyText
+  title_long: MyString
+  body_long: MyText
+  is_featured: false
+  is_active: false
+
+two:
+  title_short: MyString
+  body_short: MyText
+  title_long: MyString
+  body_long: MyText
+  is_featured: false
+  is_active: false

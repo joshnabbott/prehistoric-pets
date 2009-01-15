@@ -1,0 +1,33 @@
+<p>
+  <b>Title short:</b>
+  <%=h @announcement.title_short %>
+</p>
+
+<p>
+  <b>Body short:</b>
+  <%=h @announcement.body_short %>
+</p>
+
+<p>
+  <b>Title long:</b>
+  <%=h @announcement.title_long %>
+</p>
+
+<p>
+  <b>Body long:</b>
+  <%=h @announcement.body_long %>
+</p>
+
+<p>
+  <b>Is featured:</b>
+  <%=h @announcement.is_featured %>
+</p>
+
+<p>
+  <b>Is active:</b>
+  <%=h @announcement.is_active %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_announcement_path(@announcement) %> |
+<%= link_to 'Back', admin_announcements_path %>
