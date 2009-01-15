@@ -88,6 +88,8 @@ div#left_column div#navigation ul {
 }
 div#left_column div#navigation ul li.active a {
   color: #fff;
+  font-weight: bold;
+  text-decoration: none;
 }
 div#right_column div#left_column_blocks {
   float: left;
