@@ -5,6 +5,7 @@ module Admin::AdminHelper
       link_to('Products', admin_products_path),
       link_to('Caresheets', admin_caresheets_path),
       link_to('Announcements', admin_announcements_path),
+      link_to('Images', admin_images_path),
       link_to("Log out", logout_path)
     ] : []
     links.join(' | ')

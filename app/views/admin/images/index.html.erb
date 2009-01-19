@@ -18,13 +18,13 @@
     <td><%=h image.is_active %></td>
     <td><%=h image.is_default %></td>
     <td><%=h image.position %></td>
-    <td><%= link_to 'Show', image %></td>
-    <td><%= link_to 'Edit', edit_image_path(image) %></td>
-    <td><%= link_to 'Destroy', image, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', [:admin, image] %></td>
+    <td><%= link_to 'Edit', edit_admin_image_path(image) %></td>
+    <td><%= link_to 'Destroy', [:admin, image], :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New image', new_image_path %>
+<%= link_to 'New image', new_admin_image_path %>
