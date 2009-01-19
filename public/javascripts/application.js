@@ -14,3 +14,6 @@ $('.pagination a').livequery('click', function() {
 jQuery.ajaxSetup({
   'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
 })
+jQuery(document).ready(function($) {
+  $('a[rel*=facebox]').facebox() 
+})

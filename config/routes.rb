@@ -3,7 +3,8 @@ ActionController::Routing::Routes.draw do |map|
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
-  map.resources :announcements, :users, :images
+  map.resources :announcements, :users
+  map.resources :products, :member => { :category_thumbnail => :get, :product_thumbnail => :get }
   map.resource :session
   map.root :controller => 'home'
   map.product '/store/:id', :controller => 'products', :action => 'show'
@@ -16,7 +17,6 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :categories
     admin.resources :caresheets
     admin.resources :products
-    admin.resources :images
   end
 
   # Categories: using globbed routes since I'm not sure how many categories deep this could go

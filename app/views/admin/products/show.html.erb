@@ -3,6 +3,13 @@
   <%=h @product.category.name %>
 </p>
 
+<%- if @product.has_image? -%>
+  <p>
+    <b>Image:</b><br/>
+    <%= image_tag(formatted_admin_product_path(@product, :jpg)) %>
+  </p>
+<%- end -%>
+
 <p>
   <b>Name:</b>
   <%=h @product.name %>
