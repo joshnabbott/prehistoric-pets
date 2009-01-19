@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  owner: 
+  owner_type: MyString
+  description: MyText
+  is_active: false
+  is_default: false
+  position: 1
+
+two:
+  owner: 
+  owner_type: MyString
+  description: MyText
+  is_active: false
+  is_default: false
+  position: 1

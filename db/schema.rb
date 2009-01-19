@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090115042734) do
+ActiveRecord::Schema.define(:version => 20090119025548) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title_short"
@@ -46,6 +46,17 @@ ActiveRecord::Schema.define(:version => 20090115042734) do
   end
 
   add_index "categories", ["permalink"], :name => "index_categories_on_permalink", :unique => true
+
+  create_table "images", :force => true do |t|
+    t.integer  "owner_id"
+    t.string   "owner_type",                     :null => false
+    t.text     "description"
+    t.boolean  "is_active",   :default => false, :null => false
+    t.boolean  "is_default",  :default => false, :null => false
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "products", :force => true do |t|
     t.integer  "category_id"
