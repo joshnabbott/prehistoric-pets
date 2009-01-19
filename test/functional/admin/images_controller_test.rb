@@ -1,10 +1,10 @@
 require 'test_helper'
 
-class ImagesControllerTest < ActionController::TestCase
+class Admin::ImagesControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:images)
+    assert_not_nil assigns(:admin_images)
   end
 
   test "should get new" do
@@ -13,7 +13,7 @@ class ImagesControllerTest < ActionController::TestCase
   end
 
   test "should create image" do
-    assert_difference('Image.count') do
+    assert_difference('Admin::Image.count') do
       post :create, :image => { }
     end
 
@@ -21,25 +21,25 @@ class ImagesControllerTest < ActionController::TestCase
   end
 
   test "should show image" do
-    get :show, :id => images(:one).id
+    get :show, :id => admin_images(:one).id
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, :id => images(:one).id
+    get :edit, :id => admin_images(:one).id
     assert_response :success
   end
 
   test "should update image" do
-    put :update, :id => images(:one).id, :image => { }
+    put :update, :id => admin_images(:one).id, :image => { }
     assert_redirected_to image_path(assigns(:image))
   end
 
   test "should destroy image" do
-    assert_difference('Image.count', -1) do
-      delete :destroy, :id => images(:one).id
+    assert_difference('Admin::Image.count', -1) do
+      delete :destroy, :id => admin_images(:one).id
     end
 
-    assert_redirected_to images_path
+    assert_redirected_to admin_images_path
   end
 end
