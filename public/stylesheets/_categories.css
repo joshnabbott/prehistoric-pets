@@ -8,3 +8,10 @@ body.categories div#products div.product {
 body.categories div#products div.product.last {
   margin: 0 0 10px 0;
 }
+body.categories div#products div.product p.scientific_name {
+  font-style: italic;
+}
+body.categories div#products div.product p.price {
+  color: #f00;
+  font-weight: bold;
+}

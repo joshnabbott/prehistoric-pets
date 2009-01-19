@@ -3,3 +3,4 @@
   <%= textilize(featured_announcement.body_short) %>
   <p class="more_info"><%= link_to 'Read more', announcement_path(featured_announcement) %></p>
 </div>
+<p class="pagination_links"><%= will_paginate(@featured_announcements) %></p>

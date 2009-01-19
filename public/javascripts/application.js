@@ -1,2 +1,16 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+/*jQuery(document).ready(function($) {
+  $('div.pagination a').livequery('click', function() {
+    $('#announcements').load(this.href)
+    return false
+  })
+})*/
+$('.pagination a').livequery('click', function() { 
+  $.get(this.href, function(data) { 
+    $('body.home #announcements').html(data);
+  })
+  return false;
+});
+
+jQuery.ajaxSetup({
+  'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
+})

@@ -7,6 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
   map.root :controller => 'home'
   map.product '/store/:id', :controller => 'products', :action => 'show'
+  map.announcement_pages '/page/:page', :controller => 'home'
 
   # Admin
   map.admin 'admin/', :controller => 'admin/products'
