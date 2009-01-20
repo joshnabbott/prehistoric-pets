@@ -1,13 +1,13 @@
 <%- @page_title = 'Home' -%>
 <div id="left_column_blocks">
   <h1><span>Featured</span></h1>
-  <div id="featured">
-    <%= render :partial => 'featured_product', :collection => @featured_products %>
+  <div id="featured_products">
+    <%= render :partial => 'featured_product' %>
   </div>
 
   <h1><span>Announcements</span></h1>
   <div id="announcements">
-    <%= render :partial => 'featured_announcement', :collection => @featured_announcements %>
+    <%= render :partial => 'featured_announcements' %>
   </div>
 </div>
 <div id="right_column_blocks">

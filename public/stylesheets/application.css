@@ -1,4 +1,6 @@
 @import url(_categories.css);
+@import url(_product_detail.css);
+@import url(_tabs.css);
 
 * {
   margin: 0;
@@ -19,9 +21,6 @@ a {
 }
 a:hover, a:active {
   color: #e39f00;
-}
-img {
-  border: 5px #555555 solid;
 }
 h1 {
   background: url(_g/heading_right.jpg) right 0 no-repeat;
@@ -86,6 +85,15 @@ div#left_column div#navigation ul {
   list-style: none;
   padding-left: 10px;
 }
+div#left_column div#navigation ul li a:link,
+div#left_column div#navigation ul li a:visited {
+  display: block;
+  text-decoration: none;
+}
+div#left_column div#navigation ul li a:hover,
+div#left_column div#navigation ul li a:active {
+  text-decoration: underline;
+}
 div#left_column div#navigation ul li.active a {
   color: #fff;
   font-weight: bold;
@@ -95,6 +103,7 @@ div#right_column {
   float: left;
   width: 804px;
 }
+
 div#right_column div#left_column_blocks {
   float: left;
   margin: 0 10px 10px 0;
@@ -105,6 +114,10 @@ div#right_column div#left_column_blocks div {
   margin: 0 0 10px 0;
   padding: 10px;
 }
+div#right_column div#left_column_blocks div#announcements div {
+  border-width: 0;
+  padding: 0;
+}
 div#right_column div#right_column_blocks {
   float: right;
   margin: 0 0 10px 0;
@@ -113,39 +126,26 @@ div#right_column div#right_column_blocks {
 div#right_column div#right_column_blocks div {
   margin: 0 0 10px 0;
 }
+div#right_column div#right_column_blocks div#photo_gallery img {
+  border: 5px #555555 solid;
+}
 div#right_column div#right_column_blocks div#videos {
   padding: 0;
+}
+div#right_column div#left_column_blocks div.featured h3 {
+  margin: 0 0 10px 0;
 }
 div#right_column div#left_column_blocks div.featured {
   border-width: 0;
   padding: 0;
 }
-/*
-  Show product
-  store/:id
-*/
-body.products div#right_column div.product {
-  border: 1px solid #3e3e3e;
-  padding: 10px;
-}
-body.products div#right_column div.product h2 {
-  display: block;
-}
-body.products div#right_column div.product p {
-  margin-bottom: 10px;
-}
-body.products div#right_column div.product p.image {
+div#right_column div#left_column_blocks div.featured p.image {
   float: left;
   margin: 0 10px 10px 0;
+  text-align: center;
 }
-body.products div#right_column div.product p.image img {
-  border-width: 0;
-}
-body.products div#right_column div.product p.price {
-  color: #f00;
-}
-body.products div#right_column div.product p.price strong {
-  color: #fff;
+div#right_column div#left_column_blocks div.featured p.image span {
+  display: block;
 }
 div#content:after,
 body.products div#right_column div.product:after {

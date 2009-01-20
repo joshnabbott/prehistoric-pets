@@ -1,5 +1,9 @@
 <div class="featured">
-  <h3><%= featured_product.name %></h3>
-  <%= textilize(featured_product.description) %>
-  <p class="more_info"><%= link_to 'More info', product_path(featured_product) %></p>
+  <p class="image">
+    <%= link_to(image_tag(formatted_product_path(@featured_product, :jpg, :size => '160x160')), product_path(@featured_product)) %>
+    <span><%= link_to 'More info', product_path(@featured_product) %></span>
+  </p>
+  <h3><%= @featured_product.name %></h3>
+  <%= textilize(@featured_product.description) %>
+  <p class="more_info"><%= link_to 'More info', product_path(@featured_product) %></p>
 </div>

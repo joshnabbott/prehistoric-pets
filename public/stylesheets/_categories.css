@@ -8,6 +8,9 @@ body.categories div#products div.product {
 body.categories div#products div.product.last {
   margin: 0 0 10px 0;
 }
+body.categories div#products div.product p.image {
+  margin: 0 0 20px 0;
+}
 body.categories div#products div.product p.scientific_name {
   font-style: italic;
 }

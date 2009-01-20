@@ -1,1 +1,3 @@
-@product.operate { |product| product }
+@product.operate do |image|
+  image.resize params[:size] if params[:size]
+end

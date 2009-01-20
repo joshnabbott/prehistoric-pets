@@ -3,11 +3,11 @@ ActionController::Routing::Routes.draw do |map|
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
-  map.resources :announcements, :users
-  map.resources :products, :member => { :category_thumbnail => :get, :product_thumbnail => :get }
+  map.resources :announcements, :users, :products
+  map.product_image '/products/:id/:size.:format', :controller => 'products', :action => 'show', :size => nil
+
   map.resource :session
   map.root :controller => 'home'
-  map.product '/store/:id', :controller => 'products', :action => 'show'
   map.announcement_pages '/page/:page', :controller => 'home'
 
   # Admin
@@ -21,5 +21,6 @@ ActionController::Routing::Routes.draw do |map|
 
   # Categories: using globbed routes since I'm not sure how many categories deep this could go
   # and I would like a breadcrumb-like url (/snakes/pythons/ball-pythons).
-  map.category '*categories', :controller => 'categories', :action => 'show'
+  map.category 'browse/*categories', :controller => 'categories', :action => 'show'
+  map.static '*path', :controller => 'static', :action => 'show'
 end
