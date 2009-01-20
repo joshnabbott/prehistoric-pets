@@ -1,0 +1,12 @@
+<ul id="announcement_tabs">
+  <%- @featured_announcements.each_with_index do |announcement, index| -%>
+    <li class="jquery_tab"><%= link_to content_tag(:span, announcement.title_short), "#announcement_#{index}" %></li>
+  <%- end -%>
+  <li><%= link_to 'View all...', announcements_path %></li>
+</ul>
+<%- @featured_announcements.each_with_index do |announcement, index| -%>
+  <div id="announcement_<%= index %>">
+    <%= textilize(announcement.body_short) %>
+    <p class="read_more"><%= link_to 'Read more...', announcement_path(announcement) %></p>
+  </div>
+<%- end -%>

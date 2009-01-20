@@ -1,5 +1,3 @@
-@import url(_categories.css);
-@import url(_product_detail.css);
 @import url(_tabs.css);
 
 * {
@@ -103,7 +101,10 @@ div#right_column {
   float: left;
   width: 804px;
 }
-
+div#right_column h2 {
+  text-align: center;
+  margin: 0 0 25px 0;
+}
 div#right_column div#left_column_blocks {
   float: left;
   margin: 0 10px 10px 0;

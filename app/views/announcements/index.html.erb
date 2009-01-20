@@ -1,0 +1,12 @@
+<%- @page_title = 'Announcements' -%>
+<%- content_for :stylesheets do -%>
+<%= stylesheet_link_tag "_announcements" %>
+<%- end -%>
+<h2>News &amp; Announcements</h2>
+<table>
+  <tr>
+    <th>Date posted</th>
+    <th>Title</th>
+  </tr>
+  <%= render :partial => @announcements %>
+</table>

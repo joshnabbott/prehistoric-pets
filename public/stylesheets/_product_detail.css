@@ -1,0 +1,20 @@
+body.products div#right_column div.product {
+  border: 1px solid #3e3e3e;
+  padding: 10px;
+}
+body.products div#right_column div.product h2 {
+  display: block;
+}
+body.products div#right_column div.product p {
+  margin-bottom: 10px;
+}
+body.products div#right_column div.product p.image {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+body.products div#right_column div.product p.price {
+  color: #f00;
+}
+body.products div#right_column div.product p.price strong {
+  color: #fff;
+}

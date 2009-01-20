@@ -1,0 +1,25 @@
+div#right_column div#left_column_blocks div#announcements ul#announcement_tabs {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  list-style: none;
+  margin: -10px 5px 20px -10px;
+}
+div#right_column div#left_column_blocks div#announcements ul#announcement_tabs li {
+  background: #3e3e3e;
+  float: left;
+  margin: 0 5px 0 0;
+}
+div#right_column div#left_column_blocks div#announcements ul#announcement_tabs li a {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 5px;
+}
+div#right_column div#left_column_blocks div#announcements .ui-tabs-hide {
+  display: none;
+}
+div#right_column div#left_column_blocks div#announcements .ui-tabs-selected a {
+  color: #e39f00;
+  text-decoration: none;
+}

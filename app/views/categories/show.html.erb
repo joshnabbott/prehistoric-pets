@@ -1,4 +1,7 @@
 <%- @page_title = @category.name -%>
+<%- content_for :stylesheets do -%>
+<%= stylesheet_link_tag "_categories" %>
+<%- end -%>
 <div id="products">
   <%- @count = 0 -%>
   <%= render :partial => 'product', :collection => @products %>

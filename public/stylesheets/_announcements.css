@@ -1,0 +1,10 @@
+body.announcements table {
+  margin: 0 auto;
+  width: 50%;
+}
+body.announcements table tr th {
+  font-size: 125%;
+}
+body.announcements table tr td {
+  text-align: center;
+}

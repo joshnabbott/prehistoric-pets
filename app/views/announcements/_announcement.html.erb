@@ -1,0 +1,4 @@
+<tr class="announcement">
+  <td><%= announcement.created_at.strftime("%m/%d/%Y") %></td>
+  <td><%= link_to(announcement.title_short, announcement_path(announcement)) %></td>
+</tr>

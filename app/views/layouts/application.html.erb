@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Prehistoric Pets - <%= @page_title %></title>
   <%= stylesheet_link_tag 'application', 'facebox' %>
+  <%= yield :stylesheets %>
   <%= javascript_include_tag 'jquery','jquery.ui','jquery.tabs','facebox','application' %>
 </head>
 
@@ -15,7 +16,7 @@
         <li class="first"><%= link_to 'Home', root_path %></li>
         <li><%= link_to 'About Us', static_path('about') %></li>
         <li><%= link_to 'Contact Us', static_path('contact-us') %></li>
-        <li class="last"><%= link_to 'Photo Gallery', nil %></li>
+        <li class="last"><%= link_to 'Photo Gallery', static_path('photo-gallery') %></li>
       </ul>
     </div>
 
@@ -32,9 +33,9 @@
     <p>&copy; 1996 - <%= Time.now.year %> Prehitoric Pets</p>
     <ul>
       <li><%= link_to 'JurassicParties.com', 'http://www.jurassicparties.com' %></li>
-      <li><%= link_to 'Photo Gallery', nil %></li>
-      <li><%= link_to 'Terms and Conditions', nil %></li>
-      <li><%= link_to 'Contact Us', nil %></li>
+      <li><%= link_to 'Photo Gallery', static_path('photo-gallery') %></li>
+      <li><%= link_to 'Terms and Conditions', static_path('terms-and-conditions') %></li>
+      <li><%= link_to 'Contact Us', static_path('contact-us') %></li>
     </ul>
   </div>
 </body>
