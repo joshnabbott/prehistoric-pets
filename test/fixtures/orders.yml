@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user: 
+  ip_address: MyString
+  reference_number: MyString
+  line_items_count: 1
+  shipping: 9.99
+  subtotal: 9.99
+  tax: 9.99
+  amount: 9.99
+
+two:
+  user: 
+  ip_address: MyString
+  reference_number: MyString
+  line_items_count: 1
+  shipping: 9.99
+  subtotal: 9.99
+  tax: 9.99
+  amount: 9.99

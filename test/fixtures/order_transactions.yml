@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  order: 
+  amount: 9.99
+  is_success: false
+  reference_number: MyString
+  message: MyText
+  action: MyString
+  params: MyText
+  is_test: false
+
+two:
+  order: 
+  amount: 9.99
+  is_success: false
+  reference_number: MyString
+  message: MyText
+  action: MyString
+  params: MyText
+  is_test: false
