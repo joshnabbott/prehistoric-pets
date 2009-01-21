@@ -24,7 +24,6 @@ Rails::Initializer.run do |config|
   # They can then be installed with "rake gems:install" on new installations.
   # You have to specify the :lib option for libraries, where the Gem name (sqlite3-ruby) differs from the file itself (sqlite3)
   config.gem "RedCloth", :lib => "redcloth", :source => "http://code.whytheluckystiff.net"
-  config.gem 'mislav-will_paginate', :version => '~> 2.3.2', :lib => 'will_paginate', :source => 'http://gems.github.com'
   config.gem "rubyist-aasm", :source => "http://gems.github.com", :lib => 'aasm', :version => "2.0.2"
   # config.gem "bj"
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
