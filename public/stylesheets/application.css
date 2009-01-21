@@ -40,6 +40,9 @@ h1 span {
 .center {
   text-align: center;
 }
+form fieldset {
+  border-width: 0;
+}
 div#container {
   background-color: #000;
   margin: 0 auto;

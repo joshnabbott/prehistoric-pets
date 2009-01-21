@@ -14,3 +14,6 @@ body.items table td {
 body.items table td.total {
   background-color: #292929;
 }
+body.cart form {
+  margin: 25px 0;
+}

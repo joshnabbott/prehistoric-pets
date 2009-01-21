@@ -9,6 +9,7 @@ class CreateOrders < ActiveRecord::Migration
       t.timestamps
     end
     add_index :orders, :reference_number, :unique => true
+    add_index :orders, [:reference_number, :state]
     add_index :orders, :state
     add_index :orders, :ip_address
   end

@@ -13,12 +13,12 @@ class ApplicationController < ActionController::Base
   filter_parameter_logging :password
 private
   def find_order
-    if session[:order_id].blank?
+    if session[:order_reference_number].blank?
       @order = Order.create(:ip_address => request.remote_ip)
     else
-      @order = Order.find_or_create_by_id(session[:order_id])
+      @order = Order.find_or_create_by_reference_number_and_state(session[:order_reference_number], 'in_cart')
     end
-    session[:order_id] = @order.id
+    session[:order_reference_number] = @order.reference_number
     @order
   end
 

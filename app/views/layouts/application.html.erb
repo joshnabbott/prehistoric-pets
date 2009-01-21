@@ -7,6 +7,7 @@
   <%= stylesheet_link_tag 'application', 'facebox' %>
   <%= yield :stylesheets %>
   <%= javascript_include_tag 'jquery','jquery.ui','jquery.tabs','facebox','application' %>
+  <%= yield :javascripts %>
 </head>
 
 <body class="<%= controller.controller_name %>">

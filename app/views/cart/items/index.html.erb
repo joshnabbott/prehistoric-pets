@@ -1,3 +1,7 @@
+<%- @page_title = 'In your cart' -%>
+<%- content_for :stylesheets do -%>
+<%= stylesheet_link_tag "_cart" %>
+<%- end -%>
 <h2>Your cart</h2>
 <%- unless @order.line_items.empty? -%>
   <%= render :partial => "cart" %>

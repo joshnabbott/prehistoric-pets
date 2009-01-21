@@ -19,6 +19,3 @@ body.products div#right_column div.product p.price {
 body.products div#right_column div.product p.price strong {
   color: #fff;
 }
-body.products div#right_column div.product form fieldset {
-  border-width: 0;
-}
