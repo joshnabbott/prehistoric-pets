@@ -6,7 +6,6 @@ class CreateOrders < ActiveRecord::Migration
       t.string :state, :default => 'in_cart', :null => false
       t.integer :line_items_count, :default => 0
       t.decimal :shipping, :subtotal, :tax, :amount, :precision => 8, :scale => 2, :default => 0.0, :null => false
-
       t.timestamps
     end
     add_index :orders, :reference_number, :unique => true

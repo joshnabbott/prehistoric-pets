@@ -16,7 +16,8 @@
         <li class="first"><%= link_to 'Home', root_path %></li>
         <li><%= link_to 'About Us', static_path('about') %></li>
         <li><%= link_to 'Contact Us', static_path('contact-us') %></li>
-        <li class="last"><%= link_to 'Photo Gallery', static_path('photo-gallery') %></li>
+        <li><%= link_to 'Photo Gallery', static_path('photo-gallery') %></li>
+        <li class="cart"><%= link_to "#{pluralize(@order.line_items.count, 'item')} in cart", cart_items_path, :id => "cart_link" %></li>
       </ul>
     </div>
 

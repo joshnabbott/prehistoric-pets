@@ -1,0 +1,29 @@
+<%- @page_title = 'In your cart' -%>
+<%- content_for :stylesheets do -%>
+<%= stylesheet_link_tag "_cart" %>
+<%- end -%>
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>Price Ea</th>
+      <th>Total</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render :partial => 'cart_item', :collection => @order.line_items %>
+    <tr>
+      <td colspan="2">&nbsp;</td>
+      <td class="center total"><strong>Total:</strong></td>
+      <td class="center total"><%= number_to_currency(@order.total) %></td>
+    </tr>
+    <tr>
+      <td colspan="3">&nbsp;</td>
+      <td class="center">
+          <%= render :partial => 'checkout' %>
+      </td>
+    </tr>
+  </tbody>
+</table>

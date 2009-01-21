@@ -4,6 +4,7 @@ body.products div#right_column div.product {
 }
 body.products div#right_column div.product h2 {
   display: block;
+  text-align: left;
 }
 body.products div#right_column div.product p {
   margin-bottom: 10px;
@@ -17,4 +18,7 @@ body.products div#right_column div.product p.price {
 }
 body.products div#right_column div.product p.price strong {
   color: #fff;
+}
+body.products div#right_column div.product form fieldset {
+  border-width: 0;
 }

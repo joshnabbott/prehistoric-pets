@@ -1,0 +1,16 @@
+body.items table {
+  border-collapse: collapse;
+  width: 100%;
+}
+body.items table th {
+  background-color: #292929;
+  font-size: 125%;
+  padding: 5px;
+  text-align: center;
+}
+body.items table td {
+  padding: 5px;
+}
+body.items table td.total {
+  background-color: #292929;
+}

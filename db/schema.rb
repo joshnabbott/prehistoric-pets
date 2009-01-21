@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090119030019) do
+ActiveRecord::Schema.define(:version => 20090120223028) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title_short"
@@ -58,6 +58,52 @@ ActiveRecord::Schema.define(:version => 20090119030019) do
     t.datetime "updated_at"
   end
 
+  create_table "line_items", :force => true do |t|
+    t.integer  "order_id"
+    t.integer  "product_id"
+    t.integer  "quantity",                                 :default => 1,   :null => false
+    t.decimal  "price",      :precision => 8, :scale => 2, :default => 0.0, :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "line_items", ["order_id", "product_id"], :name => "index_line_items_on_order_id_and_product_id"
+  add_index "line_items", ["order_id"], :name => "index_line_items_on_order_id"
+  add_index "line_items", ["product_id"], :name => "index_line_items_on_product_id"
+
+  create_table "order_transactions", :force => true do |t|
+    t.integer  "order_id"
+    t.decimal  "amount",           :precision => 8, :scale => 2, :default => 0.0,   :null => false
+    t.boolean  "is_success",                                     :default => false, :null => false
+    t.boolean  "is_test",                                        :default => false, :null => false
+    t.string   "reference_number"
+    t.string   "action"
+    t.text     "message"
+    t.text     "params"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "order_transactions", ["reference_number"], :name => "index_order_transactions_on_reference_number"
+
+  create_table "orders", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "ip_address"
+    t.string   "reference_number"
+    t.string   "state",                                          :default => "in_cart", :null => false
+    t.integer  "line_items_count",                               :default => 0
+    t.decimal  "shipping",         :precision => 8, :scale => 2, :default => 0.0,       :null => false
+    t.decimal  "subtotal",         :precision => 8, :scale => 2, :default => 0.0,       :null => false
+    t.decimal  "tax",              :precision => 8, :scale => 2, :default => 0.0,       :null => false
+    t.decimal  "amount",           :precision => 8, :scale => 2, :default => 0.0,       :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "orders", ["ip_address"], :name => "index_orders_on_ip_address"
+  add_index "orders", ["reference_number"], :name => "index_orders_on_reference_number", :unique => true
+  add_index "orders", ["state"], :name => "index_orders_on_state"
+
   create_table "products", :force => true do |t|
     t.integer  "category_id"
     t.integer  "caresheet_id"
@@ -76,6 +122,16 @@ ActiveRecord::Schema.define(:version => 20090119030019) do
   end
 
   add_index "products", ["permalink"], :name => "index_products_on_permalink", :unique => true
+
+  create_table "sessions", :force => true do |t|
+    t.string   "session_id", :null => false
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
+  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
   create_table "users", :force => true do |t|
     t.string   "login",                     :limit => 40

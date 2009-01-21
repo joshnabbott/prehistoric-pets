@@ -8,4 +8,11 @@
   <p><em><%= @product.scientific_name %></em></p>
   <p class="description">Description:<%= textilize(@product.description) %></p>
   <p class="price"><strong>Price:</strong> <%= number_to_currency(@product.price) %></p>
+  <%- form_tag(cart_items_path) do -%>
+    <fieldset>
+      <%= hidden_field_tag 'quantity', 1 %>
+      <%= hidden_field_tag 'product_id', @product.id %>
+      <p><%= submit_tag "Add to cart" %></p>
+    </fieldset>
+  <%- end -%>
 </div>

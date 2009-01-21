@@ -31,6 +31,15 @@ h1 span {
   display: block;
   padding: 0 10px;
 }
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
 div#container {
   background-color: #000;
   margin: 0 auto;
@@ -56,8 +65,16 @@ div#container div#header ul li {
 div#container div#header ul li.first {
   background: url(_g/header_nav_left.jpg) 0 0 no-repeat;
 }
+div#container div#header ul li.cart {
+  float: right;
+}
 div#container div#header ul li a {
   padding: 0 10px;
+}
+div#container div#header ul li.cart a#cart_link {
+  background: url(_g/cart.png) 0 center no-repeat;
+  padding: 0 0 0 20px;
+  margin: 0 10px 0 0;
 }
 div#container div#content {
   margin-top: 25px;

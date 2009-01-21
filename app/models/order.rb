@@ -4,15 +4,12 @@ class Order < ActiveRecord::Base
   has_many :transactions, :class_name => "OrderTransaction", :dependent => :destroy
   has_many :line_items, :dependent => :destroy
 
-  aasm_column         :state
-  aasm_initial_state  :shopping
+  aasm_column :state
+  aasm_initial_state :shopping
   aasm_state :in_cart
   aasm_state :pending # sent to payment processor
   aasm_state :completed # returned from payment processor::completed
-  # aasm_state :pending_payment
-  # aasm_state :authorized
-  # aasm_state :declined
-  # aasm_state :paid
+
   aasm_event :checkout do
     transitions :to => :pending, :from => :in_cart
   end
@@ -28,10 +25,6 @@ class Order < ActiveRecord::Base
     else
       line_items.create(:product_id => product.id, :price => product.price, :quantity => options[:quantity])
     end
-  end
-
-  def number
-    CGI::Session.generate_unique_id
   end
 
   def product_count

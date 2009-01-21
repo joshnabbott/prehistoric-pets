@@ -6,4 +6,8 @@ class LineItem < ActiveRecord::Base
   def increment_quantity
     update_attribute(:quantity, (quantity + 1))
   end
+
+  def total
+    quantity * price
+  end
 end

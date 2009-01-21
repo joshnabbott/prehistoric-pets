@@ -4,7 +4,7 @@ class CreateOrderTransactions < ActiveRecord::Migration
       t.belongs_to :order
       t.decimal :amount, :precision => 8, :scale => 2, :default => 0.0, :null => false
       t.boolean :is_success, :is_test, :default => false, :null => false
-      t.string :reference_number, :action, 
+      t.string :reference_number, :action
       t.text :message, :params
       t.timestamps
     end

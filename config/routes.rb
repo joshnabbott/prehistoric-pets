@@ -8,7 +8,14 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resource :session
   map.root :controller => 'home'
-  map.announcement_pages '/page/:page', :controller => 'home'
+
+  # Cart
+  map.cart_checkout '/cart/checkout', :controller => "cart/cart", :action => "checkout", :method => :post
+
+  map.namespace(:cart) do |cart|
+    cart.resources :items
+    cart.resources :orders
+  end
 
   # Admin
   map.admin 'admin/', :controller => 'admin/products'

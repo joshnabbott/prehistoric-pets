@@ -1,0 +1,34 @@
+<%- form_tag("https://trans.merchantpartners.com/cgi-bin/process.cgi") do-%>
+  <!-- Cart variables -->
+  <input type="hidden" name="AddToCart" value="RefreshPage">
+  <input type="hidden" name="CheckOut" value="RefreshPage">
+  <input type="hidden" name="usegc" value="1">
+  <input type="hidden" name="atsid" value="18867">
+  <input type="hidden" name="action" value="preview">
+  <input type="hidden" name="usepost" value="1">
+  <input type="hidden" name="accepturl" value="http://www.prehistoricpets.com/orderaccept.aspx">
+  <input type="hidden" name="declineurl" value="http://www.prehistoricpets.com/orderacceptn.aspx">
+  <input type="hidden" name="body" value="bgcolor=white text=black">
+  <input type="hidden" name="title" value="PrehistoricPets.com - Secure Check Out">
+  <input type="hidden" name="header" value="&lt;font face=Verdana size=4&gt;&lt;b&gt;PrehistoricPets.com&lt;/b&gt; Secure Checkout&lt;/font&gt;">
+  <input type="hidden" name="getshippinginfo" value="0">
+  <%- @order.line_items.each do |line_item| -%>
+    <%- product = line_item.product -%>
+    <%= hidden_field_tag :itemid, product.sku %>
+    <%= hidden_field_tag :itemname, product.name %>
+    <%= hidden_field_tag :itemdesc, 'PP Product' %>
+    <%= hidden_field_tag :itemprice, product.price %>
+    <%= hidden_field_tag :itemquant, line_item.quantity %>
+    <%= hidden_field_tag :itemtax, '0' %>
+  <%- end -%>
+  <input type="hidden" name="fname" value="" />
+  <input type="hidden" name="" value="">
+  <input type="hidden" name="ci_billaddr1" value="">
+  <input type="hidden" name="" value=", ">
+  <input type="hidden" name="" value=''>
+  <input type="hidden" name="" value=''>
+  <%= hidden_field_tag :remotehost, @order.ip_address, :id => 'remotehost' %>
+  <%= hidden_field_tag :remoteaddr, @order.ip_address, :id => 'remoteaddr' %>
+  <%= hidden_field_tag :order_id, @order.to_param %>
+  <%= submit_tag "Checkout" %>
+<%- end -%>

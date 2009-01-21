@@ -1,0 +1,8 @@
+<%- product = cart_item.product -%>
+<tr>
+  <td class="center"><%= link_to "#{product.name} (#{product.sku})", product_path(product) %></td>
+  <td class="center"><%= cart_item.quantity %></td>
+  <td class="center"><%= number_to_currency(cart_item.product.price) %></td>
+  <td class="center"><%= number_to_currency(cart_item.total) %>
+  <td class="center"><%= link_to "remove", cart_item_path(cart_item), :method => :delete, :confirm => "Are you sure?", :class => "delete" %></td>
+</tr>
