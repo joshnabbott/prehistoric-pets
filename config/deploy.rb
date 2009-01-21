@@ -4,7 +4,7 @@ require 'ftools'
 # General settings
 set :primary_domain, "lolmfao.com"
 set :application, "prehistoricpets"
-set :domain, "lolmfao.com"
+set :domain, "pp.lolmfao.com"
 set :user, "joshnabbott"
 
 # Apache settings
