@@ -65,15 +65,15 @@ div#container div#header ul li {
 div#container div#header ul li.first {
   background: url(_g/header_nav_left.jpg) 0 0 no-repeat;
 }
-div#container div#header ul li.cart {
+div#container div#header ul li#cart_link {
   float: right;
 }
 div#container div#header ul li a {
   padding: 0 10px;
 }
-div#container div#header ul li.cart a#cart_link {
+div#container div#header ul li#cart_link a {
   background: url(_g/cart.png) 0 center no-repeat;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 25px;
   margin: 0 10px 0 0;
 }
 div#container div#content {
