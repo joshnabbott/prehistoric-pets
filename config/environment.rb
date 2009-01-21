@@ -75,6 +75,7 @@ Rails::Initializer.run do |config|
   # Please note that observers generated using script/generate observer need to have an _observer suffix
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 end
+require 'redcloth'
 require 'string'
 require 'will_paginate'
 WillPaginate::ViewHelpers.pagination_options[:page_links] = false
