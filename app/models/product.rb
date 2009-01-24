@@ -1,5 +1,6 @@
 class Product < ActiveRecord::Base
   include Prehistoric
+  include PostOMatic::KingSnake
   acts_as_fleximage :image_directory => 'public/images/uploads'
   before_validation :create_permalink
   belongs_to :caresheet

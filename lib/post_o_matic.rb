@@ -17,38 +17,38 @@ module PostOMatic
     }
 
     def post_ad(options = {}) # options = { :ad_duration => '5 days' }
-      agent    = WWW::Mechanize.new
-      page     = login(agent)
-      page     = agent.get(URLS[:ball_pythons])
-      page     = submit_ad(page)
-      @page    = page
-    end
-
-    def page
-      @page
+      @agent = WWW::Mechanize.new
+      page   = login
+      page   = submit_ad(@page)
+      puts page.inspect
     end
 
   private
-
-    def get_my_form(page)
-      page.forms[1]
-    end
-
-    def login(agent)
-      page          = agent.get(URLS[:login])
+    def login
+      page          = @agent.get(URLS[:login])
       form          = page.forms[1]
       form.username = USERNAME
       form.passwd   = PASSWORD
-      page          = agent.submit(form)
+      page          = @agent.submit(form)
     end
 
     def submit_ad(page)
+      page          = @agent.get(URLS[:ball_pythons])
       form          = page.forms[1]
       form.subject  = name
       form.descript = description
-      form.imageurl = imageurl
-      form
-      # page          = form.submit
+      form.imageurl = "http:/prehistoricpets.com/products/#{to_param}.jpg"
+      # page        = form.submit # works
+      validate_post_success(form)
+    end
+
+    def validate_post_success(page)
+      # if page.something_on_the_page.eql?('bla bla bla)
+        # return true
+      # else
+      #   return false
+      # end
+      "eff holed"
     end
   end
 end
@@ -73,6 +73,10 @@ class Product
 
   def imageurl
     @imageurl
+  end
+
+  def to_param
+    name
   end
 end
 p = Product.new
