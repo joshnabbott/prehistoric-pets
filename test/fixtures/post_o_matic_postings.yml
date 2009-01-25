@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  product: 
+  posted_to: MyString
+  state: MyString
+  position: 1
+
+two:
+  product: 
+  posted_to: MyString
+  state: MyString
+  position: 1

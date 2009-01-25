@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  product: 
+  posted_to: MyString
+
+two:
+  product: 
+  posted_to: MyString

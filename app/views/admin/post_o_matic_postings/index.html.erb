@@ -1,0 +1,22 @@
+<h1>Listing post_o_matic_postings</h1>
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Posted to</th>
+  </tr>
+
+<% for post_o_matic_posting in @post_o_matic_postings %>
+  <tr>
+    <td><%=h post_o_matic_posting.product.name %></td>
+    <td><%=h post_o_matic_posting.posted_to %></td>
+    <td><%= link_to 'Show', [:admin, post_o_matic_posting] %></td>
+    <td><%= link_to 'Edit', edit_admin_post_o_matic_posting_path(post_o_matic_posting) %></td>
+    <td><%= link_to 'Destroy', [:admin, post_o_matic_posting], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New post_o_matic_posting', new_admin_post_o_matic_posting_path %>

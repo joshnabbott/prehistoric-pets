@@ -1,0 +1,6 @@
+<%= f.error_messages %>
+
+<p>
+  <%= f.label :product_id %><br />
+  <%= f.collection_select :product_id, Product.active.find(:all, :order => 'name asc'), :id, :name %>
+</p>

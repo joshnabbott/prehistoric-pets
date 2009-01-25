@@ -1,0 +1,12 @@
+<p>
+  <b>Product:</b>
+  <%=h @post_o_matic_posting.product.name %>
+</p>
+
+<p>
+  <b>Posted to:</b>
+  <%=h @post_o_matic_posting.posted_to %>
+</p>
+
+<%= link_to 'Edit', edit_admin_post_o_matic_posting_path(@post_o_matic_posting) %> |
+<%= link_to 'Back', admin_post_o_matic_postings_path %>

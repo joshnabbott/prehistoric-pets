@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090120223028) do
+ActiveRecord::Schema.define(:version => 20090125043046) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title_short"
@@ -101,8 +101,20 @@ ActiveRecord::Schema.define(:version => 20090120223028) do
   end
 
   add_index "orders", ["ip_address"], :name => "index_orders_on_ip_address"
+  add_index "orders", ["reference_number", "state"], :name => "index_orders_on_reference_number_and_state"
   add_index "orders", ["reference_number"], :name => "index_orders_on_reference_number", :unique => true
   add_index "orders", ["state"], :name => "index_orders_on_state"
+
+  create_table "post_o_matic_postings", :force => true do |t|
+    t.integer  "product_id"
+    t.string   "posted_to"
+    t.string   "state",      :default => "scheduled"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "post_o_matic_postings", ["state"], :name => "index_post_o_matic_postings_on_state"
 
   create_table "products", :force => true do |t|
     t.integer  "category_id"
