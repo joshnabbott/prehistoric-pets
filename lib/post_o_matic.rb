@@ -61,11 +61,11 @@ module PostOMatic
       # else
       #   return false
       # end
-      "eff holed"
       return true
     end
   end
 end
+# Keep this for testing:
 # class Product
 #   include PostOMatic::KingSnake
 #   attr_accessor :name, :description, :imageurl

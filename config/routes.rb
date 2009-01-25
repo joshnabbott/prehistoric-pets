@@ -24,7 +24,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :categories
     admin.resources :caresheets
     admin.resources :products
-    admin.resources :post_o_matic_postings
+    admin.resources :post_o_matic_postings, :collection => { :update_positions => :post }
   end
 
   # Categories: using globbed routes since I'm not sure how many categories deep this could go

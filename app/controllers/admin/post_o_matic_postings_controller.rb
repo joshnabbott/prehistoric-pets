@@ -2,7 +2,7 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
   # GET /admin/post_o_matic_postings
   # GET /admin/post_o_matic_postings.xml
   def index
-    @post_o_matic_postings = PostOMaticPosting.find(:all)
+    @post_o_matic_postings = PostOMaticPosting.find(:all, :order => 'position asc')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -76,6 +76,21 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
   def destroy
     @post_o_matic_posting = PostOMaticPosting.find(params[:id])
     @post_o_matic_posting.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(admin_post_o_matic_postings_url) }
+      format.xml  { head :ok }
+    end
+  end
+
+  # Non-REST actions
+  def update_positions
+    params[:post_o_matic_posting].each do |post_o_matic_posting|
+      id       = post_o_matic_posting["id"]
+      position = post_o_matic_posting["list_order"]
+      record   = PostOMaticPosting.find(id)
+      record.insert_at(position)
+    end
 
     respond_to do |format|
       format.html { redirect_to(admin_post_o_matic_postings_url) }

@@ -1,21 +1,30 @@
 <h1>Listing post_o_matic_postings</h1>
 
-<table>
-  <tr>
-    <th>Product</th>
-    <th>Posted to</th>
-  </tr>
+<%- form_tag("/admin/post_o_matic_postings/update_positions") do -%>
+  <%= submit_tag "Update list order" %>
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Posted to</th>
+      <th>List order</th>
+    </tr>
 
-<% for post_o_matic_posting in @post_o_matic_postings %>
-  <tr>
-    <td><%=h post_o_matic_posting.product.name %></td>
-    <td><%=h post_o_matic_posting.posted_to %></td>
-    <td><%= link_to 'Show', [:admin, post_o_matic_posting] %></td>
-    <td><%= link_to 'Edit', edit_admin_post_o_matic_posting_path(post_o_matic_posting) %></td>
-    <td><%= link_to 'Destroy', [:admin, post_o_matic_posting], :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+  <%- @post_o_matic_postings.each_with_index do |post_o_matic_posting, index| -%>
+    <tr>
+      <td><%=h post_o_matic_posting.product.name %></td>
+      <td><%=h post_o_matic_posting.posted_to %></td>
+      <td>
+        <%= text_field_tag "post_o_matic_posting[][list_order]", post_o_matic_posting.position, :autocomplete => :off %>
+        <%= hidden_field_tag "post_o_matic_posting[][id]", post_o_matic_posting.id %>
+        </td>
+      <td><%= link_to 'Show', [:admin, post_o_matic_posting] %></td>
+      <td><%= link_to 'Edit', edit_admin_post_o_matic_posting_path(post_o_matic_posting) %></td>
+      <td><%= link_to 'Destroy', [:admin, post_o_matic_posting], :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+  </table>
+  <%= submit_tag "Update list order" %>
+<%- end -%>
 
 <br />
 
