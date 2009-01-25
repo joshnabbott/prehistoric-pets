@@ -85,6 +85,7 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
 
   # Non-REST actions
   def update_positions
+    # is this stupid?
     params[:post_o_matic_posting].each do |post_o_matic_posting|
       id       = post_o_matic_posting["id"]
       position = post_o_matic_posting["list_order"]
