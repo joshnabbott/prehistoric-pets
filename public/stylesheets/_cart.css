@@ -17,3 +17,11 @@ body.items table td.total {
 body.cart form {
   margin: 25px 0;
 }
+body.items a#checkout {
+  background: url(_g/btn_checkout.jpg) 0 0 no-repeat;
+  display: block;
+  height: 25px;
+  margin: 0 auto;
+  text-indent: -3000px;
+  width: 100px;
+}
