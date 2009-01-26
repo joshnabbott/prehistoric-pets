@@ -6,6 +6,7 @@
     <tr>
       <th>Product</th>
       <th>Post to</th>
+      <th>Post in category</th>
       <th>List order</th>
     </tr>
 
@@ -13,6 +14,7 @@
     <tr>
       <td><%=h post_o_matic_posting.product.name %></td>
       <td><%=h post_o_matic_posting.post_to %></td>
+      <td><%=h post_o_matic_posting.post_in.humanize %></td>
       <td>
         <%= text_field_tag "post_o_matic_posting[][list_order]", post_o_matic_posting.position, :autocomplete => :off %>
         <%= hidden_field_tag "post_o_matic_posting[][id]", post_o_matic_posting.id %>

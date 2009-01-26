@@ -1,6 +1,6 @@
 class Product < ActiveRecord::Base
   include Prehistoric
-  attr_accessor :post_o_matisize
+  attr_accessor :post_o_matisize, :post_o_matic_category
   acts_as_fleximage :image_directory => 'public/images/uploads'
   after_save :schedule_for_post_o_matic, :if => Proc.new { |record| record.post_o_matisize }
   before_validation :create_permalink
@@ -14,6 +14,6 @@ class Product < ActiveRecord::Base
   named_scope :featured, :conditions => { :is_featured => true }
 private
   def schedule_for_post_o_matic
-    self.post_o_matic_postings.create(:product => self)
+    self.post_o_matic_postings.create(:product => self, :post_in => self.post_o_matic_category)
   end
 end

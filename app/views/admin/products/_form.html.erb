@@ -59,3 +59,7 @@
   <%= f.label :post_o_matisize, 'Post-O-Matic' %><br />
   <%= f.check_box :post_o_matisize %>
 </p>
+<p>
+  <%= f.label :post_o_matic_category, 'Post-O-Matic category' %><br />
+  <%= f.select :post_o_matic_category, kingsnake_categories, :include_blank => true %>
+</p>

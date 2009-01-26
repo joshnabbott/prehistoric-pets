@@ -4,3 +4,7 @@
   <%= f.label :product_id %><br />
   <%= f.collection_select :product_id, Product.active.find(:all, :order => 'name asc'), :id, :name %>
 </p>
+<p>
+  <%= f.label :post_in, 'Category' %><br />
+  <%= f.select :post_in, kingsnake_categories, :include_blank => true %>
+</p>

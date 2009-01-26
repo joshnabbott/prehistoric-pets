@@ -4,8 +4,18 @@
 </p>
 
 <p>
-  <b>Posted to:</b>
+  <b>Post to:</b>
   <%=h @post_o_matic_posting.post_to %>
+</p>
+
+<p>
+  <b>Post in:</b>
+  <%=h @post_o_matic_posting.post_in.humanize %>
+</p>
+
+<p>
+  <b>Position in queue:</b>
+  <%=h @post_o_matic_posting.position %>
 </p>
 
 <%= link_to 'Edit', edit_admin_post_o_matic_posting_path(@post_o_matic_posting) %> |
