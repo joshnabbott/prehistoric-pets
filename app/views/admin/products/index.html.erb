@@ -11,6 +11,8 @@
     <th>Is active</th>
     <th>Caresheet</th>
     <th>Is featured</th>
+    <th>Current Post-O-Matic postings</th>
+    <th>Scheduled Post-O-Matic postings</th>
   </tr>
 
 <% for product in @products %>
@@ -24,6 +26,8 @@
     <td><%=h product.is_active %></td>
     <td><%=h product.caresheet.name if product.caresheet %></td>
     <td><%=h product.is_featured %></td>
+    <td><%=h product.post_o_matic_postings.posted.count %></td>
+    <td><%=h product.post_o_matic_postings.scheduled.count %></td>
     <td><%= link_to 'Show', [:admin, product] %></td>
     <td><%= link_to 'Edit', edit_admin_product_path(product) %></td>
     <td><%= link_to 'Destroy', [:admin, product], :confirm => 'Are you sure?', :method => :delete %></td>
