@@ -2,9 +2,9 @@ class PostOMaticPosting < ActiveRecord::Base
   include AASM
   # include PostOMatic::KingSnake
   acts_as_list :scope => 'state = \'scheduled\''
-  before_validation :set_posted_to
+  before_validation :set_post_to
   belongs_to :product
-  validates_presence_of :product, :posted_to
+  validates_presence_of :product, :post_to
 
   aasm_column :state
   aasm_initial_state :scheduled
@@ -30,7 +30,7 @@ class PostOMaticPosting < ActiveRecord::Base
   #   super
   # end
 private
-  def set_posted_to
-    self.posted_to = 'kingsnake.com'
+  def set_post_to
+    self.post_to = 'kingsnake.com'
   end
 end

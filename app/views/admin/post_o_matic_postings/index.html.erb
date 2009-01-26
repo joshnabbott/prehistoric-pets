@@ -12,7 +12,7 @@
   <%- @post_o_matic_postings.each_with_index do |post_o_matic_posting, index| -%>
     <tr>
       <td><%=h post_o_matic_posting.product.name %></td>
-      <td><%=h post_o_matic_posting.posted_to %></td>
+      <td><%=h post_o_matic_posting.post_to %></td>
       <td>
         <%= text_field_tag "post_o_matic_posting[][list_order]", post_o_matic_posting.position, :autocomplete => :off %>
         <%= hidden_field_tag "post_o_matic_posting[][id]", post_o_matic_posting.id %>
