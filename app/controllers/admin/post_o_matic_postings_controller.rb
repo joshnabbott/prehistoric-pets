@@ -2,7 +2,12 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
   # GET /admin/post_o_matic_postings
   # GET /admin/post_o_matic_postings.xml
   def index
-    @post_o_matic_postings = PostOMaticPosting.scheduled.find(:all, :order => 'position asc')
+    if params[:post_o_matic_category_id]
+      post_o_matic_category = PostOMaticCategory.find(params[:post_o_matic_category_id])
+      @post_o_matic_postings = post_o_matic_category.post_o_matic_postings
+    else
+      @post_o_matic_postings = PostOMaticPosting.scheduled.find(:all, :order => 'position asc')
+    end
 
     respond_to do |format|
       format.html # index.html.erb

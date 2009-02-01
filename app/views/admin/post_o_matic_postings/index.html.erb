@@ -5,16 +5,18 @@
   <table>
     <tr>
       <th>Product</th>
-      <th>Post to</th>
-      <th>Post in category</th>
-      <th>List order</th>
+      <th>Category</th>
+      <th>Ad duration</th>
+      <th>State</th>
+      <th>Position in queue</th>
     </tr>
 
   <%- @post_o_matic_postings.each_with_index do |post_o_matic_posting, index| -%>
     <tr>
       <td><%=h post_o_matic_posting.product.name %></td>
-      <td><%=h post_o_matic_posting.post_to %></td>
-      <td><%=h post_o_matic_posting.post_in.humanize %></td>
+      <td><%=h post_o_matic_posting.post_o_matic_category.name %></td>
+      <td><%=h post_o_matic_posting.ad_duration %> days</td>
+      <td><%=h post_o_matic_posting.state %></td>
       <td>
         <%= text_field_tag "post_o_matic_posting[][list_order]", post_o_matic_posting.position, :autocomplete => :off %>
         <%= hidden_field_tag "post_o_matic_posting[][id]", post_o_matic_posting.id %>

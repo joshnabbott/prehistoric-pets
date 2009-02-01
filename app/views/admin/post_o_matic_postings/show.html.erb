@@ -5,12 +5,17 @@
 
 <p>
   <b>Post to:</b>
-  <%=h @post_o_matic_posting.post_to %>
+  <%=h @post_o_matic_posting.post_o_matic_category.name %>
 </p>
 
 <p>
-  <b>Post in:</b>
-  <%=h @post_o_matic_posting.post_in.humanize %>
+  <b>Ad duration:</b>
+  <%=h @post_o_matic_posting.ad_duration %> days
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @post_o_matic_posting.state %>
 </p>
 
 <p>

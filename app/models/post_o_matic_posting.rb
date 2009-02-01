@@ -2,10 +2,11 @@ class PostOMaticPosting < ActiveRecord::Base
   include AASM
   # include PostOMatic::KingSnake
   acts_as_list :scope => 'state = \'scheduled\''
-  before_validation :set_post_to, :set_post_in
+  # acts_as_list :scope => :post_o_matic_category
+  before_validation :set_post_to
   belongs_to :product
-  validates_presence_of :product, :post_to, :post_in
-  validates_inclusion_of :post_in, :in => [ 'adoptions', 'ball_pythons', 'pythons', 'tree_boas', 'boa_constrictors', 'other_boas', 'rose_rubber_and_sand_boas', 'new_world rat_snakes', 'old_world_rat_snakes', 'corn_snakes', 'gray_banded_kingsnakes', 'other_kings_and_milksnakes', 'other_snakes', 'venomous' ], :allow_nil => true, :message => '%s is not a valid category name.'
+  belongs_to :post_o_matic_category
+  validates_presence_of :product, :post_to, :ad_duration
 
   aasm_column :state
   aasm_initial_state :scheduled
@@ -25,14 +26,26 @@ class PostOMaticPosting < ActiveRecord::Base
   named_scope :posted,    :conditions => { :state => 'posted' }
   named_scope :scheduled, :conditions => { :state => 'scheduled' }
 
-  # def post_ad
-  #   post_ad!
-  #   remove_from_list
-  #   super
-  # end
+  def post_ad
+    # is_posted = super
+    is_posted = true
+    if is_posted
+      post_ad!
+      move_to_bottom
+      time = Time.now
+      set_expires_at(time)
+      set_posted_at(time)
+      return true
+    end
+    is_posted
+  end
 private
-  def set_post_in
-    self.post_in = self.product.category.name if self.post_in.blank?
+  def set_expires_at(time)
+    self.expires_at = Time.now + self.ad_duration.days
+  end
+
+  def set_posted_at(time)
+    self.posted_at = Time.now
   end
 
   def set_post_to
