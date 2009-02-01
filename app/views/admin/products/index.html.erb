@@ -1,40 +1,21 @@
+<%= controller_options %>
+
 <h1>Listing products</h1>
 
-<table>
-  <tr>
-    <th>Category</th>
-    <th>Name</th>
-    <th>Scientific name</th>
-    <th>Sku</th>
-    <th>Price</th>
-    <th>Override</th>
-    <th>Is active</th>
-    <th>Caresheet</th>
-    <th>Is featured</th>
-    <th>Current Post-O-Matic postings</th>
-    <th>Scheduled Post-O-Matic postings</th>
-  </tr>
-
-<% for product in @products %>
-  <tr>
-    <td><%=h product.category.name %></td>
-    <td><%=h product.name %></td>
-    <td><%=h product.scientific_name %></td>
-    <td><%=h product.sku %></td>
-    <td><%=h product.price %></td>
-    <td><%=h product.override %></td>
-    <td><%=h product.is_active %></td>
-    <td><%=h product.caresheet.name if product.caresheet %></td>
-    <td><%=h product.is_featured %></td>
-    <td><%=h product.post_o_matic_postings.posted.count %></td>
-    <td><%=h product.post_o_matic_postings.scheduled.count %></td>
-    <td><%= link_to 'Show', [:admin, product] %></td>
-    <td><%= link_to 'Edit', edit_admin_product_path(product) %></td>
-    <td><%= link_to 'Destroy', [:admin, product], :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<table class="eight_col">
+  <thead>
+    <tr>
+      <th class="first"><span>Category</span></th>
+      <th><span>Name</span></th>
+      <th><span>Price</span></th>
+      <th><span>Is active</span></th>
+      <th><span>Is featured</span></th>
+      <th><span>Current Post-O-Matic postings</span></th>
+      <th><span>Scheduled Post-O-Matic postings</span></th>
+      <th class="last"><span>Actions</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render :partial => @products %>
+  </tbody>
 </table>
-
-<br />
-
-<%= link_to 'New product', new_admin_product_path %>

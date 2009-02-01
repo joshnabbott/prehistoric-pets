@@ -91,19 +91,33 @@ form label {
   display: block;
   line-height: 200%;
 }
-input.text_field,
-form fieldset input.text_field {
+form fieldset input.check_box {
+  font-size: 32px;
+  margin: 0 0 15px 0;
+}
+form fieldset input.text_field,
+form fieldset textarea,
+form fieldset select {
   border: #cacaca 2px solid;
   font-size: 32px;
   margin: 0 0 15px 0;
   width: 100%;
 }
-form fieldset select {
-  font-size: 14px;
-  margin: 0 0 20px 0;
+form fieldset textarea {
+  height: 100px;
 }
 form input.submit {
   font-size: 24px;
+}
+body.post_o_matic_postings_index form {
+  width: 100%;
+}
+body.post_o_matic_postings_index form input.text_field {
+  border: #cacaca 2px solid;
+  font-size: 24px;
+  margin: 0 0 15px 0;
+  text-align: center;
+  width: 50%;
 }
 table.two_col,
 table.three_col,

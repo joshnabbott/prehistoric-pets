@@ -1,23 +1,16 @@
-<h1>Listing post_o_matic_categories</h1>
+<%= controller_options %>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Url</th>
-  </tr>
+<h1>Listing Post-O-Matic Categories</h1>
 
-<% for post_o_matic_category in @post_o_matic_categories %>
-  <tr>
-    <td><%=h post_o_matic_category.name %></td>
-    <td><%=h post_o_matic_category.url %></td>
-    <td><%= link_to 'Show', [:admin, post_o_matic_category] %></td>
-    <td><%= link_to 'Edit', edit_admin_post_o_matic_category_path(post_o_matic_category) %></td>
-    <td><%= link_to 'Destroy', [:admin, post_o_matic_category], :confirm => 'Are you sure?', :method => :delete %></td>
-    <td><%= link_to 'Post-O-Matic Postings', admin_post_o_matic_category_post_o_matic_postings_path(post_o_matic_category) %></td>
-  </tr>
-<% end %>
+<table class="three_col">
+  <thead>
+    <tr>
+      <th class="first"><span>Name</span></th>
+      <th><span>Url</span></th>
+      <th class="last"><span>Actions</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render :partial => @post_o_matic_categories %>
+  </tbody>
 </table>
-
-<br />
-
-<%= link_to 'New post_o_matic_category', new_admin_post_o_matic_category_path %>

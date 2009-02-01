@@ -1,26 +1,26 @@
 <%= f.error_messages %>
 
 <p>
-  <%= f.label :title_short, 'Title' %><br />
-  <%= f.text_field :title_short %>
+  <%= f.label :title_short, 'Title' %>
+  <%= f.text_field :title_short, :class => 'text_field' %>
 </p>
 <p>
-  <%= f.label :body_short, 'Summary' %><br />
+  <%= f.label :body_short, 'Summary' %>
   <%= f.text_area :body_short %>
 </p>
 <p>
-  <%= f.label :title_long, 'Headline' %><br />
-  <%= f.text_field :title_long %>
+  <%= f.label :title_long, 'Headline' %>
+  <%= f.text_field :title_long, :class => 'text_field' %>
 </p>
 <p>
-  <%= f.label :body_long, 'Extended story' %><br />
+  <%= f.label :body_long, 'Extended story' %>
   <%= f.text_area :body_long %>
 </p>
 <p>
-  <%= f.label :is_featured, 'Show on homepage' %><br />
-  <%= f.check_box :is_featured %>
+  <%= f.label :is_featured, 'Show on homepage' %>
+  <%= f.check_box :is_featured, :class => 'check_box' %>
 </p>
 <p>
-  <%= f.label :is_active, 'Active' %><br />
-  <%= f.check_box :is_active %>
+  <%= f.label :is_active, 'Active' %>
+  <%= f.check_box :is_active, :class => 'check_box' %>
 </p>

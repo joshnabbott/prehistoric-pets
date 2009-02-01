@@ -15,17 +15,6 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
     end
   end
 
-  # GET /admin/post_o_matic_postings/1
-  # GET /admin/post_o_matic_postings/1.xml
-  def show
-    @post_o_matic_posting = PostOMaticPosting.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @post_o_matic_posting }
-    end
-  end
-
   # GET /admin/post_o_matic_postings/new
   # GET /admin/post_o_matic_postings/new.xml
   def new
@@ -49,10 +38,11 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
 
     respond_to do |format|
       if @post_o_matic_posting.save
-        flash[:notice] = 'PostOMaticPosting was successfully created.'
-        format.html { redirect_to([:admin, @post_o_matic_posting]) }
+        flash[:success] = 'Post-O-Matic Posting was successfully created.'
+        format.html { redirect_to(admin_post_o_matic_postings_url) }
         format.xml  { render :xml => @post_o_matic_posting, :status => :created, :location => @post_o_matic_posting }
       else
+        flash[:error] = 'Post-O-Matic Posting could not be created. See errors below.'
         format.html { render :action => "new" }
         format.xml  { render :xml => @post_o_matic_posting.errors, :status => :unprocessable_entity }
       end
@@ -66,10 +56,11 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
 
     respond_to do |format|
       if @post_o_matic_posting.update_attributes(params[:post_o_matic_posting])
-        flash[:notice] = 'PostOMaticPosting was successfully updated.'
-        format.html { redirect_to([:admin, @post_o_matic_posting]) }
+        flash[:success] = 'Post-O-Matic Posting was successfully updated.'
+        format.html { redirect_to(admin_post_o_matic_postings_url) }
         format.xml  { head :ok }
       else
+        flash[:error] = 'Post-O-Matic Posting could not be updated. See errors below.'
         format.html { render :action => "edit" }
         format.xml  { render :xml => @post_o_matic_posting.errors, :status => :unprocessable_entity }
       end
@@ -83,6 +74,7 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
     @post_o_matic_posting.destroy
 
     respond_to do |format|
+      flash[:success] = 'Post-O-Matic Posting was deleted.'
       format.html { redirect_to(admin_post_o_matic_postings_url) }
       format.xml  { head :ok }
     end
@@ -99,6 +91,7 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
     end
 
     respond_to do |format|
+      flash[:success] = 'Queue successfully updated.'
       format.html { redirect_to(admin_post_o_matic_postings_url) }
       format.xml  { head :ok }
     end

@@ -1,0 +1,10 @@
+<tr class="<%= cycle('even','odd') %>">
+  <td class="center"><%=h announcement.title_short %></td>
+  <td><%=h announcement.body_short %></td>
+  <td class="center"><%=h announcement.is_featured %></td>
+  <td class="center"><%=h announcement.is_active %></td>
+  <td class="center">
+    <%= link_to 'Edit', edit_admin_announcement_path(announcement) %> | 
+    <%= link_to 'Destroy', [:admin, announcement], :confirm => 'Are you sure?', :method => :delete %>
+  </td>
+</tr>

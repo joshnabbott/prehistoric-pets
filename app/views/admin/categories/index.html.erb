@@ -1,21 +1,16 @@
+<%= controller_options %>
+
 <h1>Listing categories</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-  </tr>
-<% for category in @categories %>
-  <tr>
-    <td><%=h category.name %></td>
-    <td><%=h category.description %></td>
-    <td><%= link_to 'Show', [:admin,category] %></td>
-    <td><%= link_to 'Edit', edit_admin_category_path(category) %></td>
-    <td><%= link_to 'Destroy', [:admin,category], :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<table class="three_col">
+  <thead>
+    <tr>
+      <th class="first"><span>Name</span></th>
+      <th><span>Description</span></th>
+      <th class="last"><span>Actions</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render :partial => @categories %>
+  </tbody>
 </table>
-
-<br />
-
-<%= link_to 'New category', new_admin_category_path %>

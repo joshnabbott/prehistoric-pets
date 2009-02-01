@@ -1,0 +1,14 @@
+<tr class="<%= cycle('even','odd') %>">
+  <td class="center"><%=h post_o_matic_posting.product.name %></td>
+  <td class="center"><%=h post_o_matic_posting.post_o_matic_category.name %></td>
+  <td class="center"><%=h post_o_matic_posting.ad_duration %> days</td>
+  <td class="center"><%=h post_o_matic_posting.state %></td>
+  <td class="center">
+    <%= text_field_tag "post_o_matic_posting[][list_order]", post_o_matic_posting.position, :autocomplete => :off, :class => 'text_field' %>
+    <%= hidden_field_tag "post_o_matic_posting[][id]", post_o_matic_posting.id %>
+  </td>
+  <td class="center">
+    <%= link_to 'Edit', edit_admin_post_o_matic_posting_path(post_o_matic_posting) %> | 
+    <%= link_to 'Destroy', [:admin, post_o_matic_posting], :confirm => 'Are you sure?', :method => :delete %>
+  </td>
+</tr>

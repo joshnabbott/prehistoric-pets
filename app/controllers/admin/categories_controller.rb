@@ -10,17 +10,6 @@ class Admin::CategoriesController < Admin::AdminController
     end
   end
 
-  # GET /admin/categories/1
-  # GET /admin/categories/1.xml
-  def show
-    @category = Category.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @category }
-    end
-  end
-
   # GET /admin/categories/new
   # GET /admin/categories/new.xml
   def new
@@ -44,10 +33,11 @@ class Admin::CategoriesController < Admin::AdminController
 
     respond_to do |format|
       if @category.save
-        flash[:notice] = 'Category was successfully created.'
-        format.html { redirect_to([:admin,@category]) }
+        flash[:success] = 'Category was successfully created.'
+        format.html { redirect_to(admin_categories_url) }
         format.xml  { render :xml => @category, :status => :created, :location => @category }
       else
+        flash[:error] = 'Category could not be created. See errors below.'
         format.html { render :action => "new" }
         format.xml  { render :xml => @category.errors, :status => :unprocessable_entity }
       end
@@ -61,10 +51,11 @@ class Admin::CategoriesController < Admin::AdminController
 
     respond_to do |format|
       if @category.update_attributes(params[:category])
-        flash[:notice] = 'Category was successfully updated.'
-        format.html { redirect_to([:admin,@category]) }
+        flash[:success] = 'Category was successfully updated.'
+        format.html { redirect_to(admin_categories_url) }
         format.xml  { head :ok }
       else
+        flash[:error] = 'Category could not be updated. Please see errors below.'
         format.html { render :action => "edit" }
         format.xml  { render :xml => @category.errors, :status => :unprocessable_entity }
       end
@@ -78,6 +69,7 @@ class Admin::CategoriesController < Admin::AdminController
     @category.destroy
 
     respond_to do |format|
+      flash[:success] = 'Category was deleted.'
       format.html { redirect_to(admin_categories_url) }
       format.xml  { head :ok }
     end

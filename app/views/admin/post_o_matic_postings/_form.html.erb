@@ -1,14 +1,14 @@
 <%= f.error_messages %>
 
 <p>
-  <%= f.label :post_o_matic_category_id, 'Category' %><br />
+  <%= f.label :post_o_matic_category_id, 'Category' %>
   <%= f.collection_select :post_o_matic_category_id, PostOMaticCategory.find(:all, :order => 'name asc'), :id, :name %>
 </p>
 <p>
-  <%= f.label :product_id %><br />
+  <%= f.label :product_id %>
   <%= f.collection_select :product_id, Product.active.find(:all, :order => 'name asc'), :id, :name %>
 </p>
 <p>
-  <%= f.label :ad_duration %><br />
+  <%= f.label :ad_duration %>
   <%= f.select :ad_duration, [['2 days', 2], ['7 days', 7], ['15 days', 15], ['30 days', 30]] %>
 </p>

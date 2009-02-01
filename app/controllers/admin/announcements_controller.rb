@@ -10,17 +10,6 @@ class Admin::AnnouncementsController < Admin::AdminController
     end
   end
 
-  # GET /admin/announcements/1
-  # GET /admin/announcements/1.xml
-  def show
-    @announcement = Announcement.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @announcement }
-    end
-  end
-
   # GET /admin/announcements/new
   # GET /admin/announcements/new.xml
   def new
@@ -44,10 +33,11 @@ class Admin::AnnouncementsController < Admin::AdminController
 
     respond_to do |format|
       if @announcement.save
-        flash[:notice] = 'Announcement was successfully created.'
-        format.html { redirect_to([:admin, @announcement]) }
+        flash[:success] = 'Announcement was successfully created.'
+        format.html { redirect_to(admin_announcements_url) }
         format.xml  { render :xml => @announcement, :status => :created, :location => @announcement }
       else
+        flash[:error] = 'Announcement could not be created. See errors below.'
         format.html { render :action => "new" }
         format.xml  { render :xml => @announcement.errors, :status => :unprocessable_entity }
       end
@@ -61,10 +51,11 @@ class Admin::AnnouncementsController < Admin::AdminController
 
     respond_to do |format|
       if @announcement.update_attributes(params[:announcement])
-        flash[:notice] = 'Announcement was successfully updated.'
-        format.html { redirect_to([:admin, @announcement]) }
+        flash[:success] = 'Announcement was successfully updated.'
+        format.html { redirect_to(admin_announcements_url) }
         format.xml  { head :ok }
       else
+        flash[:error] = 'Announcement could not be created. See errors below.'
         format.html { render :action => "edit" }
         format.xml  { render :xml => @announcement.errors, :status => :unprocessable_entity }
       end
@@ -78,6 +69,7 @@ class Admin::AnnouncementsController < Admin::AdminController
     @announcement.destroy
 
     respond_to do |format|
+      flash[:success] = 'Announcement was deleted.'
       format.html { redirect_to(admin_announcements_url) }
       format.xml  { head :ok }
     end

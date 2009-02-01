@@ -1,0 +1,8 @@
+<tr class="<%= cycle('even','odd') %>">
+  <td class="center"><%= category.name %></td>
+  <td class="center"><%= category.description %></td>
+  <td class="center">
+    <%= link_to 'Edit', edit_admin_category_path(category) %> | 
+    <%= link_to 'Destroy', [:admin, category], :confirm => 'Are you sure?', :method => :delete %>
+  </td>
+</tr>

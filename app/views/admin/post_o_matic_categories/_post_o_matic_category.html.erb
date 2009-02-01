@@ -1,0 +1,9 @@
+<tr class="<%= cycle('even','odd') %>">
+  <td class="center"><%=h post_o_matic_category.name %></td>
+  <td class="center"><%=h post_o_matic_category.url %></td>
+  <td class="center">
+    <%= link_to 'Edit', edit_admin_post_o_matic_category_path(post_o_matic_category) %> | 
+    <%= link_to 'Destroy', [:admin, post_o_matic_category], :confirm => 'Are you sure?', :method => :delete %> | 
+    <%= link_to 'Post-O-Matic Postings', admin_post_o_matic_category_post_o_matic_postings_path(post_o_matic_category) %>
+  </td>
+</tr>

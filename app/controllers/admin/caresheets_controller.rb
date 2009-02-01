@@ -10,17 +10,6 @@ class Admin::CaresheetsController < Admin::AdminController
     end
   end
 
-  # GET /admin/caresheets/1
-  # GET /admin/caresheets/1.xml
-  def show
-    @caresheet = Caresheet.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @caresheet }
-    end
-  end
-
   # GET /admin/caresheets/new
   # GET /admin/caresheets/new.xml
   def new
@@ -44,10 +33,11 @@ class Admin::CaresheetsController < Admin::AdminController
 
     respond_to do |format|
       if @caresheet.save
-        flash[:notice] = 'Caresheet was successfully created.'
-        format.html { redirect_to([:admin, @caresheet]) }
+        flash[:success] = 'Caresheet was successfully created.'
+        format.html { redirect_to(admin_caresheets_url) }
         format.xml  { render :xml => @caresheet, :status => :created, :location => @caresheet }
       else
+        flash[:error] = 'Caresheet could not be created. See errors below.'
         format.html { render :action => "new" }
         format.xml  { render :xml => @caresheet.errors, :status => :unprocessable_entity }
       end
@@ -61,10 +51,11 @@ class Admin::CaresheetsController < Admin::AdminController
 
     respond_to do |format|
       if @caresheet.update_attributes(params[:caresheet])
-        flash[:notice] = 'Caresheet was successfully updated.'
-        format.html { redirect_to([:admin, @caresheet]) }
+        flash[:success] = 'Caresheet was successfully updated.'
+        format.html { redirect_to(admin_caresheets_url) }
         format.xml  { head :ok }
       else
+        flash[:error] = 'Caresheet could not be created. See errors below.'
         format.html { render :action => "edit" }
         format.xml  { render :xml => @caresheet.errors, :status => :unprocessable_entity }
       end
@@ -78,6 +69,7 @@ class Admin::CaresheetsController < Admin::AdminController
     @caresheet.destroy
 
     respond_to do |format|
+      flash[:success] = 'Caresheet was deleted.'
       format.html { redirect_to(admin_caresheets_url) }
       format.xml  { head :ok }
     end

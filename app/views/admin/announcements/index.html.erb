@@ -1,30 +1,18 @@
+<%= controller_options %>
+
 <h1>Listing announcements</h1>
 
-<table>
-  <tr>
-    <th>Title short</th>
-    <th>Body short</th>
-    <th>Title long</th>
-    <th>Body long</th>
-    <th>Is featured</th>
-    <th>Is active</th>
-  </tr>
-
-<% for announcement in @announcements %>
-  <tr>
-    <td><%=h announcement.title_short %></td>
-    <td><%=h announcement.body_short %></td>
-    <td><%=h announcement.title_long %></td>
-    <td><%=h announcement.body_long %></td>
-    <td><%=h announcement.is_featured %></td>
-    <td><%=h announcement.is_active %></td>
-    <td><%= link_to 'Show', [:admin, announcement] %></td>
-    <td><%= link_to 'Edit', edit_admin_announcement_path(announcement) %></td>
-    <td><%= link_to 'Destroy', [:admin, announcement], :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<table class="five_col">
+  <thead>
+    <tr>
+      <th class="first"><span>Title short</span></th>
+      <th><span>Body short</span></th>
+      <th><span>Is featured</span></th>
+      <th><span>Is active</span></th>
+      <th class="last"><span>Actions</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render :partial => @announcements %>
+  </tbody>
 </table>
-
-<br />
-
-<%= link_to 'New announcement', new_admin_announcement_path %>

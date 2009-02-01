@@ -1,65 +1,65 @@
 <%= f.error_messages %>
 
 <p>
-  <%= f.label :category_id %><br />
+  <%= f.label :category_id %>
   <%= f.collection_select :category_id, Category.find(:all), :id, :name %>
 </p>
 <p>
-  <%= f.label :image_file %><br />
+  <%= f.label :image_file %>
   <%= f.file_field :image_file %>
   <%= f.hidden_field :image_file_temp %>
 </p>
 <%- if @product.has_image? -%>
   <p>
-    Current image:<br />
+    Current image:
     <%= embedded_image_tag(@product.operate { |img| img.resize 100 }) %>
   </p>
 <%- end -%>
 <p>
-  <%= f.label :name %><br />
-  <%= f.text_field :name %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :class => 'text_field' %>
 </p>
 <p>
-  <%= f.label :scientific_name %><br />
-  <%= f.text_field :scientific_name %>
+  <%= f.label :scientific_name %>
+  <%= f.text_field :scientific_name, :class => 'text_field' %>
 </p>
 <p>
-  <%= f.label :sku %><br />
-  <%= f.text_field :sku %>
+  <%= f.label :sku %>
+  <%= f.text_field :sku, :class => 'text_field' %>
 </p>
 <p>
-  <%= f.label :description %><br />
+  <%= f.label :description %>
   <%= f.text_area :description %>
 </p>
 <p>
-  <%= f.label :comments %><br />
+  <%= f.label :comments %>
   <%= f.text_area :comments %>
 </p>
 <p>
-  <%= f.label :price %><br />
-  <%= f.text_field :price %>
+  <%= f.label :price %>
+  <%= f.text_field :price, :class => 'text_field' %>
 </p>
 <p>
-  <%= f.label :override %><br />
-  <%= f.check_box :override %>
+  <%= f.label :override %>
+  <%= f.check_box :override, :class => 'check_box' %>
 </p>
 <p>
-  <%= f.label :is_active %><br />
-  <%= f.check_box :is_active %>
+  <%= f.label :is_active %>
+  <%= f.check_box :is_active, :class => 'check_box' %>
 </p>
 <p>
-  <%= f.label :is_featured %><br />
-  <%= f.check_box :is_featured %>
+  <%= f.label :is_featured %>
+  <%= f.check_box :is_featured, :class => 'check_box' %>
 </p>
 <p>
-  <%= f.label :caresheet_id %><br />
+  <%= f.label :caresheet_id %>
   <%= f.collection_select :caresheet_id, Caresheet.active, :id, :name, :include_blank => true %>
 </p>
 <p>
-  <%= f.label :post_o_matisize, 'Post-O-Matic' %><br />
-  <%= f.check_box :post_o_matisize %>
+  <%= f.label :post_o_matisize, 'Post-O-Matic' %>
+  <%= f.check_box :post_o_matisize, :class => 'check_box' %>
 </p>
 <p>
-  <%= f.label :post_o_matic_category_id, 'Post-O-Matic category' %><br />
+  <%= f.label :post_o_matic_category_id, 'Post-O-Matic category' %>
   <%= f.collection_select :post_o_matic_category_id, PostOMaticCategory.find(:all, :order => 'name asc'), :id, :name, :include_blank => true %>
 </p>

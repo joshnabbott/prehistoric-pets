@@ -4,7 +4,7 @@
   <fieldset>
     <%= render :partial => 'form', :locals => { :f => f } %>
     <p>
-      <%= f.submit "Update" %> - or - <%= link_to 'Cancel', admin_caresheets_path %>
+      <%= f.submit "Update", :class => 'submit' %> - or - <%= link_to 'Cancel', admin_caresheets_path %>
     </p>
   </fieldset>
 <% end %>

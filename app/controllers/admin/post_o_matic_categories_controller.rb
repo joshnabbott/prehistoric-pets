@@ -10,17 +10,6 @@ class Admin::PostOMaticCategoriesController < Admin::AdminController
     end
   end
 
-  # GET /admin/post_o_matic_categories/1
-  # GET /admin/post_o_matic_categories/1.xml
-  def show
-    @post_o_matic_category = PostOMaticCategory.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @post_o_matic_category }
-    end
-  end
-
   # GET /admin/post_o_matic_categories/new
   # GET /admin/post_o_matic_categories/new.xml
   def new
@@ -44,10 +33,11 @@ class Admin::PostOMaticCategoriesController < Admin::AdminController
 
     respond_to do |format|
       if @post_o_matic_category.save
-        flash[:notice] = 'PostOMaticCategory was successfully created.'
-        format.html { redirect_to([:admin, @post_o_matic_category]) }
+        flash[:success] = 'Post-O-Matic Category was successfully created.'
+        format.html { redirect_to(admin_post_o_matic_categories_url) }
         format.xml  { render :xml => @post_o_matic_category, :status => :created, :location => @post_o_matic_category }
       else
+        flash[:error] = 'Post-O-Matic Category could not be created. See errors below.'
         format.html { render :action => "new" }
         format.xml  { render :xml => @post_o_matic_category.errors, :status => :unprocessable_entity }
       end
@@ -61,10 +51,11 @@ class Admin::PostOMaticCategoriesController < Admin::AdminController
 
     respond_to do |format|
       if @post_o_matic_category.update_attributes(params[:post_o_matic_category])
-        flash[:notice] = 'PostOMaticCategory was successfully updated.'
-        format.html { redirect_to([:admin, @post_o_matic_category]) }
+        flash[:success] = 'Post-O-Matic Category was successfully updated.'
+        format.html { redirect_to(admin_post_o_matic_categories_url) }
         format.xml  { head :ok }
       else
+        flash[:error] = 'Post-O-Matic Category could not be updated. See errors below.'
         format.html { render :action => "edit" }
         format.xml  { render :xml => @post_o_matic_category.errors, :status => :unprocessable_entity }
       end
@@ -78,6 +69,7 @@ class Admin::PostOMaticCategoriesController < Admin::AdminController
     @post_o_matic_category.destroy
 
     respond_to do |format|
+      flash[:success] = 'Post-O-Matic Category was deleted.'
       format.html { redirect_to(admin_post_o_matic_categories_url) }
       format.xml  { head :ok }
     end

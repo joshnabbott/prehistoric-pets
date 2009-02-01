@@ -1,18 +1,18 @@
 <%= f.error_messages %>
 
 <p>
-  <%= f.label :name %><br />
-  <%= f.text_field :name %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :class => 'text_field' %>
 </p>
 <p>
-  <%= f.label :scientific_name %><br />
-  <%= f.text_field :scientific_name %>
+  <%= f.label :scientific_name %>
+  <%= f.text_field :scientific_name, :class => 'text_field' %>
 </p>
 <p>
-  <%= f.label :body %><br />
+  <%= f.label :body %>
   <%= f.text_area :body %>
 </p>
 <p>
-  <%= f.label :is_active %><br />
-  <%= f.check_box :is_active %>
+  <%= f.label :is_active %>
+  <%= f.check_box :is_active, :class => 'check_box' %>
 </p>

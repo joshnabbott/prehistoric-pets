@@ -10,18 +10,6 @@ class Admin::ProductsController < Admin::AdminController
     end
   end
 
-  # GET /admin/products/1
-  # GET /admin/products/1.xml
-  def show
-    @product = Product.find(params[:id])
-
-    respond_to do |format|
-      format.jpg   # show.jpg.flexi
-      format.html # show.html.erb
-      format.xml  { render :xml => @product }
-    end
-  end
-
   # GET /admin/products/new
   # GET /admin/products/new.xml
   def new
@@ -45,10 +33,11 @@ class Admin::ProductsController < Admin::AdminController
 
     respond_to do |format|
       if @product.save
-        flash[:notice] = 'Product was successfully created.'
-        format.html { redirect_to([:admin, @product]) }
+        flash[:success] = 'Product was successfully created.'
+        format.html { redirect_to(admin_products_url) }
         format.xml  { render :xml => @product, :status => :created, :location => @product }
       else
+        flash[:error] = 'Product could not be created. See errors below.'
         format.html { render :action => "new" }
         format.xml  { render :xml => @product.errors, :status => :unprocessable_entity }
       end
@@ -62,10 +51,11 @@ class Admin::ProductsController < Admin::AdminController
 
     respond_to do |format|
       if @product.update_attributes(params[:product])
-        flash[:notice] = 'Product was successfully updated.'
-        format.html { redirect_to([:admin, @product]) }
+        flash[:success] = 'Product was successfully updated.'
+        format.html { redirect_to(admin_products_url) }
         format.xml  { head :ok }
       else
+        flash[:error] = 'Category could not be created. See errors below.'
         format.html { render :action => "edit" }
         format.xml  { render :xml => @product.errors, :status => :unprocessable_entity }
       end
@@ -79,6 +69,7 @@ class Admin::ProductsController < Admin::AdminController
     @product.destroy
 
     respond_to do |format|
+      flash[:success] = 'Product was deleted.'
       format.html { redirect_to(admin_products_url) }
       format.xml  { head :ok }
     end
