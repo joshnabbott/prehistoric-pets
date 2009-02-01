@@ -60,6 +60,6 @@
   <%= f.check_box :post_o_matisize %>
 </p>
 <p>
-  <%= f.label :post_o_matic_category, 'Post-O-Matic category' %><br />
-  <%= f.select :post_o_matic_category, kingsnake_categories, :include_blank => true %>
+  <%= f.label :post_o_matic_category_id, 'Post-O-Matic category' %><br />
+  <%= f.collection_select :post_o_matic_category_id, PostOMaticCategory.find(:all, :order => 'name asc'), :id, :name, :include_blank => true %>
 </p>

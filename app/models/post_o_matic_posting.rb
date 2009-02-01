@@ -1,8 +1,8 @@
 class PostOMaticPosting < ActiveRecord::Base
   include AASM
   # include PostOMatic::KingSnake
-  acts_as_list :scope => 'state = \'scheduled\''
-  # acts_as_list :scope => :post_o_matic_category
+  # acts_as_list :scope => 'state = \'scheduled\''
+  acts_as_list :scope => :post_o_matic_category_id
   before_validation :set_post_to
   belongs_to :product
   belongs_to :post_o_matic_category

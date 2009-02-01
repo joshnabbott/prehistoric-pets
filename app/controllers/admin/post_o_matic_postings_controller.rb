@@ -6,7 +6,7 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
       post_o_matic_category = PostOMaticCategory.find(params[:post_o_matic_category_id])
       @post_o_matic_postings = post_o_matic_category.post_o_matic_postings
     else
-      @post_o_matic_postings = PostOMaticPosting.scheduled.find(:all, :order => 'position asc')
+      @post_o_matic_postings = PostOMaticCategory.find(:all, :include => :post_o_matic_postings, :order => 'name asc').map(&:post_o_matic_postings).flatten
     end
 
     respond_to do |format|

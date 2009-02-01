@@ -13,6 +13,7 @@
     <td><%= link_to 'Show', [:admin, post_o_matic_category] %></td>
     <td><%= link_to 'Edit', edit_admin_post_o_matic_category_path(post_o_matic_category) %></td>
     <td><%= link_to 'Destroy', [:admin, post_o_matic_category], :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Post-O-Matic Postings', admin_post_o_matic_category_post_o_matic_postings_path(post_o_matic_category) %></td>
   </tr>
 <% end %>
 </table>

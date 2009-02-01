@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #333;
+  font: 24px normal medium "Trebuchet MS", sans-serif;
+  line-height: 150%;
+}
+a {
+  color: #333;
+  outline: 0;
+  text-decoration: underline;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+h1 {
+  font-size: 20px;
+  background: #F0F0F0;
+  line-height: 200%;
+  text-align: center;
+  margin: 0 0 25px 0;
+}
+p.fourteen {
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0 0 10px 0;
+}
+div#content {
+  background: #f0f0f0;
+  border: 14px #cacaca solid;
+  margin: 100px auto 15px auto;
+  padding: 20px;
+  width: 400px;
+}
+form div#errorExplanation h2 {
+  display: none;
+}
+form div#errorExplanation {
+  font-size: 12px;
+  line-height: 150%;
+}
+form div#errorExplanation ul {
+  margin: 0 0 0 20px;
+}
+form fieldset {
+  border-width: 0;
+}
+form label {
+  display: block;
+  line-height: 200%;
+}
+form p.inline {
+  margin: 0 0 15px 0;
+}
+form label.inline {
+  display: inline;
+  font-size: 12px;
+}
+form input.text_field {
+  border: #cacaca 2px solid;
+  font-size: 32px;
+  margin: 0 0 15px 0;
+  width: 100%;
+}
+form input.submit {
+  font-size: 24px;
+}
+div#footer {
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: center;
+}

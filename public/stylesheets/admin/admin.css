@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #333;
+  font: 24px normal medium "Trebuchet MS", sans-serif;
+  line-height: 150%;
+}
+div#header {
+  height: 97px;
+  background: #000 url("_g/BG_admin_header.jpg") 0 0 repeat-x;
+}
+div#header h1 {
+  color: #fff;
+  position: absolute;
+  background: transparent;
+  margin: 10px 0 0 10px;
+  font-size: 24px;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.even {
+  background: transparent;
+}
+.odd {
+  background: #F0F0F0;
+}
+.center {
+  text-align: center;
+}
+p img {
+  display: block;
+}
+p.fourteen {
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0 0 10px 0;
+}
+p.success,
+p.error {
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  padding: 0 0 0 35px;
+}
+p.success {
+  background: #b5e6b0 url(_g/success.png) 5px center no-repeat;
+  border-color: #0d7b01;
+  color: #0d7b01;
+}
+p.error {
+  background: #ffa9a9 url(_g/error.png) 5px center no-repeat;
+  border-color: #d10303;
+  color: #ab0000;
+}
+a:link,
+a:visited {
+  color: #8D1C1C;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+form {
+  width: 400px;
+  margin: 0 auto;
+}
+form div#errorExplanation h2 {
+  display: none;
+}
+form div#errorExplanation {
+  font-size: 12px;
+  line-height: 150%;
+}
+form div#errorExplanation ul {
+  margin: 0 0 0 20px;
+}
+form fieldset {
+  border-width: 0;
+}
+form label {
+  display: block;
+  line-height: 200%;
+}
+input.text_field,
+form fieldset input.text_field {
+  border: #cacaca 2px solid;
+  font-size: 32px;
+  margin: 0 0 15px 0;
+  width: 100%;
+}
+form fieldset select {
+  font-size: 14px;
+  margin: 0 0 20px 0;
+}
+form input.submit {
+  font-size: 24px;
+}
+table.two_col,
+table.three_col,
+table.four_col,
+table.five_col,
+table.six_col,
+table.seven_col,
+table.eight_col {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.two_col th,
+table.two_col td {
+  width: 50%;
+}
+table.three_col th,
+table.three_col td {
+  width: 33%;
+}
+table.four_col th,
+table.four_col td {
+  width: 25%;
+}
+table.five_col th,
+table.five_col td {
+  width: 20%;
+}
+table.six_col th,
+table.six_col td {
+  width: 16%;
+}
+table.seven_col th,
+table.seven_col td {
+  width: 14%;
+}
+table.eight_col th {
+  width: 12%;
+}
+table {
+  font-size: 14px;
+  line-height: 150%;
+}
+table th {
+  background: #666;
+  font-size: 90%;
+  color: #fff;
+  line-height: 30px;
+  border-style: solid;
+  border-color: #555;
+  border-width: 0 0 0 1px;
+}
+table th a:link,
+table th a:visited {
+  color: #fff;  
+}
+table td {
+  padding: 5px;
+}
+table td span {
+  padding: 0 10px 0 0;
+}
+table td.actions {
+  text-align: center;
+}
+table th.first {
+  background: #666 url("_g/BG_table_top_left.gif") 0 0 no-repeat;
+  border-width: 0;
+}
+table th.last {
+  background: #666 url("_g/BG_table_top_right.gif") right 0 no-repeat;
+}
+h1 {
+  font-size: 20px;
+  background: #F0F0F0;
+  line-height: 200%;
+  text-align: center;
+  margin: 0 0 25px 0;
+}
+div#header ul {
+  position: absolute;
+  height: 30px;
+  list-style-type: none;
+  margin: 67px 0 0 10px;
+  font-size: 14px;
+}
+div#header ul li {
+  height: 30px;
+  line-height: 30px;
+  width: 117px;
+  text-align: center;
+  float: left;
+  margin: 0 10px 0 0;
+  font-size: 90%;
+}
+div#header ul li a:link,
+div#header ul li a:visited {
+  height: 30px;
+  line-height: 35px;
+  width: 117px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  background: #000 url("_g/BG_admin_nav.jpg") 0 0 no-repeat;
+}
+div#header ul li a:hover,
+div#header ul li a:active {
+  color: #000;
+  background: #fff url("_g/BG_admin_nav.jpg") 0 -30px no-repeat;
+}
+div#content_container {
+  padding: 2px 0;
+}
+div#content_container div#content {
+  position: relative;
+  clear: both;
+  background: #F7F7F7;
+  margin: 0 10px;
+  padding: 10px;
+  z-index: 1;
+}
+div#content_container div#top_left {
+  position: relative;
+  z-index: 2;
+  width: 18px;
+  height: 8px;
+  top: 8px;
+  display: block;
+  float: left;
+  background: url("_g/BG_admin_content_topleft.jpg") right 0 no-repeat;
+}
+div#content_container div#top_right {
+  position: relative;
+  z-index: 2;
+  width: 18px;
+  height: 8px;
+  top: 8px;
+  display: block;
+  float: right;
+  background: url("_g/BG_admin_content_topright.jpg") 0 0 no-repeat;
+}
+div#content_container div#bottom_left {
+  position: relative;
+  z-index: 2;
+  width: 18px;
+  height: 8px;
+  margin-top: -8px;
+  display: block;
+  float: left;
+  background: url("_g/BG_admin_content_bottomleft.jpg") right 0 no-repeat;
+}
+div#content_container div#bottom_right {
+  position: relative;
+  z-index: 2;
+  width: 18px;
+  height: 8px;
+  margin-top: -8px;
+  display: block;
+  float: right;
+  background: url("_g/BG_admin_content_bottomrigh.jpg") 0 0 no-repeat;
+}
+div#content:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+* html div#content {
+  height: 1%;
+}
+
+ul.controller_options {
+  font-size: 14px;
+  height: 14px;
+  list-style-type: none;
+  margin: 0 0 25px 0;
+}
+ul.controller_options li {
+  float: left;
+  padding: 0 10px;
+  line-height: 14px;
+  border-right: 1px solid;
+}
+ul.controller_options li.last {
+  border-width: 0;
+}
+ul#sorter {
+  width: 400px;
+  margin: 0 auto;
+}
+ul#sorter li {
+  margin: 0 0 15px 0;
+  clear: both;
+}
+ul#sorter li img {
+  float: left;
+  margin: 0 10px 15px 0;
+}
+select#subnav {
+  font-size: 14px;
+  margin: 0 0 15px 0;
+  border: 1px solid #000;
+}
+/*Pagination*/
+.pagination {
+  padding: 3px 0;
+  margin: 3px;
+}
+.pagination a {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #c2c2c2;
+  text-decoration: none;
+  color: #8D1C1C;
+}
+.pagination a:hover, .pagination a:active {
+  border: 1px solid #8D1C1C;
+  color: #000;
+}
+.pagination span.current {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #000;
+  font-weight: bold;
+  background-color: #666;
+  color: #FFF;
+}
+.pagination span.disabled {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #eee;
+  color: #ddd;
+}
+div#footer {
+  font-size: 12px;
+  margin: 35px 0 0 0;
+  text-align: center;
+  color: #333;
+}
+div#footer a:link,
+div#footer a:visited {
+  color: #333;
+  text-decoration: underline;
+}
+div#footer a:hover,
+div#footer a:active {
+  text-decoration: none;
+}
