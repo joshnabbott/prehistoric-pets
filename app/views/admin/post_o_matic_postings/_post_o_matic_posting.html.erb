@@ -1,6 +1,6 @@
 <tr class="<%= cycle('even','odd') %>">
   <td class="center"><%=h post_o_matic_posting.product.name %></td>
-  <td class="center"><%=h post_o_matic_posting.post_o_matic_category.name %></td>
+  <td class="center"><%= link_to post_o_matic_posting.post_o_matic_category.name, admin_post_o_matic_category_post_o_matic_postings_path(post_o_matic_posting.post_o_matic_category) %></td>
   <td class="center"><%=h post_o_matic_posting.ad_duration %> days</td>
   <td class="center"><%=h post_o_matic_posting.state %></td>
   <td class="center">
