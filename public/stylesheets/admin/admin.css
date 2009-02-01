@@ -204,8 +204,11 @@ div#header ul {
   font-size: 14px;
 }
 div#header ul li {
+  background: #fff url("_g/BG_admin_nav.jpg") 0 -30px no-repeat;
+  color: #000;
+  font-weight: bold;
   height: 30px;
-  line-height: 30px;
+  line-height: 35px;
   width: 117px;
   text-align: center;
   float: left;
@@ -214,6 +217,7 @@ div#header ul li {
 }
 div#header ul li a:link,
 div#header ul li a:visited {
+  font-weight: normal;
   height: 30px;
   line-height: 35px;
   width: 117px;
