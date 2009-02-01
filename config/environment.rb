@@ -77,5 +77,3 @@ Rails::Initializer.run do |config|
 end
 require 'redcloth'
 require 'string'
-require 'will_paginate'
-WillPaginate::ViewHelpers.pagination_options[:page_links] = false

@@ -1,0 +1,22 @@
+<h1>Listing post_o_matic_categories</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Url</th>
+  </tr>
+
+<% for post_o_matic_category in @post_o_matic_categories %>
+  <tr>
+    <td><%=h post_o_matic_category.name %></td>
+    <td><%=h post_o_matic_category.url %></td>
+    <td><%= link_to 'Show', [:admin, post_o_matic_category] %></td>
+    <td><%= link_to 'Edit', edit_admin_post_o_matic_category_path(post_o_matic_category) %></td>
+    <td><%= link_to 'Destroy', [:admin, post_o_matic_category], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New post_o_matic_category', new_admin_post_o_matic_category_path %>

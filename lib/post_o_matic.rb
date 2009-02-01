@@ -12,21 +12,7 @@ module PostOMatic
     USERNAME = 'prehistoricpets'
     PASSWORD = 'pimbura1'
     URLS = {
-      :login                      => 'http://market.kingsnake.com/login.php',
-      :adoptions                  => 'http://market.kingsnake.com/list.php?cat=10',
-      :ball_pythons               => 'http://market.kingsnake.com/list.php?cat=32',
-      :pythons                    => 'http://market.kingsnake.com/list.php?cat=7',
-      :tree_boas                  => 'http://market.kingsnake.com/list.php?cat=33',
-      :boa_constrictors           => 'http://market.kingsnake.com/list.php?cat=8',
-      :other_boas                 => 'http://market.kingsnake.com/list.php?cat=62',
-      :rose_rubber_and_sand_boas  => 'http://market.kingsnake.com/list.php?cat=61',
-      :new_world_rat_snakes       => 'http://market.kingsnake.com/list.php?cat=60',
-      :old_world_rat_snakes       => 'http://market.kingsnake.com/list.php?cat=64',
-      :corn_snakes                => 'http://market.kingsnake.com/list.php?cat=65',
-      :gray_banded_kingsnakes     => 'http://market.kingsnake.com/list.php?cat=29',
-      :other_kings_and_milksnakes => 'http://market.kingsnake.com/list.php?cat=59',
-      :other_snakes               => 'http://market.kingsnake.com/list.php?cat=6',
-      :venomous                   => 'http://market.kingsnake.com/list.php?cat=40'
+      :login => 'http://market.kingsnake.com/login.php',
     }
 
     def post_ad(options = {}) # options = { :ad_duration => '5 days' }

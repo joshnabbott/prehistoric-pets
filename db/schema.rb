@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090120223028) do
+ActiveRecord::Schema.define(:version => 20090127034929) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title_short"
@@ -104,6 +104,35 @@ ActiveRecord::Schema.define(:version => 20090120223028) do
   add_index "orders", ["reference_number", "state"], :name => "index_orders_on_reference_number_and_state"
   add_index "orders", ["reference_number"], :name => "index_orders_on_reference_number", :unique => true
   add_index "orders", ["state"], :name => "index_orders_on_state"
+
+  create_table "post_o_matic_categories", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.string   "permalink"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "post_o_matic_categories", ["name"], :name => "index_post_o_matic_categories_on_name", :unique => true
+  add_index "post_o_matic_categories", ["permalink"], :name => "index_post_o_matic_categories_on_permalink", :unique => true
+
+  create_table "post_o_matic_postings", :force => true do |t|
+    t.integer  "product_id"
+    t.integer  "post_o_matic_category_id"
+    t.string   "post_to"
+    t.integer  "ad_duration"
+    t.datetime "expires_at"
+    t.datetime "posted_at"
+    t.string   "state",                    :default => "scheduled"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "post_o_matic_postings", ["post_o_matic_category_id"], :name => "index_post_o_matic_postings_on_post_o_matic_category_id"
+  add_index "post_o_matic_postings", ["product_id"], :name => "index_post_o_matic_postings_on_product_id"
+  add_index "post_o_matic_postings", ["state"], :name => "index_post_o_matic_postings_on_state"
 
   create_table "products", :force => true do |t|
     t.integer  "category_id"
