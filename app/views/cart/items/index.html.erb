@@ -4,7 +4,7 @@
 <%- end -%>
 <h2>Your cart</h2>
 <%- unless @order.line_items.empty? -%>
-  <%= render :partial => "cart" %>
+  <%= render "cart" %>
 <%- else -%>
   <p>There are no items in your cart.</p>
 <%- end -%>

@@ -1,5 +1,6 @@
 class Announcement < ActiveRecord::Base
   include Prehistoric
+  default_scope :order => 'created_at desc'
   before_validation :create_permalink
   validates_presence_of :title_short, :body_short, :permalink
   validates_presence_of :title_long, :body_long, :if => :is_active?

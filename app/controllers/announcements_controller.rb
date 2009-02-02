@@ -1,6 +1,6 @@
 class AnnouncementsController < ApplicationController
   def index
-    @announcements = Announcement.active.find(:all, :order => 'created_at desc')
+    @announcements = Announcement.active.find(:all)
   end
 
   def show

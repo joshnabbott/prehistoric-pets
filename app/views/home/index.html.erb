@@ -2,12 +2,12 @@
 <div id="left_column_blocks">
   <h1><span>Featured</span></h1>
   <div id="featured_products">
-    <%= render :partial => 'featured_product' if @featured_product %>
+    <%= render 'featured_product' if @featured_product %>
   </div>
 
   <h1><span>Announcements</span></h1>
   <div id="announcements">
-    <%= render :partial => 'featured_announcements' if @featured_announcements %>
+    <%= render 'featured_announcements' if @featured_announcements %>
   </div>
 </div>
 <div id="right_column_blocks">

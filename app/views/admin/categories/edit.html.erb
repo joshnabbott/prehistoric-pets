@@ -2,7 +2,7 @@
 
 <% form_for([:admin, @category]) do |f| %>
   <fieldset>
-    <%= render :partial => 'form', :locals => { :f => f } %>
+    <%= render 'form', :locals => { :f => f } %>
     <p>
       <%= f.submit "Update", :class => 'submit' %> - or - <%= link_to 'Cancel', admin_categories_path %>
     </p>

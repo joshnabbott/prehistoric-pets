@@ -5,7 +5,7 @@ class HomeController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.js { render :partial => 'featured_announcement', :collection => @featured_announcements }
+      format.js { render 'featured_announcement', :collection => @featured_announcements }
     end
   end
 end

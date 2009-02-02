@@ -2,7 +2,7 @@
 
 <% form_for([:admin, @post_o_matic_category]) do |f| %>
   <fieldset>
-    <%= render :partial => 'form', :locals => { :f => f } %>
+    <%= render 'form', :locals => { :f => f } %>
     <p>
       <%= f.submit "Create", :class => 'submit' %> - or - <%= link_to 'Cancel', admin_post_o_matic_categories_path %>
     </p>
