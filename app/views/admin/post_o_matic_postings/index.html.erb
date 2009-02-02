@@ -16,7 +16,7 @@
     </thead>
     <tbody>
       <%- @post_o_matic_postings.each_with_index do |post_o_matic_posting, index| -%>
-        <%= render 'post_o_matic_posting', :locals => { :post_o_matic_posting => post_o_matic_posting, :index => index } %>
+        <%= render :partial => 'post_o_matic_posting', :locals => { :post_o_matic_posting => post_o_matic_posting, :index => index } %>
       <%- end -%>
     </tbody>
   </table>

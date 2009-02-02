@@ -28,8 +28,10 @@ class PostOMaticPosting < ActiveRecord::Base
   named_scope :scheduled, :conditions => { :state => 'scheduled' }
 
   def post_ad
+    # the post_ad method is defined in lib/post_o_matic.rb. the method creates a new listing on kingsnake.com
+    # and returns true or false, depending on whether or not it was posted.
+    # hence the 'super'
     is_posted = super
-    # is_posted = true
     if is_posted
       # post_ad!
       move_to_bottom
