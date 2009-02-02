@@ -139,6 +139,21 @@ div#right_column div#left_column_blocks div#announcements div {
   border-width: 0;
   padding: 0;
 }
+div#right_column div#left_column_blocks div#care_sheets ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 80%;
+}
+div#right_column div#left_column_blocks div#care_sheets ul li {
+  text-align: center;
+  width: 50%;
+}
+div#right_column div#left_column_blocks div#care_sheets ul li.left {
+  float: left;
+}
+div#right_column div#left_column_blocks div#care_sheets ul li.right {
+  float: right;
+}
 div#right_column div#right_column_blocks {
   float: right;
   margin: 0 0 10px 0;
@@ -147,11 +162,39 @@ div#right_column div#right_column_blocks {
 div#right_column div#right_column_blocks div {
   margin: 0 0 10px 0;
 }
-div#right_column div#right_column_blocks div#photo_gallery img {
+div#right_column div#right_column_blocks div#photo_gallery img,
+div#right_column div#right_column_blocks div#map a img {
   border: 5px #555555 solid;
 }
 div#right_column div#right_column_blocks div#videos {
+  background: #555555 url(_g/bg_videos.gif) 0 bottom no-repeat;
   padding: 0;
+}
+div#right_column div#right_column_blocks div#videos p {
+  padding: 0 16px;
+}
+div#right_column div#right_column_blocks div#videos p.more_videos {
+  clear: both;
+  font-size: 80%;
+  text-align: right;
+}
+div#right_column div#right_column_blocks div#videos div#video {
+  text-align: center;
+}
+div#right_column div#right_column_blocks div#videos ul#thumbnails {
+  list-style: none;
+}
+div#right_column div#right_column_blocks div#videos ul#thumbnails li {
+  float: left;
+}
+div#right_column div#right_column_blocks div#videos ul#thumbnails li a {
+  margin: 0 0 0 16px;
+}
+div#right_column div#right_column_blocks div#videos ul#thumbnails li a img {
+  border: 1px solid #000;
+}
+div#right_column div#right_column_blocks div#videos ul#thumbnails li a.selected img {
+  border-color: #fff;
 }
 div#right_column div#left_column_blocks div.featured h3 {
   margin: 0 0 10px 0;
@@ -168,8 +211,12 @@ div#right_column div#left_column_blocks div.featured p.image {
 div#right_column div#left_column_blocks div.featured p.image span {
   display: block;
 }
+/*
+  Clear after floats here.
+*/
 div#content:after,
-body.products div#right_column div.product:after {
+body.products div#right_column div.product:after,
+div#right_column div#left_column_blocks div#care_sheets ul:after {
   clear: both;
   color: #1e1e1e;
   content: ".";
@@ -178,7 +225,8 @@ body.products div#right_column div.product:after {
   overflow: hidden;
 }
 * html div#content,
-* html body.products div#right_column div.product {
+* html body.products div#right_column div.product,
+* html div#right_column div#left_column_blocks div#care_sheets ul {
   height: 1%;
 }
 div#footer {

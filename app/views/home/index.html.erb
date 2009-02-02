@@ -9,6 +9,15 @@
   <div id="announcements">
     <%= render 'featured_announcements' if @featured_announcements %>
   </div>
+
+  <h1><span>Care sheets</span></h1>
+  <div id="care_sheets">
+    <p>If you don't see what you're looking for, please check back. We will be adding more soon.</p>
+    <ul>
+      <%= render :partial => 'caresheet', :collection => @caresheets %>
+    </ul>
+    <p class="right"><%= link_to "View all", caresheets_path %></p>
+  </div>
 </div>
 <div id="right_column_blocks">
   <div id="photo_gallery">
@@ -17,7 +26,7 @@
 
   <h1><span>Videos</span></h1>
   <div id="videos">
-    <embed width="320" height="254" type="application/x-shockwave-flash" flashvars="m=20814372&v=2&type=video" src="http://lads.myspace.com/videos/vplayer.swf"/>
+    <%= render 'videos' %>
   </div>
 
   <div id="map">

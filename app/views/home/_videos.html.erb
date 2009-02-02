@@ -1,0 +1,11 @@
+<div id="video">
+  <embed width="328" height="254" type="application/x-shockwave-flash" flashvars="m=20814372&v=2&type=video" src="http://lads.myspace.com/videos/vplayer.swf"/>
+</div>
+<p>Other videos</p>
+<ul id="thumbnails">
+  <li><%= link_to(image_tag('movthmb_1.jpg', :alt => 'Watch this video'), "http://vids.myspace.com/index.cfm?fuseaction=vids.individual&VideoID=19906266", :id => '19906266') %></li>
+  <li><%= link_to(image_tag('movthmb_6.jpg', :alt => 'Watch this video'), "http://vids.myspace.com/index.cfm?fuseaction=vids.individual&VideoID=21371875", :id => '21371875') %></li>
+  <li><%= link_to(image_tag('movthmb_3.jpg', :alt => 'Watch this video'), "http://vids.myspace.com/index.cfm?fuseaction=vids.individual&VideoID=20351620", :id => '20351620') %></li>
+  <li><%= link_to(image_tag('movthmb_4.jpg', :alt => 'Watch this video'), "http://vids.myspace.com/index.cfm?fuseaction=vids.individual&VideoID=20814372", :id => '20814372', :class => 'selected') %></li>
+</ul>
+<p class="more_videos"><%= link_to "check out more videos...", "http://vids.myspace.com/index.cfm?fuseaction=vids.channel&ChannelID=237598077" %></p>
