@@ -1,5 +1,6 @@
 class Category < ActiveRecord::Base
   include Prehistoric
+  default_scope :order => 'name asc'
   acts_as_list :scope => :parent_id
   acts_as_tree :order => :parent_id
   before_validation :create_permalink

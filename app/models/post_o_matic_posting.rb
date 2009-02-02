@@ -1,6 +1,7 @@
 class PostOMaticPosting < ActiveRecord::Base
   include AASM
-  # include PostOMatic::KingSnake
+  default_scope :order => 'position asc'
+  include PostOMatic::KingSnake
   # acts_as_list :scope => 'state = \'scheduled\''
   acts_as_list :scope => :post_o_matic_category_id
   before_validation :set_post_to
@@ -27,15 +28,14 @@ class PostOMaticPosting < ActiveRecord::Base
   named_scope :scheduled, :conditions => { :state => 'scheduled' }
 
   def post_ad
-    # is_posted = super
-    is_posted = true
+    is_posted = super
+    # is_posted = true
     if is_posted
-      post_ad!
+      # post_ad!
       move_to_bottom
       time = Time.now
       set_expires_at(time)
       set_posted_at(time)
-      return true
     end
     is_posted
   end

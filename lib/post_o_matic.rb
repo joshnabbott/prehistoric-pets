@@ -32,12 +32,12 @@ module PostOMatic
     end
 
     def submit_ad(page)
-      page          = @agent.get(URLS[self.category.to_sym]) # URLS[self.category.to_sym]
+      page          = @agent.get(self.post_o_matic_category.url)
       form          = page.forms[1]
       return false if form.nil?
-      form.subject  = name
-      form.descript = description
-      # form.imageurl = "http:/prehistoricpets.com/products/#{to_param}.jpg" # is this breaking it when I try to post?
+      form.subject  = self.product.name
+      form.descript = self.product.description
+      # form.imageurl = "http:/prehistoricpets.com/products/#{self.product.to_param}.jpg" # is this breaking it when I try to post?
       page          = form.submit
       validate_post_success(page)
     end
@@ -51,31 +51,3 @@ module PostOMatic
     end
   end
 end
-# Keep this for testing:
-class Product
-  include PostOMatic::KingSnake
-  attr_accessor :name, :description, :imageurl
-
-  def initialize
-    @name = "Test"
-    @description = "This is a test."
-  end
-
-  def category
-    "venomous"
-  end
-
-  def name
-    @name
-  end
-
-  def description
-    @description
-  end
-
-  def to_param
-    name
-  end
-end
-p = Product.new
-puts p.post_ad
