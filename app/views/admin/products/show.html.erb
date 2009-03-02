@@ -1,6 +1,6 @@
 <p>
   <b>Category:</b>
-  <%=h @product.category.name %>
+  <%=h @product.categories.map(&:name).join('; ') %>
 </p>
 
 <%- if @product.has_image? -%>

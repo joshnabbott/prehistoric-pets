@@ -4,6 +4,8 @@ class CreateCategories < ActiveRecord::Migration
       t.belongs_to :parent
       t.string :name, :permalink
       t.text :description
+      t.boolean :is_active, :is_price_specific, :default => false, :null => false
+      t.decimal :starting_price, :ending_price, :precision => 8, :scale => 2, :default => 0.0
       t.integer :position
       t.timestamps
     end

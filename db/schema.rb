@@ -9,18 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090127034929) do
+ActiveRecord::Schema.define(:version => 20090302034918) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title_short"
     t.text     "body_short"
     t.string   "title_long"
     t.text     "body_long"
-    t.boolean  "is_featured", :default => false, :null => false
-    t.boolean  "is_active",   :default => false, :null => false
-    t.string   "permalink",                      :null => false
+    t.boolean  "is_featured",         :default => false, :null => false
+    t.boolean  "is_active",           :default => false, :null => false
+    t.string   "permalink",                              :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "old_announcement_id"
   end
 
   create_table "caresheets", :force => true do |t|
@@ -28,9 +29,10 @@ ActiveRecord::Schema.define(:version => 20090127034929) do
     t.string   "scientific_name"
     t.string   "permalink"
     t.text     "body"
-    t.boolean  "is_active",       :default => false, :null => false
+    t.boolean  "is_active",        :default => false, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "old_caresheet_id"
   end
 
   add_index "caresheets", ["permalink"], :name => "index_caresheets_on_permalink", :unique => true
@@ -40,9 +42,15 @@ ActiveRecord::Schema.define(:version => 20090127034929) do
     t.string   "name"
     t.string   "permalink"
     t.text     "description"
+    t.boolean  "is_active",                                         :default => false, :null => false
+    t.boolean  "is_price_specific",                                 :default => false, :null => false
+    t.decimal  "starting_price",      :precision => 8, :scale => 2, :default => 0.0
+    t.decimal  "ending_price",        :precision => 8, :scale => 2, :default => 0.0
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "old_category_id"
+    t.integer  "old_sub_category_id"
   end
 
   add_index "categories", ["permalink"], :name => "index_categories_on_permalink", :unique => true
@@ -135,7 +143,6 @@ ActiveRecord::Schema.define(:version => 20090127034929) do
   add_index "post_o_matic_postings", ["state"], :name => "index_post_o_matic_postings_on_state"
 
   create_table "products", :force => true do |t|
-    t.integer  "category_id"
     t.integer  "caresheet_id"
     t.string   "name"
     t.string   "scientific_name"
@@ -149,9 +156,8 @@ ActiveRecord::Schema.define(:version => 20090127034929) do
     t.boolean  "is_active",                                                   :default => false, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "old_product_id"
   end
-
-  add_index "products", ["permalink"], :name => "index_products_on_permalink", :unique => true
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
@@ -162,6 +168,13 @@ ActiveRecord::Schema.define(:version => 20090127034929) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "taxons", :force => true do |t|
+    t.integer  "category_id"
+    t.integer  "product_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "login",                     :limit => 40

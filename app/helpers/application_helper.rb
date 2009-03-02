@@ -12,7 +12,7 @@ module ApplicationHelper
 
   def category_active_state(category)
     if @product
-      active_state = 'active' if @product.category.eql?(category) || @product.category.ancestors.include?(category)
+      active_state = 'active' if @product.categories.include?(category) # || @product.categories.map(&:ancestors).include?(category)
     elsif params[:categories]
       active_state = 'active' if params[:categories].include?(category.permalink)
     end

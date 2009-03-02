@@ -1,7 +1,7 @@
 class CreateProducts < ActiveRecord::Migration
   def self.up
     create_table :products do |t|
-      t.belongs_to :category, :caresheet
+      t.belongs_to :caresheet
       t.string :name, :scientific_name, :permalink
       t.string :sku, :limit              => 10, :null => false
       t.text :description, :comments
@@ -11,7 +11,7 @@ class CreateProducts < ActiveRecord::Migration
       t.boolean :is_active, :default     => false, :null => false
       t.timestamps
     end
-    add_index :products, :permalink, :unique => true
+    # add_index :products, :permalink, :unique => true
   end
 
   def self.down

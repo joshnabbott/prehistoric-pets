@@ -1,8 +1,8 @@
 <%= f.error_messages %>
 
 <p>
-  <%= f.label :category_id %>
-  <%= f.collection_select :category_id, Category.find(:all), :id, :name %>
+  <%= f.label :category_ids %>
+  <%= f.collection_select :category_ids, Category.find(:all), :id, :name, {}, { :multiple => true } %>
 </p>
 <p>
   <%= f.label :image_file %>

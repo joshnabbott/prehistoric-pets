@@ -1,0 +1,6 @@
+id,parent_id,name,description,is_active,kingsnake_cat_id,is_price_specific,starting_price,ending_price,thumbnail
+1,1,"Ball Pythons","This is for balls",1,,,,,"ball_sc-on.jpg"
+2,1,"Reticulated Pythons","This is for retics",1,,,,,"retics_sc-on.jpg"
+3,1,"Other Pythons","This is for all others",1,,,,,"other_sc-on.jpg"
+4,2,"Redtails","This is for Redtails",1,,,,,"redtail_sc.jpg"
+5,2,"Other Boas","This is for others",1,,,,,"otherBoa_sc.jpg"

@@ -1,0 +1,667 @@
+id,category_id,sub_category_id,name,description,scientific_name,price,override_price,override,image_path,comments,has_care_sheet,care_sheet_id,is_kingsnake_item,is_active,is_featured,sku
+1,1,1,"Pastel Ghost Pair.","This is a great combination of two beautiful animals: A Bell Pastel and a Bell Ghost. These are some fine examples of the Pastel Ghost. Just look at the color and pattern on each one. This pair would be great if bred together because you would get Ghosts, Pastel Ghosts and SUPER Pastel Ghosts. And what is even better is what you could make with this snake. Breed it with any Spider or Pinstripe het Ghost and you could make a Pastel Honeybee or Pastel Ghost Pinstripe. The male and female both weigh in around 250 grams right now. Sorry, no trades at this time. Reasonable offers will be considered. $2,750.00 pair.","Python regius",$2750.00,"",0,"pastghofm3pair1","",0,1,0,0,1,"pp-7113132"
+2,1,1,"2007 Male Pastel het Orange Ghost","Beautiful male pastel which is 100 percent het for Bell Line orange ghost. Great animal at an affordable price.
+Email any questions to info@prehistoricpets.com or give us a call.","Python regius",$325.00,"",0,"pastelhetghost","",0,1,0,1,0,"pp-711210"
+3,1,1,"2007 Male DH Albino and Genetic Stripe (758 grams)","Beautiful male which is 100 percent het for albino and genetic stripe, 758 grams. Ready to breed! He is perfect for your het females and other projects.
+Reasonable offers will be considered. EXPORT AVAILABLE. Email questions to info@prehistoricpets.com.","Python regius",$800.00,"",0,"dhalgs","",0,1,0,1,0,"pp-9113115"
+7,1,2,"10 ft White Phase Albino Tiger Female","We are down to very few 2006 Albino Tiger Females. This animal is a white phase, classic pattern. We also have the striped phase. These are in the 10 foot range, but could potentially be fed well enough to breed in the 2009/2010 seaon. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$2500.00,"",0,"adult_lav_retic","",0,2,0,1,1,"pp-7115130"
+8,1,2,"Suntiger Retics","We have some great looking Suntigers available right now. This is a great looking double co-dominant snake. Breeding this with anything will give you some Sunfires, some Tigers and some Suntigers, and that is just from breeding it with a normal. Imagine if you crossed the Genetic Stripe or Platinum/Fire gene into it. There are still quite a few cool combo morphs to be made with retics and the Suntiger is a great way to get your project off its feet. Email to inquire on package deals. These are offered for $1,000. Reasonable offers and trades considered. EXPORT AVAILABLE.
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find i","Python reticulatus",$1000.00,"",0,"malepied1","",0,2,0,1,1,"pp-7115139"
+12,1,3,"Indian Python Pair","This is a great looking pair of true Indian pythons. These were born here at our facility from our CB parents. These are great looking animals and could make great pets with some handling. Also, they are considered an endangered species. Because we are located in California, the sale of these animals is restricted to within California, unless a proper U.S. Fish and Wildlife permit is obtained. We have larger ones available. Inquire for price and availability. These may or may not be the exact pair that you get. Email for pics. ","Python molurus molurus",$700.00,"0",0,"patternlessrockmale10","Only for sale in CA",0,0,0,1,0,"pp-11"
+15,3,0,"Albino Jungle Corn","We have some nice baby Albino Jungle Corns available. They are feeding well and ready for your home. They grow up to make a beautiful pet snake with some nice color. This is a general picture and not the exact snake that you will receive. Email for pics if interested.","Lampropeltis m. californiae x Elaphe gutatta gutatta",$100.00,"",0,"ajungcorn","",0,1,0,1,0,"pp-14"
+29,1,2,"Payment for Ed Rossi","asdf","Python reticulatus",$955.00,"",0,"payment","",0,1,0,0,0,"pp-16215214"
+31,1,1,"Cb 2007 Pinstripe Ball Python Female.","Cb 2007 Pinstripe Ball Python Female. 120 gram range. Feeding on adult mice, or fuzzy rats. Beautiful well started female, that should be ready next season. EXPORT AVAILABLE. Email or call/text for package deals or more information. 714.397.0414 or Info@PrehistoricPets.com","Python regius",$650.00,"",0,"2femalepinstripe75g","",1,1,0,0,1,"pp-121214124"
+34,1,1,"2007 Albino Pastels","Cb 2007 Albino Pastels. Both sexes available, yearlings! $1,650.00 each + Shipping. EXPORT AVAILABLE. Email: Info@prehistoricpets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$1650.00,"",0,"albinopastelmale2","",0,1,0,0,0,"pp-7113142"
+35,1,1,"Cb 06 Female Clown 1300+ grams","Cb 2006 1,300+ Gram Female Clown Ball Python. This girl is nearly breedable! This is a rare opportunity for someone to snag one of the best morphs in ball pythons! $6,500.00 + Shipping. EXPORT AVAILABLE! Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$6500.00,"",0,"clown","",0,1,0,1,0,"pp-711212"
+39,1,1,"2008 Female Pewter Ball Python","What a beautiful animal. Great color, awesome pattern, and a perfect addition to your collection. Imagine to ball python morph possibilities which could be made with her. 
+Package deals available. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Call or Text 714.397.0414","Python regius",$1000.00,"",0,"pewterf","",1,1,0,0,0,"pp-1721421"
+41,1,1,"CB 2007 Butter Ghosts","Cb 2007 Butter Ghosts. Well started males and females are available. $2,500.00 each package deals, and EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Call or Text 714.397.0414","Python regius",$2500.00,"",0,"butteghost","",1,1,0,0,0,"pp-7113151"
+43,1,1,"Cb 2008 Male Cinnamon Het Ghost","CB 2008 Male Cinnamon Pastels 100% het for Ghost, 136 grams. $550.00 Package Deals available, EXPORT AVAILABLE. These are Bell Line Cinnamon Pastels 100% het ghost. 
+Email: Info@PrehistoricPets.com Call or Text 714.397.0414","Python regius",$550.00,"",0,"macihegh","",0,1,0,1,1,"pp-9113128"
+52,1,1,"2008 Spider Ball Python","Beautiful animal at a great price. We have 1.1 available which are feeding great on hopper mice.
+Email: Info@prehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$300.00,"",0,"08spider","",0,1,0,1,1,"pp-13210223"
+53,1,1,"CB 2007 Male Pastel Yellow Belly","Cb 2007 Pastel Yellow Belly Ball Pythons. We have 1 male left! This is a double incomplete dominant combination. You have a lot of potential with a male like this. Plug him into three affordable females like a spider, a pastel and a yellow belly to make: Bumblebee Yellowbellies, Super Pastel Yellow Bellies, and Pastel Ivories! Package Deals available and EXPORT AVAILABLE. He is currently 388 grams in weight.
+Email: Info@PrehitoricPets.com 
+Call 714.397.0414","Python regius",$1000.00,"",0,"pastelyellowbelly","",0,1,0,0,1,"pp-7113111"
+64,1,2,"Albino Male with Tiger Het Albino Female.","2008 Albino Male with a Tiger Het Albino Female. Your choice of a White or Lavender Albino. You can make normals het albino, tigers het albino, albinos and albino tigers with this pairing. Since this is the multi color Clark strain you can produce whites, lavenders and purples with these animals. EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$755.00,"",0,"07albntigerhet","",0,2,0,1,1,"pp-7115148"
+65,1,2,"2009 Purple Albinos","CB 2009 Purple Albinos, from Bob Clark's multicolor strain of albino. We have been selectively breeding purples to make the best possible. Nice purples available for only $600.00 each. We also have a few 2007 animals available for $1,000.00 each. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$600.00,"",0,"07purpntighet","",0,1,0,1,1,"pp-16215254"
+67,1,2,"Albino Genetic Stripes","Cb 2008 Female Lavender Albino Genetic Stripe. Beautiful morph, which should stay a nice small size from the dwarf blood on the genetic stripe side. We are only releasing one female at this time, but can put together a group of genetic stripe poss hets and poss double hets. EXPORT AVAILABLE 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$5500.00,"",0,"albinogstripe","",0,2,0,1,1,"pp-711516"
+68,1,2,"Ultra Ivory Retics","CB 2008 Ultra Ivory Retics from our Ivory X Ivory breeding, making these siblings to our Black Eyed Leucistics. Beautiful snakes, with tons of potential! EXPORT AVAILABLE
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$8500.00,"",0,"albinoreticc","",0,2,0,1,1,"pp-7115114"
+69,1,2,"Albino Sunfires","Cb 2008 Albino Sunfire Retics. This is a gorgeous combination and unlike most morphs, these get BETTER with age. They are one of our favorites around here. Sorry but Males are only available in the white phase. EXPORT AVAILABLE 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$8500.00,"",0,"albinosun","",0,2,0,1,1,"pp-7115124"
+71,1,2,"Lavender Albino Sunfires","We have a hand full of Lavender Albino Sunfires available. The subtle lavender should be very striking on an adult. Sorry but only females are available in the Lavender phase. EXPORT AVAILABLE 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$10000.00,"",0,"albinosunfires","",0,2,0,1,1,"pp-7115132"
+72,1,2,"Albino Tiger Retics","Cb 2008 Albino Tiger Retics. Classic or Striped Phase. Males or Female $755.00 each or $1,500.00 pair. EXPORT AVAILABLE 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$755.00,"",0,"albinotiger","",0,2,0,1,1,"pp-7115140"
+73,1,2,"1.1 Granite Back Retics","1.1 CB 2006 Granite Back Retics. These are taking large rats and are well on their way to being future breeders. Their grandfather was Anthrax and their father is a direct son of Anthrax. These are the visual hets for the Anthrax Pattern, and are 50% hets for the anthrax color. $1,500.00 pair + shipping. EXPORT AVAILABLE. text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$1500.00,"",0,"granitebackpair","",0,1,0,1,1,"pp-1821526"
+76,1,2,"Amel Strain Tiger Retics","Cb 2008 Amel Strain Tiger Retics (Kahl/Baldogo line). These are not compatible with the Clark multi-color line and only produce white phase. These attain a gorgeous light mature coloration with an adult average size towards the top of the retic size spectrum. EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$700.00,"",0,"kahltiger","",0,2,0,1,1,"pp-7115155"
+77,1,2,"Lavender Dwarf Retics","Cb 2008 Lavender Phase Dwarf Retics. These are a key combination to make dwarf combos with. These are the first phase in an onslaught of unbelievable dwarf designer Retics! If you want to get in on the fore front, these snakes are a required tool! EXPORT AVAILABLE. Email for package availability $3,500.00 pair + 1.1 Free hets $6,000.00 for 2.2 + get 1.2 Free Hets! 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$2000.00,"",0,"lavdwarf","",0,2,0,1,1,"pp-711514"
+78,1,2,"Leopard Phase Titanium Retics!","Cb 2008 Leopard Phase Titanium Retics. These are from our Titanium line but express some white lateral markings which really looks beautiful as they grow. This is one expression of the trait we are going to be line breeding to see how far we can take this variable expression of the Titanium Morph. We are releasing 1.1 of these, at a small premium. EXPORT AVAILABLE 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$10000.00,"",0,"leopardt","",0,2,0,1,1,"pp-7115113"
+79,1,2,"2007 SunTigers","Cb 2007 Suntigers. These are well started Suntigers from last season. They are in the 4-5' range, and taking medium rats. Either sex for $1000.00 each You can make Super Tiger Super Sunfires with these! EXPORT AVAILABLE 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$1000.00,"",0,"malepied1","",0,2,0,1,1,"pp-7115145"
+81,1,2,"2008 Sunfire Retics","Cb 2008 Sunfire Retics. This is an incomplete dominant gene, and cleans up any morph, while infusing striking color and contrast. We have 2008 males for $400.00 each and Females at $600.00 each. EXPORT AVAILABLE 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$400.00,"",0,"newsun","",0,2,0,1,1,"pp-711515"
+82,1,2,"2007 Platinum Retics","Cb 2007 Platinum Retics. These are the visual het for Ivory Retics, which was the path that led us to the Ultra Morph and the Leucistic Morph. These are power packed snakes, with tons and tons of color. Plug one of these into a super tiger sunfire for something new and truly jaw dropping. $4,000.00 each for either sex. EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$4000.00,"",0,"platinum","",0,2,0,1,1,"pp-7115127"
+83,1,2,"DARK Purples","Cb 2008 DARK Purple Retics. These are from our selectively bred Purple animals, to create the darkest purple animals possible. These should contend with Caramel animals. $1,200.00 each EXPORT AVAILABLE. Discounts available on multiple animals. Reasonable offers and trades considered.  
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$1200.00,"",0,"purple","",0,2,0,1,1,"pp-7115137"
+85,1,2,"Purple Super Tiger Retics.","Well, here's another Prehistoric Pets' exclusive! Purple Super Tigers! Ultra Rare, Uber Beautiful, and the only place to get them. $6,500.00 each. Discounts available on multiple animals. Reasonable offers and trades considered. EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$6500.00,"",0,"purplesuper","",0,2,0,1,1,"pp-711519"
+90,1,2,"Cb 2008 Sunfire Het Albino","Cb 2008 Sunfire Het Albino. These are 4-5' yearlings taking medium rats. Use the males next year for your albino sunfire projects! Email for photos of some of our albino sunfires with some size on them, they are mind blowing! Package Deals and Export are available.
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$2000.00,"",0,"sunfirehet","",0,1,0,1,1,"pp-18215258"
+93,1,2,"Lavender Albino Super Dwarf Retics","Lavender Albino Super Dwarf Retics. All of the work is done here! We made an apartment sized retic, now you get to enjoy one! These hatched out about half the size of a normal retic, and the parents range from 6-7' for the males and 9-10' for the females. Barely larger than Carpet Pythons. $4,500.00 each Package Deals Available- EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$4500.00,"",0,"superdwarfalbinos","",0,2,0,1,1,"pp-7115153"
+97,1,2,"1.1 2009 Tigers 100% Het Titanium","1.1 2009 Tiger Retics 100% het for Titanium. You can produce, Tigers, Super Tigers, Titaniums, Titanium Tigers and Titanium Super Tigers. Excellent potential with this combination. $3,500.00 for the pair. Package Deals, and Export are Available! 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$3500.00,"",0,"tigerhettitanium2","",0,1,0,1,1,"pp-16215232"
+102,1,3,"2008 Male Triple Het Burmese Python","This guy has it all in genetics. He is 100% het for green, granite, and albino.
+Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python molurus bivittatus",$250.00,"",0,"triplehetburm","",0,1,0,1,0,"pp-8119136"
+103,1,3,"2008 Male Green DH Burmese Python","Beautiful male green which is 100% double het for albino and granite.
+Email: Info@PrehistoricPets.com Shop: 714.964.3525
+Cell: 714.397.0414","Python molurus bivittatus",$350.00,"",0,"greendhburm","",0,1,0,1,0,"pp-8119148"
+110,2,4,"Adult Female Central American Boa","Mature Female Central American Boa. Ready to breed, captive bred, and feeding on frozen thawed large rats. $300.00 + $100.00 shipping. EXPORT AVAILABLE ON THIS ANIMAL. Email for package availability or any questions to info@prehistoricpets.com or give us a call/text today at 714-397-0414.","Boa constrictor imperator",$255.00,"",0,"femalecentral","",0,1,0,1,0,"pp-891494"
+125,2,5,"1.2 Adult Madagascan Ground Boa.","1.2 Adult Madagascan Ground Boas. These are adults, that have been in the shop for a few years and produce a litter for us a few years back. They aren't a focus any longer, and we have decided to part ways with the project. $3,000.00 for the trio. Package Deals Available, Sorry but Export is Not Available on these animals. Email: Info@PrehistoricPets.com Call/Text 714.397.0414","Acrantophis madagascariensis",$3000.00,"",0,"malekenyan","",0,1,0,1,0,"pp-1310151013"
+128,3,0,"Yearling Blood Licorice Cornsnake","Beautiful snake which has an awesome pattern and coloration.
+Reasonable offers and trades considered. Feel free to email any questions to info@prehistoricpets.com or give us a call/text at 714-397-04141 today.","Elaphe guttata guttata x Elaphe obsoleta obsoleta cross",$150.00,"",0,"whitesideblood","",0,1,0,1,0,"pp-26611623"
+131,5,0,"2008 Baby Frilled Lizards","Gorgeous baby Frilled Lizards! Perfect little babies, ready for new homes. These are one of our favorite lizards! Email: Info@PrehistoricPets.com Shop: 714.964.3525. Cell: 714.397.0414 Shipping is $45.00","Chlamydosaurus kingii",$150.00,"",0,"frilleddragon","",0,1,0,0,0,"pp-1712181222"
+136,7,0,"2008 Leopard Tortoise","Beautiful babies which will grow into awesome blond adults. These will require a health certificate to be shipped across state lines at an extra cost.
+
+Tortoises under 4 inches in length can only be sold for educational purposes only","Geochelone pardalis",$120.00,"",0,"blondeleopard4","",0,1,0,0,0,"pp-1218143"
+139,7,0,"18"" Female African Spur Thigh Tortoise","Beautiful tortoise, heavy bodied, and ready for your male. Due to her weight, she can only be shipped through Delta Airlines to your nearest airport. Send us a email to info@prehistoricpets.com if you have any questions.","Geochelone  sulcata",$1200.00,"",0,"femalesulcata","",0,1,0,1,0,"pp-412121213"
+154,6,0,"Green Tree Monitor","Established male Green Tree Monitor. Feeding well, and very well hydrated. This boy is perfect in every way. $500.00 + $75.00 shipping.","Varanus prasinus",$500.00,"",0,"prasinus","",0,1,0,1,0,"pp-131216125"
+166,2,4,"Cb Adult Female T+ Albino Argentine Boa.","Cb adult Female T+ Albino Argentine Boa. Large 18lb female, ready to breed. This is a rare find, of an exceptionally beautiful morph of the Argentine Boa. $7,500.00 Package Deals Available, Sorry but Export is Not Available on this animal. Email: Info@PrehistoricPets.com  Call/Text 714.397.0414","Boa constrictor occidentalus",$7500.00,"",0,"targ","",0,0,0,1,0,"pp-2710742"
+168,1,3,"Cb 2006 Female Striped T Positive","Cb 2006 Female T Positive Albino Blood Python. Flawless, slowly grown, with a very muscular build-not flabby and over fed! She should be perfect for breeding next season, and has a workable disposition. Blood Pythons are becoming increasingly popular, and with all of the new morphs in existence the combinations of them should take their popularity to the next level. Step full swing into this species with a ready made breeding project. $3,00.00 for this female, or take a CB 2006 trio for $7,500.00 (*The male is currently breeding another large non-albino female actively! He is very ready!) EXPORT IS AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python brongersmai",$3000.00,"",0,"tfs","",0,1,0,1,0,"pp-27113119"
+169,1,3,"Cb 2006 Male T Positive Albino Blood Python","Cb 2006 Male T Positive Albino Blood Python 
+Python brongersmai 
+
+
+
+Price: $2,750.00 
+
+
+
+Description: 
+CB 2006 Male Albino Blood. This male is actively breeding now, and is readyStep full swing into this species with a ready made breeding project. $2,750.00 for this Male, or take a 2006 1.2 trio for $7,500.00 EXPORT IS AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python brongersmai",$2750.00,"",0,"tm","",0,1,0,1,0,"pp-27113124"
+170,1,0,"Cb 2008 Het Ghost Pair","1.1 Cb 2008 100% het Bell line Ghost Ball Pythons. Feeding on hopper mice. Very nice high contrast animals, great stock to produce ghosts from. Email for photos of the sibling ghosts, very nice stock here. $350.00 for the pair + Shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Cell: 714.397.0414","Python regius",$350.00,"",0,"08hetghost","",0,0,0,1,0,"pp-1677731"
+171,1,1,"CB 2008 Het Ghost Pair","1.1 Cb 2008 100% Het Bell Line Ghost Ball Pythons. Feeding on hopper mice. Exceptional stock, evident by these animals! These are the the animals you will get. One pair left- for now! EXPORT AVAILABLE! Email: Info@PrehistoricPets.com Call/Text Cell: 714.397.0414","Python regius",$250.00,"",0,"08hetghost","",0,1,0,1,1,"pp-172821"
+173,1,1,"Adult Male Pastel Ball Python","Adult Male Pastel Ball Python. This boy is 1,100 grams and is ready to breed. A steal at $275.00! Shipping will be $75.00 within the Continental U.S. EXPORT is AVAILABLE. Email for package deals. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$275.00,"",0,"adpastel","",1,1,0,0,1,"pp-7113121"
+182,3,0,"2008 Male Ghost Honduran Milksnake","Beautiful male ghost honduran milk snake which will reach 6 plus feet in length as an adult. A ghost honduran is a combination of two genes; hypo and anery. He will make a great addition to your breeding projects or as a pet.
+Email questions to info@prehistoricpets.com or call/text 714-397-0414.","Lampropeltis t. hondurensis",$150.00,"",0,"ghosthondo","",0,0,0,1,0,"pp-21717731"
+191,11,0,"Albino Sunfire & Albino Super Dwarf","Albino Sunfire & Albino Super Dwarf.","Python reticulatus",$0.00,"Call for price.",1,"albinosun","",0,1,0,1,0,"pp-21819851"
+193,11,0,"Purple Dwarf","If you have been a fan of Reticulated Pythons and especially the Purple Albinos but the size has kept you away, then the dwarf stock is perfect for you. These are everything the mainland retics are but smaller and more colorful, but still an impressive large snake. Call for availability, pricing, combinations etc... ...","Python reticulatus",$0.00,"Call for Price",1,"purpledwarf","",0,0,0,1,0,"pp-3071171"
+194,11,0,"Leopard Phase Titanium Reticulated Python","Extremely limited numbers at this point of this Prehistoric Pets exclusive! This is our first year producing this variation of the Titanium Morph, and these are stunning! These were started with our diverse founding stock of Titanium and Titanium outcrossings, and we have likely just seen the tip of the iceberg when it comes to selective breeding with this mutation. 
+
+The prominent lateral dashes and richly colored sides have combined to make this variation something special. Prices vary but range from $10,000.00 - $12,000.00 each please call Jay directly if interested in one of these exceptional animals: 714.402.4444","Python reticulatus",$0.00,"10,000.00-$12,000.00",1,"leopardt","",0,0,0,1,0,"pp-31710759"
+199,1,3,"Cb 2008 Albino Burmese 100% Het Green","We have some well started 2008 Albino Burmese Pythons 100% Het for Green. We are down to only males. Limited quantity. $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python molurus bivittatus",$200.00,"",0,"albinoburm","",0,1,0,1,0,"pp-1310151030"
+200,7,0,"Long Term 3 Toed Box Turtles.","We have a large group of long term captive adult 3 Toed Box Turtles. Some which have exceptional color, all of which are flawless and ready to be a perfect addition to your home or your breeding group. $75.00 each + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Terrapene carolina triunguis",$75.00,"",0,"3toed","",0,1,0,0,0,"pp-13210246"
+201,1,1,"Breeder Male Axanthic Ball Python","CB 2006 Male (Snake Keeper Line) Axanthic Ball Python. 683 grams, and ready to breed. This is a very affordable way to dabble in combos. Work him into your pastel or spider project to enhance future offspring. $750.00 + $50.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$750.00,"",0,"skaxm1","",0,1,0,1,1,"pp-7115159"
+202,1,1,"Cb 2007 Mojave Male","714 Gram Male Mojave. Ready to breed now. Nice coloration, flawless snake. Make mojaves, combos, or white snakes this season with him! Shipping is $65.00 Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$800.00,"",0,"mojave","",1,1,0,0,1,"pp-7113124"
+205,1,1,"Cb 2007 Desert Ghost Ball Pythons","Cb 2007 Desert Ghosts. We have a few hold backs from the 2007 season which we are willing to release. This is one of the strongest investments in Ball Pythons-period. We can put packages together including 2006 Heterozygous animals. Desert Ghosts $6,500.00 each $12,500.00 pair! EXPORT AVAILABLE- PACKAGE DEALS AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$6500.00,"",0,"desert","",1,1,0,0,1,"pp-7113133"
+206,1,1,"Cb 2007 Genetic Stripe Ball Pythons","CB 2007 Genetic Striped Ball Pythons. We have just a few left from last year. These are the nice ones folks, great stripes, high contrast, knock your socks off color. You get what you pay for, and these barely have a premium over the ones you usually see which aren't nearly as clean or crisp. $2,000.00 each + Shipping. Export available, Package deals available.  ONLY FEMALES LEFT! Email: Info@prehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$2000.00,"",0,"genstripe","",1,1,0,0,1,"pp-7112128"
+207,1,1,"Cb 2007 Pied Ball Pythons","Cb 2007 Pied Ball Pythons. We are down to our last 2 pairs from the 2007 season. These are lower white but are very well started. $3,250.00 each. EXPORT AVAILABLE- Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$3250.00,"",0,"pied","",1,1,0,0,1,"pp-7112136"
+208,1,1,"CB 2007 Pastel Ghost","Cb 2007 Pastel Ghosts! Big well started yearlings. Males $1,200.00 each Female $1,500.00 each. Shipping = $45.00 EXPORT AVAILABLE. Email: Info@prehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$1200.00,"",0,"pastelghost","",1,1,0,0,1,"pp-711310"
+211,2,4,"Baby Columbian Redtail Boa","Very nice CBB baby Columbian Redtail Boas. We have both male and females available which are feeding great on hopper mice. They have a great disposition and will make a great pet or addition to a breeding project.
+Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$75.00,"",0,"babyboa","",0,1,0,1,0,"pp-15817822"
+214,2,4,"Female 100% Het Albino Boa","Beautiful female which is 100% het albino which was produced from breeding an albino male to a normal female. Feeding great on hopper mice and has a great disposition. Shipping charges are an additional $45 through UPS overnight to your door.
+Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$150.00,"",0,"hetalbinoboa_m","",0,1,0,1,0,"pp-21116126"
+217,2,5,"CB 2007 Western Madagascan Tree Boas","2.3 CB 2007 Western (Mandarin) Madagascan Tree Boas. These are feeding on small mice, they are approximately 30"" long and the girth of a man's thumb. These are one of the calmest most interesting arboreal boids in existence. $750.00 each for single females $650.00 each for single males. $1,250.00 pair or take the group for $3,000.00 Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Sanzinia madagascariensis volontony",$750.00,"",0,"07femsanzinia","",0,0,0,1,0,"pp-18816810"
+223,3,0,"Yearling Ghost Glades","Beautiful snake from huge orange and yellow parents.","Elaphe obsoleta",$90.00,"",0,"ghostglades","",0,0,0,1,0,"pp-20817858"
+224,1,1,"CB 2008 Male Het Bell Ghost","CB 2008 Male Het Bell Ghost, 173 Grams. Affordable way to get in the ball python game, or just to acquire a really high quality captive bred pet. $80.00 + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$80.00,"",0,"mahegh","",1,1,0,1,1,"pp-9113138"
+228,2,4,"Cb 2008 Striped North Brazilian Red Tailed Boa","Cb 2008 F1 Striped North Brazilian Red Tailed Boa. Feeding on fuzzy mice, imppecable silver base color, with an exceptional stripe. $400.00 + $45.00 shipping. EXPORT AVAILABLE. PACKAGES AVAILABLE. Info@Prehistoricpets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor constrictor",$400.00,"",0,"stripednorthbraz","",0,1,0,1,0,"pp-2591290"
+229,5,0,"Adult Female Bearded Dragon","Beautiful adult female which is ready for your male. She has a very nice coloration and is perfect. Email us at info@prehistoricpets.com if you have any questions about her or any of our animals.","Pogona Vitticeps",$200.00,"",0,"beardedfemale","",0,0,0,1,0,"pp-21816829"
+231,11,0,"Albino Genetic Stripes","This is an ultra rare Combination of two Simple Recessive Traits: Clark Strain Albino & Genetic Stripe. These can be produced in a white phase, a lavender phase (pictured) or a purple phase! The Genetic Stripes not only possess a bright yellow head but are from a bloodline known to be smaller than your average main land type. This is genuinely a must have for the retic enthusiast! Once the Sunfire Gene gets plugged into these expect their popularity to sky rocket! Call us now for our availability of: Albino Genetic Stripes, Genetic Stripes, Genetic Stripes Poss Het Albino, Albinos Poss het Genetic Stripe or other investment packages. EXPORT AVAILABLE.","Python reticulatus",$0.00,"Call For Price",1,"albinogstripe","",0,0,0,1,0,"pp-21819852"
+233,11,0,"Platinum/Fire Reticulated Pythons","Fire/Platinum Reticulated Pythons. These are not only a smoking hot yellow and silver snake by themselves but they are also responsible for making: Ivories (which produced our Leucistics!) but also Ultra Ivories! This is the incomplete stage of this incomplete dominant gene a.k.a. ""co-dominant"". We have a few available for release from last season. Call for availability.","Python reticulatus",$0.00,"Call for Price",1,"platinum","",0,0,0,1,0,"pp-2181989"
+234,11,0,"Purple Super Tigers!","Well, we heard a lot of rumors that this wouldn't be possible... so we are giving out a free spoon with the purchase of one of these genetic show pieces, so you can let your friend's eat their words-when you show them how wrong they were! These are one of the hottest looking snakes around, and if you disagree we know a great optometrist! Call us if you want to get in on this project, we can set you up with Purple Supers, Purple Tigers (the tool to make these!) or a Purple Super with a Purple Tiger!","Python reticulatus",$0.00,"Call for price",1,"purplesuper","",0,0,0,1,0,"pp-2182088"
+235,11,0,"Chrome Back Reticulated Pythons","This is yet another Prehistoric Pets Exclusive! This is a combination of the Titanium mutation, and the Tiger mutation. Making this Titanium Tigers a.k.a. Chrome Backs! These are highly variable, yet all are beautiful pastel colored animals. We can put together packages including Chrome Backs, Plutoniums (Super Tiger Titaniums), Het Titaniums, Titaniums, Tigers het Titanium and Super Tigers het Titanium! Call Today 714.397.0414","Python reticulatus",$0.00,"Call for price",1,"tigertitaniumgold","",0,0,0,1,0,"pp-2281280"
+236,11,0,"Albino Sunfire Tiger Reticulated Python`","A triple threat! Albino Sunfire Tigers: Clark Strain Albino (Which produces all three color varieties), Sunfire, and the Tiger mutation. The super tiger form of this combination is a solid gold snake with gorgeous highlighter yellow accents. We can put together packages including: Sunfires het Albino, Suntigers Het Albino, Super Tigers and Super Tiger Sunfires Het Albino, Albino Sunfires and Albino Suntigers. EXPORT AVAILABLE! Call Today 714.397.0414","Python reticulatus",$0.00,"Call for price.",1,"sunalbinot","",0,0,0,1,0,"pp-22812810"
+243,2,4,"Cb 2007 Stripeline Salmon Male","Cb 2007 Male Power Packed Salmon. This male is a potential Super Salmon, 66% Het Albino, Het for Stripe Line. If this boy proves out to be a het for albino he should make some really brilliant sunglows. He is feeding on Small Rats and is a flawless snake. $375.00 + $65.00 shipping. Export Available + Packages Available. Email: Info@PrehistoricPets.com Shop: 714.964.3525 cell: 714.3973.0414","Boa constrictor imperator",$375.00,"",0,"07stripesalmon","",0,1,0,1,0,"pp-2591298"
+245,2,4,"CB 2007 Male North Brazilian Red Tailed Boa.","CB 2007 Male North Brazilian Red Tailed Boa. This is a sibling to the 2008 North Brazilians currently available. He is the last one from the 2007 season, and is currently feeding on freshly weaned mice. This is fresh Brazilian stock, with both parents being extremely long term original imports, this is an F1 animal. Strong stock to use to outcross to other existing lines. $225.00 + $45.00 Shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor constrictor",$225.00,"",0,"07MaleNB","",0,1,0,1,0,"pp-25912930"
+261,1,3,"2008 Male Albino Green het Granite Burmese Python","Beautiful male albino which is 100% het for granite. He is well started and ready for your collection.
+Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python molurus bivittatus",$450.00,"",0,"albinogreenhet","",0,1,0,1,0,"pp-20116139"
+267,1,2,"Titanium Tiger Reticulated Python","Titanium Tiger Reticulated Pythons. This is another Prehistoric Pets Exclusive! Well started Selectively Bred 2008 Titanium Tiger Reticulated Pythons! These are a combination of the Titanium (Simple recessive) to a Tiger (Incomplete Dominant or ""Co-dominant""). These have tremendous variability and some are silver sided, others are nearly all banana yellow. This animal is priced at $8,500.00 + Freight. Export is available, and trades for other high end reptiles will be considered. If you are serious about in","Python reticulatus",$8500.00,"",0,"plooty","",0,1,0,1,0,"pp-261216120"
+268,1,2,"Albino Sunfire Tiger","Albino Sunfire Tiger Reticulated Pythons. Talk about color color color color color!!!!! These guys POP off of your computer screen don't they?! $10,000.00 each. Export Available, High end reptile trades are considered. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$10500.00,"",0,"suntiger","",0,1,0,1,0,"pp-2612161220"
+269,1,2,"Titanium Reticulated Python","Cb 2008 Titanium Reticulated Pythons. This Recessive trait is  extremely variable this example is a very ""classic"" looking Titanium and is priced at $6,500.00 with pairs being available for $12,000.00. If you're serious about investing in this project call today and we will get down to brass tacks. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your que","Python reticulatus",$6500.00,"",0,"titanium1","",0,1,0,1,0,"pp-2612161242"
+270,1,2,"Plutonium Reticulated Python","CB 2008 Plutonium Reticulated Pythons (Super Tiger & Titanium). Ridiculous looking combination, available ONLY from Prehistoric Pets. We have one Male for $15,000.00 We have one female available for $12,500.00 EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$15000.00,"",0,"lemonplutonium","",0,1,0,1,0,"pp-261216124"
+271,1,2,"Het Albino Dwarf Retics","Cb 2008 Dwarf Het Albino Retics. These share the same purple dwarf father as our purple dwarfs for sale. Nice quality animals! $1,000.00 each $2,000.00 pair. EXPORT AVAILABLE- High End Trades Considered. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$1000.00,"",0,"75percentjamphet","",0,1,0,1,0,"pp-7115115"
+272,1,2,"Super Dwarf het Albino","Cb 2008 Super Dwarf 100% Het Albino. These are the hot ticket in retics! Think of the potential when breeding all of the new and exciting reticulated","Python reticulatus",$1500.00,"",0,"superdwarfhet","",0,1,0,0,0,"pp-16912930"
+274,2,5,"CB Adult Male Madagascan Tree Boa","Cb Adult Male Western ""Mandarin"" Madagascan Tree Boa. Ready to breed, about 6' long. Totally tame, and feeding on large rats. $800.00 + Shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Madagascariensis sanzinia volotony",$800.00,"",0,"malesanzinia","",0,0,0,1,0,"pp-16915930"
+275,2,5,"CB Adult Female Western Madagascan Tree Boa","CB Adult Female Western ""Mandarin"" Madagascan Tree Boa. Large 7' + female, totally tame, huge beefy head. Very impressive animal. Feeding on Large Rats. $1,200.00 + Shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Madagascariensis sanzinia volotony",$1200.00,"",0,"femalesanzinia","",0,0,0,1,0,"pp-1691592"
+278,5,0,"Baby Smooth Back Bearded Dragons (7"" females)","CB 2008 California Line Leather Back Bearded Dragon Females! These are the visual hets for the Silkie! Breed two together and get 25% Silkies, 50% leather backs and 25% normals. They are awesome and rarely available! A great price at only $225.00 + Shipping. EXPORT AVAILABLE. Call Today these are all going fast at these prices. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Pogona vitticeps",$225.00,"",0,"leatherback","",0,1,0,1,0,"pp-26112142"
+280,2,5,"Proven Adult Red Amazon Tree Boa Male","Established adult male Red Amazon Tree Boa, with greyish green banding. Proven male which produced the orange babies for sale. Gorgeous male. $250.00 + Shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Corallus hortulanus",$250.00,"",0,"redmale","",0,1,0,1,0,"pp-22912939"
+283,1,3,"Cb 2008 Male Woma Python","Cb 2008 Male Woma Python. Feeding on small mice. We have 4 of them available, all are superb animals. $300.00 each or pair with one of the available females for $800.00 pair. These are big well started 2008s. Email for individual pics. Sorry but EXPORT IS NOT AVAILABLE for Womas! Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Aspidites ramsayi",$300.00,"",0,"woma1","",0,1,0,1,0,"pp-25912954"
+284,1,3,"CB 2008 Female Woma Python","Cb 2008 Female Woma Pythons. Big well started females 3 available. $500.00 each + Shipping or you can pair one with your choice of the available males for $800.00 pair + Shipping. Sorry but export IS NOT AVAILABLE on womas. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Aspidites ramsayi",$500.00,"",0,"woma2","",0,1,0,1,0,"pp-25912923"
+286,2,4,"Deposit for Lindsay Vo","50% deposit for male Partially Patternless PC Salmon and female Motely Boa. Total price is $1,750.00 plus $45 shipping charge.","Boa constrictor imperator",$830.00,"",0,"payment","",0,1,0,0,0,"pp-271291254"
+290,2,4,"CB 2008 Female Hypo Arabesque - high quality","CB 2008 Female Hypo Arabesque Boa. This girl is just down right beautiful! These make some of the best sunglows around, and with two incomplete dominant genes together you have just countless potential. Some of the hypo arabesques are washed out and really reduced in pattern, this female has loads of red and a strong arabesque pattern. Definitely one of the best ones around! $1250.00 + Shipping. Export available! Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$1250.00,"",0,"08fehyar","",0,1,0,1,0,"pp-3217229"
+291,2,4,"CB 2008 Female Arabesque Boa","Cb 2008 Female Arabesque Boa. Beautiful incomplete dominant gene that gets BETTER with age, unlike most morphs! Arabesques have been around for nearly 20 years and are still holding their value. These are a wonderful snake to work with, and make some very unique combinations. $550.00 + Shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$550.00,"",0,"malearab","",0,1,0,1,0,"pp-311131118"
+293,1,1,"CB 2008 Mojave Ball Pythons","Cb 2008 Mojave Ball Pythons. We have 7.2 available at this time. males are offered at $300.00 each and you can purchase a 1.1 pair for $700.00. We don't have any lone females available at this time. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$300.00,"",0,"femmojave","",0,1,0,1,1,"pp-711517"
+295,1,1,"Cb 2008 Male Albino Ball Pythons","Cb 2008 Male Albino Ball Pythons. Well started nice albinos for only $550.00 each. Sorry only males available right now. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$550.00,"",0,"malbino","",0,1,0,1,1,"pp-7115133"
+296,1,1,"Cb 2008 Female Pastel Het for Ghost","Cb 2008 Female Pastel Het Ghost #1, 181 grams. EXPORT AVAIlABLE.Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$600.00,"",0,"paheghfe1","",0,1,0,1,1,"pp-7118124"
+297,1,1,"1.1 Cb 2008 Pastels Het For Albino","1.1 Cb 2008 Gorgeous Pastels 100% Het for Albino. Make albino patels and albino super pastels with this pair. $1,500.00 for the pair + Shipping. Export available. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$1500.00,"",0,"pastelshet","",0,1,0,1,1,"pp-7115152"
+299,2,4,"Proven Female PC line Dominant Salmon","We acquired this gorgeous girl this season from Les Katsumata @ Dragon's Klutch. She is a PC Line Salmon (SUPER RARE FIND!) and is a proven dominant salmon. She produced a fantastic clutch for Les last season, and we acquired her shortly after. She has fattened up and is ready to be sold. This would be a great addition for any die hard boa enthusiast. $1,250.00 + Shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$1250.00,"",0,"fepcss","",0,1,0,1,0,"pp-17112128"
+300,2,4,"Female Proven Dominant Staub line Salmon","Beautiful Aberrant Proven Dominant Salmon Female, which was produced by Rick Staub. She was purchased from Les Katsumata @ Dragon's Klutch after producing a knock out clutch of aberrant salmons for him last season. She has great body weight and should be in good shape to produce again this season. $1,250.00 + Shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$1250.00,"",0,"staubsalmon","",0,0,0,1,0,"pp-26916936"
+302,1,3,"Adult Male High Yellow Biak Green Tree Python","4-5 year old male Biak Green Tree Python. These take the longest to complete their onto-genetic color change, but this guy is still retaining a fair amount of yellow for his age. Beautiful snake for a very fair price. Pounding rat crawlers or large mice. $375.00 + Shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Morelia viridis",$375.00,"",0,"malebiak","",0,1,0,1,0,"pp-17110149"
+306,2,4,"CB 2008 Male Probable Dominant Salmon #4","Cb 2008 Male Probable Dominant Salmon #4. This is the most affordable animals from this clutch, and he still has a ridiculous tail! $275.00 + Shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$275.00,"",0,"malesalmon4","",0,0,0,1,0,"pp-27917924"
+307,2,4,"Cb 2008 Probable Dominant Salmon #3","CB 2008 Male Probable Dominant Salmon #3. This bad boy is also a 66% Het Albino 66% Het Kahl Stripe. LOOK AT THAT TAIL! $350.00 + Shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$350.00,"",0,"malesalm3","",0,1,0,1,0,"pp-181281239"
+309,2,4,"CB 2008 Probable Dominant Salmon Male #1 KNOCK OUT!","Cb 2008 Probable Dominant Salmon Male #1 (66% Het Albino and 66% Het Stripe). TOTAL KNOCK OUT!!! $450.00 + Shipping. EXPORT AVAILABLE! Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$450.00,"",0,"malesalm1","",0,0,0,1,0,"pp-27918927"
+310,2,4,"Cb 2008 UNBELIEVABLE SUNGLOW FEMALE!","This female sunglow is unbelievable looking! Hands Down one of the hottest sunglows on the market! Les Katsumato @ Dragon's Klutch produced this gem, and I was lucky enough to pry her from his keeper shelf. Don't miss out on adding this prize to your collection... can you imagine watching her grow? EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$1500.00,"",0,"femsunglow","",0,1,0,1,0,"pp-619136"
+311,2,4,"CB 2008 Male Arabesque","CB 2008 Male Arabesque Boa. Well started beautiful baby arabesque. This is a dominant trait. Breed a this guy to a female hypo and make hypo arabesques with the first breeding! Highly under-rated morph, wih a lot of unique combos popping up lately. $550.00 + Shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$550.00,"",0,"arabm1","",0,1,0,1,0,"pp-311131135"
+317,2,4,"CB 2008 Female Lipstick Line Sunglow","Cb 2008 Female ""Lipstick Line"" Sunglow Boa. Beautiful female with tons of orange and pink. $1,500.00 + Shipping. EXPORT AVAILABLE. 
+Email: Info@PrehistoricPets.com  
+Cell: 714.397.0414","Boa constrictor imperator",$1500.00,"",0,"lipstick","",0,1,0,1,0,"pp-619152"
+318,1,2,"CB 2008 75% Jampea Dwarf 100% Het Albino","CB 2008 75% Jampea Dwarf Reticulated Pythons 100% Het for Albino, these are probably the highest percentage dwarf hets on the market. These are the culmination of years of hard work trying to ""shrink up"" the retics so that everyone can enjoy these awesome snakes. We bred a homozygous purple albino male which was 50% Jampea to a pure Jampea female making these bad boys and girls 75% dwarf! EXPORT AVAILABLE! $2,000.00 each $4,000.00 pair. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-","Python reticulatus",$2000.00,"",0,"75d","",0,1,0,1,0,"pp-2612161253"
+319,1,2,"Cb 2008 Dwarf Genetic Striped Retics","CB 2008 Dwarf Genetic Striped Retics! This a simple recessive striped mutation. The yellow heads truly pop on the silver, black and white striated body. This is a long term valuable morph to plug into existing mutations, or just beautiful enough to keep as a pet! They don't get much cooler than these folks! EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$950.00,"",0,"gstripe","",0,1,0,1,0,"pp-261216129"
+320,1,2,"Cb 2007 Sunfire Tigers 100% Het Albino","CB 2007 Sunfire Tiger 100% Het Albino Retics. These are in the 6'-8' range, and have a huge jump start on making babies for you. Buy breeder direct on these, they hatched out right at our store. Plug one of these into a female albino and make albino sunfires and albino suntigers in one fell swoop. If you don't have a big female albino to breed to one of these next season, call us- we'll take care of you! EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$5000.00,"",0,"suntigerhet","",0,1,0,1,0,"pp-2612161232"
+321,1,2,"CB 2008 Purple Tiger Retics! RARE","Cb 2008 Purple Albino Tigers, ultra rare yearlings! The purple tiger is one of the rarest combinations of the reticulated python morphs available today. These are absolutely drop dead gorgeous, with rich orange accents, deep purple trim on a lemon yellow base.  2008s $1,950.00 2007s $2,500.00 EXPORT AVAILABLE: 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$1950.00,"",0,"purps","",0,1,0,1,0,"pp-15111120"
+324,2,4,"Salmontine Female #2 High Contrast","CB 2008 Female Salmontine BOa #2 - Very High Contrast. This girl has one of the most spectacular base colors you will find... Just a brilliant looking snake. $375.00 + Shipping. Sorry Export Is Not Available on these. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator x Boa constrictor occidentalus",$375.00,"",0,"salmontinef2","",0,0,0,1,0,"pp-210151058"
+325,2,4,"Salmontine Female #3 - Striped","CB 2008 Female Salmontine Boa #3- nice long tail stripe on this lady, with a diffused pastel pink body color. Great looking snake! Sorry but export is not available on these. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator x Boa constrictor occidentalus",$400.00,"",0,"stripedsalmontine","",0,0,0,1,0,"pp-210151056"
+329,1,2,"Lavender Albino 66% Poss Het Genetic Stripe","Female Lavender Albino Poss Het Genetic Stripe. CB 2008, with a very nice interconnected pattern. $1,250.00 + Shipping. Can be paired with an albino tiger male poss het Genetic Stripe for $3,000.00 for pair. EXPORT AVAILABLE! 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$1250.00,"",0,"lavposshetgs","",0,1,0,1,0,"pp-261216127"
+330,1,2,"CB 2008 Het for Albino Reticulated Python Pairs.","CB 2008 100% Het for Albino Retics! These are from the Clark Strain Multi Color Albino Bloodline. If you breed these together you should theoretically produce white phase, lavender phase and purple phase albinos! $250.00 pair + Shipping. Export Available. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$250.00,"",0,"hetalb","",0,1,0,0,0,"pp-21111119"
+331,1,2,"CB 2008 Super Tiger Reticulated Pythons","Cb 2008 Super Tiger Reticulated Pythons. Gorgeous gold and black snakes, one of the coolest morphs around and have remained a staple morph for years! EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$350.00,"",0,"super","",0,1,0,1,0,"pp-2612161248"
+332,1,2,"CB 2008 Super Dwarf Het AMEL Retics!","CB 2008 Super Dwarf 100% Het Amel Strain Albino. To my knowledge these are from the only breeding of a Super Dwarf to an Amel Strain Albino. Only females are currently available. $2,500.00 each + Shipping. All are micro-chipped to verify genetics! EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$2500.00,"",0,"sdhetamel","",0,1,0,1,0,"pp-7115116"
+333,1,2,"CB 2007 Female Platinum Het Albino Reticulated Pythons","CB 2007 Female Platinums 100% Het for Albino. Big 7'-8' ladies! Killer looking snakes! Tons of combo potential, from making ivories, ultras and their albino forms (in 3 color phases?), to working them into albino super tiger sunfires to make the most ridiculously gold snakes the world has ever seen! $6,500.00 each + Shipping. EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$6500.00,"",0,"plattyhet","",0,1,0,1,0,"pp-2612161228"
+337,1,3,"2008 Patternless Rock Python","These are 2008 patternless rocks which have a beautiful color and pattern. We have both sexes available. These are not available very often and you can get a 1.1 pair for $700.00 + shipping charges. Export available. Send us a email if you have any questions.","Python sebae",$400.00,"",0,"08paro","",0,1,0,1,0,"pp-1511615"
+338,1,2,"2008 Lavender Albino Super Tiger","What a beautiful animal. Check out the lateral stripe and awesome coloration. We have both males and females available. These are offered for $2,000 each and export is available for them. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$2000.00,"",0,"lavsuper","",0,2,0,1,0,"pp-711513"
+339,1,2,"2008 Suntiger poss. het Albino","Beautiful animal which would make a great addition to your collection. We have both males and females available. They are offered for $1,500.00 each. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$1500.00,"",0,"suntigerposshet1","",0,1,0,1,0,"pp-2612161213"
+340,1,2,"2008 Tiger poss. DH Albino Genetic Stripe","Beautiful animal with great genetic possibilities. This tiger is possible het for both albino and genetic stripe. Great animal to add to your breeding projects. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$1500.00,"",0,"tigerdhgsa","",0,2,0,1,0,"pp-7115150"
+341,1,2,"2008 poss DH Albino Genetic Stripe","Beautiful animal which is a great investment for your breeding projects. Give us a call (714)397-0414 or send us a email info@prehistoricpets.com for more information.
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$800.00,"",0,"dhgsa","",0,2,0,1,0,"pp-7115146"
+342,1,2,"Super Dwarf Snow Siblings","50% Super Dwarf Snow Siblings. These are the normal animals from the ""Snow Clutch"". We hatched out normal looking, silver, normal albino and silver eyed white and purple albinos in this clutch. Not only are these half super dwarf (making them a very valuable asset), but they are also potentially het for two difference mutations! Email for pics of the clutch at hatching. These are $1,000.00 for lone males or $2,000.00 for a male/female pair. EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert","Python reticulatus",$1000.00,"",0,"normalpossdh","",0,1,0,1,0,"pp-2612161217"
+343,1,2,"CB 2008 Albino Super Tiger Sunfire","Cb 2008 Clark Strain Albino Super Tiger Sunfire! Solid Gold! Glowing Red Eyes! Can you imagine this plugged into our silver super dwarf stock? Or the homozygous sunfire version? You won't ever get to see those combos slitting out of eggs in your cooker without one of these! Grab her today, and get her pumped up for your own projects! We do export and are willing to put together a killer project for someone serious about investing in truly cutting edge retics available no-where-else-on-earth! To talk/text with our retic expert call Tim 
+(714) 907-7312. You can also send us an
+email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$15000.00,"",0,"alsupersun","",0,1,0,0,0,"pp-1012111245"
+344,1,2,"Super Dwarf/Jampea Poss Het Albinos","CB 2008 25% Super Dwarf 25% Jampea 66% Poss Het Albino Babies. Both sexes available. These should snake a nice modest size and they are a very affordable way to get your feet wet with the dwarf retics! $750.00 each $1,500.00 pair EXPORT AVAILABLE.
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$750.00,"",0,"25sd25jph","",0,1,0,1,0,"pp-7115129"
+346,1,2,"Early 2007 Male Sunfire","These are 6 to 8 foot beauties which are just about breedable now. Would make a addition to your breeding projects. We have a few of these available. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$700.00,"",0,"07sunfire","",0,2,0,1,1,"pp-7115158"
+348,2,4,"Cb 2008 ""PC Line"" Salmon Male","CB 2008 Male ""PC Line"" Salmon Male. This bad boy is a full sibling to the PC Line Salmons we sold last year. Their father is a PC line Salmon and their mother is a heavily abberant female salmon- These were produced by Les Katsumato- and his taste shows! EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$550.00,"",0,"pcmale","",0,0,0,1,0,"pp-710191017"
+349,2,4,"CB 2008 Female ""PC Line"" Salmon","CB 2008 Female ""PC Line"" Salmon. This is one wicked boa! This is a sibling to the male we currently have available. From Les Katsumato's 2008 PC Salmon X Aberrant Salmon Breeding. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$750.00,"",0,"pcfemalehc","",0,1,0,1,0,"pp-1812181251"
+350,2,4,"Salmontine Male #3","Nice Looking- Poorly Spirited Red Salmontine Boa Male (#3). Hot looking little snake! The good thing is these guys out grow that teen spunk- and grown into big calm placid snakes. Sorry Export is not available. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator X Boa constrictor occidentalus",$375.00,"",0,"salmontinemale3","",0,0,0,1,0,"pp-71019102"
+351,2,4,"CB 2008 High Contrast Salmontine Male #2","CB 2008 High Contrast Salmontine Male #2. This bad boy has a head that looks like it is made out of granite, a gorgeous pink/beige base color with floating red saddles. Just a ridiculous animal. $400.00 + Shipping. Sorry Export Is Not Available. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator X Boa constrictor occidentalus",$400.00,"",0,"salmontinemale2","",0,0,0,1,0,"pp-710191049"
+353,1,1,"2008 Male Fire Ball Python","We have a couple awesome males in stock at this time which were produced right here in our shop. We also have females available for $600.00 each. Beautiful ball python which bred to another fire, will produce an awesome black eyed lucy.","Python regius",$500.00,"",0,"mfire","",0,1,0,1,1,"pp-711511"
+355,1,1,"2008 Female Cinnamon 100% het Ghost","CB 2008 Female Cinnamon Pastel 100% het for Ghost, 229 grams. Breed her to your Male Pastel het Ghost for Pewter Ghosts! $650.00 each Package Deals available, EXPORT AVAILABLE. This is a Bell line Cinnamon Pastel 100% het Orange Ghost. 
+Email: Info@PrehistoricPets.com Call or Text 714.397.0414","Python regius",$650.00,"",0,"fecihegh","",1,1,0,1,1,"pp-9113158"
+356,1,2,"Proven Male Suntiger Het for Albino!","Proven Breeder Male Suntiger 100% Het for Albino! This bad boy is a stud! If you have breedable female albinos or hets you could produce an onslaught of albino sunfires and albino suntigers with this guy. He will tackle multiple females- well worth the premium of a proven male, and avoid the guesswork of an insecure immature male. Easily plug this guy into 3 + females this season. Make back your money 10 fold. If you need big female hets just give us a call, we have females from nearly breedable to proven breeders available. EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$7000.00,"",0,"bigsuntiger","",0,1,0,1,0,"pp-2612161233"
+357,1,2,"Big breeder male Sunfire","Good sized male breeder Sunfire! If you have adult female normals, tigers or super tigers you can clean house with a big male like this bad boy! One of the originals from Bob Clark. Even if you wholesale the babies from one clutch you will be seeing a profit.Then everything after that is gravy! Try doing that with most investments! The retic season is getting started now- buy him now while you still have time to use his abilities to your advantage! EXPORT AVAILABLE! 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$2750.00,"",0,"sunbreeder","",0,1,0,1,0,"pp-261216125"
+358,1,2,"Genetic Striped Tiger poss het Albino!!!","Tiger Genetic Stripe poss het albino! This is a rare combo, you never see for sale! Not only do you have the dwarf  blood from the genetic stripe, but you have the chance to be one of the first to make albino tiger genetic stripes! Can you imagine a super tiger genetic stripe? I would imagine it will be an immaculately clean looking snake with superb contrast! EXPORT AVAILABLE! 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$2750.00,"",0,"gstigerposshet","",0,1,0,1,0,"pp-2612161219"
+359,1,2,"Pinstripe Titanium","dffg","Python reticulatus",$100000.00,"",0,"tit","",0,1,0,0,0,"pp-16215228"
+361,1,1,"2008 Het Ivory Male","Beautiful male which is from a proven line of ivories. He is feeing great on hopper mice and at this price, how can you go wrong? He is offered for $100.00 plus shipping charges. Give us a call (714) 397-0414 or send a email info@prehistoricpets.com for more information.","Python regius",$100.00,"",0,"yellowmale","",0,1,0,1,0,"pp-7115110"
+362,1,2,"Early 2007 Breedable Male Sunfire het Albino","Beautiful male Sunfire which is 100% het albino. He was produced by us in early 07 and measures about 10 foot in length. He will make a great addition to your breeding colony. Export available. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$3000.00,"",0,"msunfirehet","",0,2,0,1,0,"pp-7115135"
+367,1,3,"CB 2008 Double Het T + Albino & Granite Burmese Pythons","Well folks, the reptile industry has truly blossomed with an array of various mutations to pick and choose from. This has made more options for the buyer than have ever been presented before. Not everything new is always exciting, but we are genuinely excited about this project. The burmese python has been a mainstay as one of the most popular pet reptiles for years because of its tractable disposition, modestly impressive size, and due to how prolific they have proven to be in captivity. The T+ Albino Burmese Python is a magnificent animal with gold and purple replacing the earth tones of a normally colored animal, and if you haven't seen one feel free to email for pictures. 
+
+We have 1 pair of Burmese Pythons available from the world's first breeding of a male T+ Albino Burmese to a female Granite Burmese. The resulting babies are 100% heterozygous for BOTH traits! These offspring put you years ahead of buying a visual T+, and present the opportunity to produce the world's first T+","Python molurus bivittatus",$12500.00,"",0,"fthetg","",0,1,0,1,0,"pp-27113139"
+368,1,3,"Male Cb 2008 Double Het T + Albino & Granite Burmese","CB 2008 Male Double Heterozygous (100% het for both) T + Albino (Caramel) & Granite. This is from the world's first breeding of a T + Albino and a Granite- Which means you would have as much of a chance as us to produce the first T + Albino Granite EVER! We personally think this will be one of the best looking morph combos- banana yellow with purple speckling?! Can you imagine anything much cooler? This is the ONLY pair on the market and the ONLY pair we are releasing. We are looking to re-invest in a new project and are cashing out of these for that purpose only. These are for sale as a pair ONLY @ $12,500.00 pair. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python molurus bivittatus",$6250.00,"",0,"mthetg","",0,1,0,0,0,"pp-27113150"
+373,2,4,"CB 2008 Male Partially Patternless PC Salmon!","CB 2008 Male Pc Salmon- with partially patternless markings, numerous missing saddles, rich red tail and a clean buckskin base color. This is a shower stopper already, and should only get better with age. This is one of those animals breeders rarely release- and usually at a HUGE premium. Priced fairly at $750.00 + Shipping. Email: Info@Prehistoricpets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$750.00,"",0,"patternpcmale","",0,1,0,1,0,"pp-27129128"
+381,5,0,"1.1 9-10"" Subadult Smooth Back Bearded Dragons","1.1 Subadult Smooth Back Bearded Dragons (These make the silkies!) Beautiful  new morph! Co-dominant mutation! $750.00 pair + Shipping ($45.00) EXPORT AVAILABLE in GROUPS. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Pogona vitticeps",$800.00,"",0,"smoothie1","",0,1,0,0,0,"pp-13112119"
+382,5,0,"Juvenile Smooth Backed Bearded Dragons","1.1 Subadult Smooth Back Bearded Dragons (These make the silkies!) Beautiful  new morph! Co-dominant mutation! $200.00 each. + Shipping ($45.00). Males and females available. 
+EXPORT AVAILABLE in GROUPS. 
+Email: Info@PrehistoricPets.com  
+Cell: 714.397.0414","Pogona vitticeps",$200.00,"",0,"smoothie2","",0,1,0,0,0,"pp-13112152"
+384,9,0,"50w Nocturnal Infrared Heat Lamp","Ideal 24 hour heat source for all types of reptiles, birds, or small animals. Excellent for nocturnal viewing on all types of animals. Very little visible light provided so as not to disturb your animal's sleeping patterns.","",$9.99,"",0,"zoomedinfrared50w","",0,0,0,1,0,"pp-711171114"
+385,9,0,"100w Nocturnal Infrared Heat Lamp","Ideal 24 hour heat source for all types of reptiles, birds, or small animals. Excellent for nocturnal viewing on all types of animals. Very little visible light provided so as not to disturb your animal's sleeping patterns.","",$12.99,"",0,"zoomedinfrared100w","",0,0,0,1,0,"pp-71117112"
+386,9,0,"150w Nocturnal Infrared Heat Lamp","Ideal 24 hour heat source for all types of reptiles, birds, or small animals. Excellent for nocturnal viewing on all types of animals. Very little visible light provided so as not to disturb your animal's sleeping patterns.","",$15.99,"",0,"zoomedinfrared150w","",0,0,0,1,0,"pp-71117119"
+390,7,0,"Adult Gulf Coast Box Turtles","Adult Gulf Coast Box Turtles-both males and females available lone males $125.00 each male/female pairs for $250.00 + shipping. Some are proven breeders. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Terrapene carolina major",$125.00,"",0,"gcbt","",0,1,0,1,0,"pp-101212122"
+398,1,1,"Cb 2007 Male Het Clown","Cb 2007 Males 100% Het for Clown $125.00 each + $45.00 shipping. A very affordable way to get a clown- buy a couple of poss het females and try to prove them out! Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$125.00,"",0,"07hetclown","",0,0,0,1,0,"pp-1311161142"
+403,1,1,"Deposit for Loren Cain","Deposit for Female Pewter which is $1,000 shipped","Deposit",$355.00,"",0,"payment","",0,1,0,0,0,"pp-16215225"
+405,1,2,"Cb 2008 Super Dwarf/Jamp Poss Het Albino","Cb 2008 Male and Female Super Dwarf X Jampea 66% Poss Het Albino. $500.00 each for these, and as an added bonus their father is the male who fathered our snows! EXPORT AVAILABLE. 
+To talk/text with our reticulated python expert 
+call Tim (714) 907-7312 between the hours of 
+10am – 8pm pacific time. You can also send 
+us an email to info@prehistoricpets.com and we
+will answer your questions right away. 
+Check out our website for all of our available
+reticulated pythons and current breeding projects. 
+If you don’t see what you are looking for, let us
+know, and we will see if we can find it for you.","Python reticulatus",$500.00,"",0,"08sdxph","",0,1,0,1,0,"pp-7116119"
+407,2,4,"Cb 2008 Group 5 PC Female #1","CB 2008 Female PC Salmon from our group 5 ""Pc"" out crossing clutch produced by Les Katsumata. This female should prove to have an intense red coloration on her tail, and infused through her body. $250.00 + Shipping ($45.00) Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414 EXPORT AVAILABLE.","Boa constrictor imperator",$250.00,"",0,"grp5pcfem1","",0,0,0,1,0,"pp-1911141112"
+408,2,4,"Cb 2008 Male Striped PC #1","CB 2008 Male Striped PC Salmon from a PC X Striped Breeding. This boy has a ridiculously long tail with strong contrasting bow ties down his back. He should make some truly stunning striped babies in the future. $325.00 + $45.00 Shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414 EXPORT AVAILABLE.","Boa constrictor imperator",$325.00,"",0,"grp5pcm1","",0,0,0,1,0,"pp-1911141128"
+409,1,1,"Cb 2008 Female Spider Fly","CB 2008 Female Spider Fly (Spider & Fire). Plug her into a male Pastel Butter or a male Pastel Yellow Belly for some truly amazing offspring, combos no one else has made yet! EXPORT AVAILABLE! Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414 $3,500.00 + Shipping.","Python regius",$3500.00,"",0,"spiderfly","",0,0,0,1,0,"pp-1911151118"
+410,1,1,"CB 2006 Male Pastel Het Bell Ghost","Cb 2006 Male Pastel Het Bell Ghost - adult ready to breed. He is 750 grams. $650.00 + Shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$650.00,"",0,"06pastelhetghost","",0,1,0,1,0,"pp-11217126"
+412,1,3,"1.1 Cb 2008 Western Black Headed Pythons","1.1 CB 2008 Western Black Headed Pythons. Well started juveniles thriving on small mice. Voracious with food, yet docile with people. They obtain an impressive size as adults, but stay manageable for keepers to enjoy. A must have species for all Ophidiaphiles! $3,500.00 for the pair + Shipping. Sorry this species is not available for export. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Aspidites melanocephalus",$3500.00,"",0,"blackhead","",0,1,0,0,0,"pp-15112114"
+413,1,3,"Cb 2008 Male Striped Woma","2008 seems to be the year of the woma! If you've been paying attention a few great things happened for woma fans 1.) They became affordable for the average keeper 2.) Pattern anomalies have popped up, which could prove to open up a new level of selective breeding for Woma fans! I don' know if this guy is one of those anomalies or not, but he is definitely unique and very attractive. Worth the gamble at only $750.00 + Shipping. Sorry export is not available for womas. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Aspidites ramsayi",$750.00,"",0,"stripedwoma","",0,0,0,1,0,"pp-512181242"
+415,7,0,"7"" Male Yellow-Foot Tortoise","CB 7"" Male Yellow-Foot Tortoise. Beautiful specimen, with loads of yellow. Available for $225.00 + $75.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Geochelone denticulata",$225.00,"",0,"yellowfoot","",0,1,0,0,0,"pp-1211112"
+416,7,0,"Cb 9"" Male Red-Foot Tortoise","CB 9"" Male Red-Foot Tortoise. Flawless, with perfect growth. $250.00 + $75.00 Shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Geochelone carbonaria",$250.00,"",0,"redfoot1","",0,1,0,0,0,"pp-13210243"
+420,6,0,"Cb Adult Male Argentine Black and White Tegus","Cb Adult Male Argentine Black and White Tegu. We have 2 in stock, both are missing the very ends of their tails, otherwise healthy and would make great stock or pets. $250.00 each + $75.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Tupinambis merianae",$250.00,"",0,"bwtegu","",0,0,0,1,0,"pp-1012121232"
+421,6,0,"SOLD DEPOSIT FOR STEVEN.","This is an adult male Flavi which was part of a breeding project. He just isn't a big dominant male and got picked on a bit, he has some missing digits, the tip of his tail and some minor body scarring. He is tame though and would make a great pet. Priced fairly at $350.00 + $75.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Varanus gouldi flavirufus",$130.00,"",0,"flavi","",0,1,0,1,0,"pp-10216211"
+423,6,0,"1.1 Adult Black Dragons","1.1 Adult Black Dragons- Super Rare- Totally established- And Laying Eggs! The hard part is over in establishing these rare Indo monitors, take the pair for only $5,500.00 + shipping. Female pictured here. Email: info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Varanus ssp?",$5500.00,"",0,"blackdragon","",0,0,0,1,0,"pp-1012131221"
+426,1,2,";","Blood Python.","",$0.00,"",1,"payment","",0,1,0,0,0,"pp-7116149"
+427,5,0,"CB 2008 Cuban Iguanas","CB 2008 Cuban Iguanas. Healthy, fat babies. Ready to go home and make a gorgeous pet. $150.00 each + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Cyclura nubila nubila",$200.00,"",0,"cuban","",0,1,0,0,0,"pp-1721620"
+428,5,0,"CB Adult Female Rhino Iguana","CB Adult Female Rhino Iguana. Huge girl, fully ready to breed. Perfect health & condition. Unfortunately she is not a fan of people, and would be best for experienced keepers. Rarely does a prime lone female come up for sale! Shipping will be done through Delta and will be $100.00 if needed. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Cyclura cornuta",$1500.00,"",0,"rhino","",0,0,0,1,0,"pp-121214122"
+430,2,4,"CB 2008 Female Rio Bravo Line Peruvian Red Tail (Iquitos)","CB 2008 Rio Bravo Line Iquitos Peruvian Red Tailed Boa. Taking weaned mice, beautiful silver sides, with a yellow dorsal color, long tail, crisp tight pattern... this animal is going to be amazing as an adult. $475.00 + Shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor constrictor",$475.00,"",0,"grfperu","",0,0,0,1,0,"pp-2712131219"
+433,2,4,"Female Peruvian #2","Cb 2008 Female Peruvian Red Tailed Boa #2. 3rd generation captive bred. Nice looking true red tail. $275.00 + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor constrictor",$275.00,"",0,"fp2","",0,1,0,1,0,"pp-17112144"
+435,2,4,"Cb 2008 Female Peruvian Red Tail #4","Cb 2008 Female Peruvian Red Tail Boa #4. Nicely freckled classic female. Good base color, should be a pretty adult. $325.00 + $45.00 Shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor constrictor",$325.00,"",0,"fp4","",0,0,0,1,0,"pp-2712161221"
+436,2,4,"Cb 2008 Female Peruvian Red Tail Boa #5","CB 2008 Female Peruvian Red Tail Boa #5. Perfectly classic female Peruvian. $350.00 + $45.00 Shipping. EXPORT AVAILABLE! Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor constrictor",$350.00,"",0,"fp5","",0,0,0,1,0,"pp-2712161257"
+437,2,4,"Cb 2008 Female Peruvian Red Tail Boa #6","Cb 2008 Female Peruvian Red Tail Boa #6. Uniquely colored female Peruvian. $375.00 + $45.00 shipping. EXPORT AVAILABL! Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor constrictor",$375.00,"",0,"fp6","",0,0,0,1,0,"pp-2712161238"
+438,2,4,"CB 2008 Male Amazon Basin True Red Tail","CB 2008 Male Amazon Basin True Red Tail Boa. This male has a very nice well connected pattern and a tail which should prove to be a knock out! Absolutely gorgeous snake. $425.00 + Shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor constrictor",$425.00,"",0,"bccmale","",0,0,0,1,0,"pp-291213123"
+439,2,4,"CB 2008 Female Amazon Basin True Red Tail Boa","CB 2008 Female Amazon Basin True Red Tail Boa. Nearly perfect pattern with only one distorted saddle, fat widows peaks, a beautiful tail, and a rosy pink head with that really unique broken head arrow. This is sure to be a trophy snake some day. $625.00 + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor constrictor",$625.00,"",0,"femalebcc","",0,0,0,1,0,"pp-2912131243"
+441,1,1,"Cb 2007 Het Albino Female (1172 grams!)","CB 2007 Female 100% Het Albino Ball Python. 1172 Grams, and just shy of breeding weight. Definitely a good snake to acquire for next season. Stout, great color, and a strong feeder. Take her before we change our minds and keep her for ourselves! $750.00 + $50.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$750.00,"",0,"hetalfm","",0,0,0,1,0,"pp-7113116"
+442,1,1,"CB 2007 Female Black Pastel (1167 grams)","CB 2007 Female Black Pastel Ball Python, 1167 grams. Nearly breedable, and gorgeous. Make black pewters or silver bullets with her next season! $1,250.00 + $50.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$1250.00,"",0,"blpasfm","",0,0,0,1,0,"pp-7113118"
+443,1,1,"CB 2007 Female Cinnamon Pastel #1 (520 grams)","Cb 2007 Female Cinnamon Pastel #1, 520 grams. Nice vertebral stripe, light base color... beautiful snake. A year from breeding with the proper feeding regimene. $750.00 + $50.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$750.00,"",0,"cinnfem1","",0,1,0,1,0,"pp-7113134"
+444,1,1,"Cb 2007 Female Cinnamon Pastel #2 (665 grams)","CB 2007 Female Cinnamon Pastel #2, 665 grams. Nice light colored Cinny, with a little ringer mark on her side. $850.00 + $50.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$850.00,"",0,"cinnfem2","",0,0,0,1,0,"pp-7113113"
+445,1,1,"CB 2008 Female Pastel Het Ghost #2","CB 2008 Female Pastel Het Ghost #2 420 grams. Great asset for morph combinations. $700.00 + $50.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$700.00,"",0,"paheghfe2","",0,0,0,1,0,"pp-711814"
+447,1,1,"CB 2007 Female Pinstripe #1 (552 grams)","Cb 2007 Female Pinstripe #1, 552 grams. Beautiful crisp female pinstripe. Should make some very spectacular lemon blasts (or yellow belly lemon blasts!)$700.00 + $50.00 Shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$700.00,"",0,"pistfe1","",0,0,0,1,0,"pp-711817"
+448,1,1,"Cb 2007 Female Pinstripe #2 (511 grams)","CB 2007 Female Pinstripe #2, 511 grams. This female is a little on the dark side, so she has been priced affordably at $475.00 + $50.00 shipping. She would be great to combo into sables or albinos. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$475.00,"",0,"pistfe2","",0,0,0,1,0,"pp-7118156"
+449,1,1,"Cb 2007 Female Pinstripe #3 (484 grams)","Cb 2007 Female Pinstripe #3, 484 grams. Nearly perfect vertebral stripe, and crisp gold make this one of the best Pins we hatched out last season. She has a great start at 484 grams and has retained very great coloration. Snag her for only $700.00 + $50.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$700.00,"",0,"pistfe3","",0,0,0,1,0,"pp-711815"
+450,1,1,"Cb 2007 Female Pinstripe #4 (426 grams)","Cb 2007 Female Pinstripe #4, 426 grams. This female has a great gold base color and a very loose pattern which would make her perfect for combining with a spider or bumblebee, to get that really low pattern density which is highly desirable. $600.00 + $50.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$600.00,"",0,"pistfe4","",0,0,0,1,0,"pp-7118159"
+451,5,0,"CB 2008 Juvenile Silkie (Scaleless) Bearded Dragon","CB 2008 Juvenile ""AC line"" Silkie (Scaleless) Bearded Dragon. This is an incomplete dominant trait, wih the visual hets being leather back bearded dragons. Breed a silkie to a leather back and get 50% silkies and 50% leather backs! $750.00 + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Pogona vitticeps",$750.00,"",0,"08silkie","",0,0,0,1,0,"pp-8112127"
+452,1,1,"CB 2008 Male Bell Ghost","CB 2008 Male Bell Ghost, 441 grams. Early 2008 male, nearly breedable. Taking small rats, strong feeder! $550.00 + $50.00 shipping. EXPORT AVAILABLE! Email: Info@PrehistoricPets.com Cell: 714.397.0414","Python regius",$550.00,"",0,"magh","",0,0,0,1,0,"pp-9113157"
+453,1,2,"CB 2009 Super Tiger Het Albino Retics","CB 2009 Super Tiger Het Albino Male. Loads of contrast, which should make a gorgeous well patterned Albino Super Tiger. There are three expressions of the Clark Albino: White Albino, Lavender Albino and the Rare Purple Albino Super Tiger! $750.00 + $45.00 Shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com To talk/text with our reticulated python expert call Tim (714) 907-7312 between the hours of 10am – 8pm pacific time. You can also send us an email to info@prehistoricpets.com and we will answer your questions right away. Check out our website for all of our available reticulated pythons and current breeding projects. If you don’t see what you are looking for, let us know, and we will see if we can find it for you.","Python reticulatus",$750.00,"",0,"09suhetal","",0,0,0,1,0,"pp-12118138"
+454,1,2,"CB 2009 Albino Super Tiger Retic","s","Python reticulatus",$2250.00,"",0,"09alsuti","",0,0,0,0,0,"pp-12118129"
+455,1,2,"CB 2009 Male Lavender Albino Retic","CB 2009 Male Lavender Albino Retic. This is the Clark Strain Albino, which expresses itself in three phases (White, Lavender and Purple). $450.00 + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com To talk/text with our reticulated python expert call Tim (714) 907-7312 between the hours of 10am – 8pm pacific time. You can also send us an email to info@prehistoricpets.com and we will answer your questions right away. Check out our website for all of our available reticulated pythons and current breeding projects. If you don’t see what you are looking for, let us know, and we will see if we can find it for you.","Python reticulatus",$450.00,"",0,"09lav","",0,1,0,1,0,"pp-27112142"
+456,1,2,"CB 2009 Female White Phase Albino","CB 2009 Female White Phase Albino Retic. This is the Clark Strain Albino, which expresses itself in three phases (White, Lavender and Purple). $500.00 + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com To talk/text with our reticulated python expert call Tim (714) 907-7312 between the hours of 10am – 8pm pacific time. You can also send us an email to info@prehistoricpets.com and we will answer your questions right away. Check out our website for all of our available reticulated pythons and current breeding projects. If you don’t see what you are looking for, let us know, and we will see if we can find it for you.","Python reticulatus",$500.00,"",0,"09whal","",0,1,0,1,0,"pp-27112127"
+457,1,3,"Cb 2008 Female Angolan Python","Cb 2008 Female Angolan Python. Truly exceptional pythons, these have been highly sought after for years and year, and are finally reaching an affordable price. These have beautiful beaded scales, a voracious appetite, stay a manageable size, breed readily, and are much more outgoing than a Ball Python. These are one of the most interesting species you keep. Female $2,500.00 + $45.00 shipping or take her with the available male for $3,250.00 for the pair. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python anchietae",$2500.00,"",0,"fean","",0,0,0,1,0,"pp-13112138"
+458,1,3,"CB 2008 Male Angolan Python","CB 2008 Male Angolan Python. Truly exceptional pythons, these have been highly sought after for years and year, and are finally reaching an affordable price. These have beautiful beaded scales, a voracious appetite, stay a manageable size, breed readily, and are much more outgoing than a Ball Python. These are one of the most interesting species you keep. Male $950.00 + $45.00 shipping or take him with the available female for $3,250.00 for the pair. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python anchietae",$950.00,"",0,"maan","",0,0,0,1,0,"pp-13112159"
+460,5,0,"Small 6-7"" Leather Back Bearded Dragon Males","Cb 6-7"" Leather Back Bearded Dragon Males. Breed these with the female leather backs and produce 25% Silkies, 50% leather backs and 25% normals. $175.00 each + shipping. EXPORT AVAILABLE (*No C.I.T.E.S. Required!) Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Pogona vitticeps",$175.00,"",0,"smsibe","",0,0,0,1,0,"pp-13112146"
+461,5,0,"Medium 9-10"" Leather Back Females!","Medium 9""-10"" Female Leather Backs! Breed these with the male leather backs and produce 25% Silkies, 50% leather backs and 25% normals. $375.00 each + shipping. EXPORT AVAILABLE (*No C.I.T.E.S. Required!) Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Pogona vitticeps",$375.00,"",0,"mesife","",0,1,0,1,0,"pp-13112139"
+462,5,0,"Large 10-12"" Female Leather Backs","CB 2008 11-12"" Female Leather Backs Breed these with the male leather backs and produce 25% Silkies, 50% leather backs and 25% normals. $525.00 each + shipping. EXPORT AVAILABLE (*No C.I.T.E.S. Required!) Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Pogona vitticeps",$525.00,"",0,"lgsife","",0,0,0,1,0,"pp-13112122"
+463,2,4,"Cb 2008 Female Hog Island Boa","CB 2008 Female Hog Island Boa, feeding on adult mice. This female has a great start, and is a very nice looking classic hog island boa. $225.00 + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$225.00,"",0,"08feho","",0,0,0,1,0,"pp-13118144"
+464,2,4,"Cb 2008 Female Short Tailed Boa","Cb 2008 Female Bolivian Short Tailed Boa. This girl was produced last season, and is very well started. NIcely colored, and evenly patterned. $325.00 + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor amarali",$325.00,"",0,"08feshta","",0,0,0,1,0,"pp-13118129"
+465,1,3,"Cb 2008 Male Indian Python","Cb 2008 Male Indian Python, pure true Indian Python! These are rarely available, and were produced locally by adults we produced in store a few years prior. Sorry but these are not available for export, and unless you ALREADY have a USCBWF Permit you can not purchase them outside of California. California Residents Only-No-Ifs-Ands-Or-Buts. Sorry folks its the law. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python molurus molurus",$375.00,"",0,"08main","",0,0,0,1,0,"pp-13118149"
+466,1,2,"CB 2003 Male Dwarf Tiger","CB 2003 Male Dwarf Tiger. This animal is puppy dog tame, and flawless! Unfortunately we need space for some up and coming males- and had to make some really tough choices. This boy is just amazing, and if you have a female jamp you can make 75% dwarf tigers (which has only been done once at this point!) $750.00 + $100.00 shipping via Delta. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python reticulatus",$750.00,"",0,"madwti","",0,0,0,1,0,"pp-15116132"
+469,2,4,"CB 2008 Male Super Salmon","Cb 2008 Male Super Salmon (66% het albino & 66% het Kahl stripe). This is one outstanding salmon boa! He also has the white eye markers, and I would be willing to bet money he will prove out to be a het. He should make some truly phenomenal sunglows! $500.00 + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$500.00,"",0,"08masspdags","",0,0,0,1,0,"pp-15117111"
+471,2,4,"Cb 2008 Male North Brazilian Red Tail #2","CB 2008 Male North Brazilian Red Tail Boa #2. Held back for a strong start before being offered for sale, all of the available north brazilians have had over 20 meals and will take pre-killed hopper mice off of forceps. These are all F1 stock, from original import animals. This Male is available for $325.00 + $45.00 for shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor constrictor",$325.00,"",0,"08nbma2","",0,0,0,1,0,"pp-17112130"
+472,2,4,"Cb 2008 Male North Brazilian Red Tail #3","CB 2008 Male North Brazilian Red Tail Boa #3. Held back for a strong start before being offered for sale, all of the available north brazilians have had over 20 meals and will take pre-killed hopper mice off of forceps. These are all F1 stock, from original import animals. This Male is available for $275.00 + $45.00 for shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor constrictor",$275.00,"",0,"08nbfe3","",0,1,0,1,0,"pp-2211812"
+473,2,4,"Cb 2006 Female Short Tailed Boa","CB 2006 Female Short Tailed Boa, feeding on large rats. A year away from breeding age and size, almost all of the work has been done. This is the perfect age to aquire breeding stock! She has a very nice even pattern, a classic silver color and a very nice red tail for an amarali. $425.00 + $75.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor amarali",$425.00,"",0,"06feshtabo","",0,0,0,1,0,"pp-17112140"
+475,2,4,"Adult Male ""PC"" bloodline Salmon Boa","Cb Adult Male ""PC"" Bloodline Salmon Boa, produced by Rich Ihle @ Salmon Boa. This male has the genetics to produce some genuinely amazing offspring, and this bloodline is rarely available and never at this size. Some of the most exceptional animals available on our page have been sired by this male. Infuse color, cleanliness, and constrast into your offspring by adding this male to your colony. $850.00 + $100.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$850.00,"",0,"mapcsa","",0,0,0,1,0,"pp-17112155"
+476,1,2,"Cb 2006 Het Genetic Stripe Retics!","CB 2006 Het Genetic Stripe Retics. We have 1.2 available, pounding jumbo rats. These are animals we have raised slowly, and are about 6'-7' in length. With some solid feeding the female should be ready next season. These stay significantly smaller than mainland animals with the dwarf blood from the genetic stripe in them. If you want a ready made project with a highly sought after Retic pattern mutation for an affordable start up cost I can release the trio for only $2,250.00. EXPORT IS AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python reticulatus",$900.00,"",0,"06fehegest","",0,0,0,1,0,"pp-17112150"
+477,2,4,"CB 2007 Female Hypo Het Albino (Double Het Sunglow)","CB 2007 Female Hypo Het Albino (Double Het Sunglow) Medium rat feeder. Get a year's growth head start towards your sunglow project. This girl has a lot of dark rich color, and shouldn't make the washed out bland sunglows. $700.00 + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$700.00,"",0,"07fehesu","",0,0,0,1,0,"pp-21112134"
+479,2,4,"Cb 2008 Female Red Line Salmon Boa","Cb 2008 Female Red Line Salmon Boa. She was produced from ""DM Exotics"" well known red line, outcrossed to a rich salmon boa. This animal came directly from Dan, and looks like it should fire up into quite an impressive adult. $275.00 + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$275.00,"",0,"08dmhy","",0,0,0,1,0,"pp-21112135"
+481,2,4,"CB 2005 Female Peruvian Red Tail Boa","Cb 2005 Female Peruvian Red Tail Boa. This girl is a gorgeous classic peruvian, and she is almost large enough to breed. She is feeding on large rats. $750.00 + $75.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor constrictor",$750.00,"",0,"04feper","",0,0,0,1,0,"pp-21112118"
+483,2,4,"CB 2008 Sunglow Package- Cheap!","Cb 2008 Sunglow Package! Includes: 1.0 CB 2008 Male Double Het Sunglow & 0.2 Cb 2008 Het Albinos. With this combo you will make hypos, albinos and sunglows! This particular male has an exceptionally long tail and should make some very nice sunglows. $600.00 per trio + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$600.00,"",0,"08madohesu","",0,0,0,1,0,"pp-22118148"
+485,2,4,"CB 2006 Female Albino Boa","CB 2006 Female Albino Boa. Gorgeous tame, taking large rats, appx 5' in length. This female is about a year from breeding size. If you want prime animals for breeding stock, this is the age you want. This animal has been raised slowly, the right way. $1,250.00 + $75.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$1250.00,"",0,"fealbo06","",0,0,0,1,0,"pp-23116137"
+486,3,0,"CB 2007 Male Anery Het Albino Gopher","Cb 2007 Male Anery Gopher Het for Albino (San Diego line). You can use this male for a slew of combos. He is nearly breedable and a flawless animal. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Pituophis catenifer annectens",$175.00,"",0,"07maango","",0,1,0,1,0,"pp-5211244"
+488,3,0,"Cb 2009 Top Choice Albino Motley Corns","Cb 2009 Albino Motley Corns- Top Choice, hand picked. Limited quantity - highest quality! $60.00 each + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Elaphe guttata",$60.00,"",0,"09almoco","",0,0,0,1,0,"pp-27118118"
+489,3,0,"Cb 2006 Male: Thayrei X Greeri X Corn 100% het Albino","CB 2006 Male: Thayrei X Greeri X Corn Snake 100% Het Albino. Ready to breed now, $175.00 + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Ophidius mongrelatus",$175.00,"",0,"06mathgrco","",0,0,0,1,0,"pp-27118114"
+490,3,0,"Cb 2006 Female Thayrei X Greeri X Corn Snake 100% Het Albino","CB 2006 Female Thayrei X Greeri X Corn Snake 100% Het Albino. Nice, plump and ready to breed. $225.00 + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Ophidious mongrelatus",$225.00,"",0,"06fethgrco","",0,0,0,1,0,"pp-2711814"
+491,2,5,"CB 2007 Male ""Vision Line"" Lavender Albino Rosy Boa","Cb 2007 Male ""Vision Line"" Lavender Albino Rosy Boa. Nearly ready to breed! $375.00 + $45.00 Shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Lichanura trivirgata trivirgata",$375.00,"",0,"07malaro","",0,0,0,1,0,"pp-27118141"
+492,1,2,"CB 2008 Het Genetic Striped Retics","CB 2008 Het Genetic Striped Retics, these are part dwarf and average a much smaller adult size than mainland animals- making them great for combos with other dwarf projects! Females $500.00 each or $750.00 pair + $45.00 shipping. EXPORT AVAILABLE- Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python reticulatus",$500.00,"",0,"08hegs","",0,0,0,1,0,"pp-28113140"
+493,1,2,"CB 2008 Female White Phase Albino Retic #1","CB 2008 Female White Phase Albino Retic #1- Gorgeous little lady with some decent growth already. Check out the lemon yellow head, cryptic neck pattern, and broken up sides. This is from Bob Clark's Multi Color Strain of Albino- capable of expressing White Albino, Lavender Albino and Purple Albino Retics. $750.00 + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python reticulatus",$750.00,"",0,"08fewh1","",0,0,0,1,0,"pp-2811313"
+494,1,2,"CB 2008 Female White Phase Albino Retic #2","CB 2008 Female White Phase Albino Retic #2.  Perfect classic animal, with a rich lemon drop head! This is from Bob Clark's Multi Color Strain of Albino- capable of expressing White Albino, Lavender Albino and Purple Albino Retics. $750.00 + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python reticulatus",$750.00,"",0,"08fewh2","",0,0,0,1,0,"pp-28113130"
+495,1,2,"Cb 2008 Male White Phase Albino Retic #1","CB 2008 Male White Phase Albino Retic #1, sporadic connected pattern, rich orange sides, thick white head stripe breaking up the yellow- he's just beautiful. This is from Bob Clark's Multi Color Strain of Albino- capable of expressing White Albino, Lavender Albino and Purple Albino Retics. $650.00 + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python reticulatus",$650.00,"",0,"08mawh1","",0,0,0,1,0,"pp-2811315"
+496,1,2,"Cb 2008 Female Genetic Stripe #1","Cb 2008 Female Genetic Stripe Retic #1. This is a simple recessive trait, from a dwarf population of retic. These acquire bright yellow heads as adults, and stay in the 10' range on average. There have not been very many combinations done with this mutation yet, and I am eager to see the Amel Strain Sunfire Genetic Stripe personally! Although projects like this are years away, you can get started on your own idea of the best combo by acquiring a 1 year old visual genetic stripe female to start your combos with today! $950.00 + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python reticulatus",$950.00,"",0,"08fegest1","",0,0,0,1,0,"pp-2811610"
+497,1,2,"Cb 2008 Female Genetic Stripe Poss Het Albino","Cb 2008 Female Genetic Stripe Poss Het Albino! This is a big well started yearling Genetic Stripe, which is a 66% poss het albino (sibling to our albino genetic stripes*). This is an affordable way to get into the albino genetic stripe combo. Packages available for this combination. $1,500.00 + $45.00 shipping for this girl. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python reticulatus",$1500.00,"",0,"08fegsphal","",0,0,0,1,0,"pp-28116142"
+498,2,4,"CB 2006 Male Circle Back Ladder Tail","CB 2006 Male Circle Back Ladder Tail Colombian Boa. Perfect ""CBLT"", with a nice silver color. This male would be PERFECT with the female CBLT available as well. $225.00 + $55.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$225.00,"",0,"06macblt","",0,0,0,1,0,"pp-2911812"
+499,2,4,"CB 2006 Female Circle Back Ladder Tail","Cb 2006 Female Circle Back Ladder Tail Boa. She is just shy of breeding size, and she is feeding on large rats. She would match up perfectly with the male CBLT also available. $325.00 + $55.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$325.00,"",0,"06fecblt","",0,0,0,1,0,"pp-29118119"
+500,2,4,"Cb 2006 Female Honduran Boa","Cb 2006 Female Honduran Boa, from Jack Dyer's bloodline. She is nearly ready to breed, and is a nice example of a not so common locality type of central american Bci. $275.00 + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$275.00,"",0,"06fehobo","",0,0,0,1,0,"pp-29118156"
+501,2,4,"CB 2008 Male Albino Boa","CB 2008 Male Albino Boa. This male is extremely well started, jumbo mouse/crawler rat feeder. Tame, rich tail, and tame as can be. $475.00 + $45.00 shipping. EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$475.00,"",0,"08maalbo1","",0,0,0,1,0,"pp-30118115"
+502,2,4,"CB 2008 Male Sharp Strain Albino","CB 2008 Male Sharp Strain Albino, big yearling with gret growth. These get better with age, where as most of the more common bloodline become more yellow and pale. Sharp strain albinos are still in high demand, and there are many combinations barely in the works for them. Take this male home for $1,100.00 + Shipping. ($45.00) EXPORT AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$1100.00,"",0,"08mashal","",0,0,0,1,0,"pp-30118123"
+503,4,0,"Cb 2008 Grande Terre Type B X Nuu Ami Leachianus #1","Cb 2008 Grande Terre Type B X Nuu Ami Leachianus #1, these are unsexed. This is a lighter phase animal and it is available for $325.00 + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Rachodactylus leachianus",$325.00,"",0,"gtxnuuami1","",0,0,0,1,0,"pp-30118147"
+504,4,0,"Cb 2008 Grande Terre Type B X Nuu Ami Leachianus #2","Cb 2008 Grande Terre Type B X Nuu Ami Leachianus #2, these are unsexed. This is a medium phase animal and it is available for $350.00 + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Rachodactylus leachianus",$350.00,"",0,"gtxnuuami2","",0,0,0,1,0,"pp-30118135"
+505,4,0,"Cb 2008 Grande Terre Type B X Nuu Ami Leachianus #3","Cb 2008 Grande Terre Type B X Nuu Ami Leachianus #2, these are unsexed. This is a darker phase animal and it is available for $375.00 + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Rachodactylus leachianus",$375.00,"",0,"gtxnuuami3","",0,1,0,1,0,"pp-30118141"
+506,2,4,"CB 2008 Male T+ Albino Nicaraguan Boa","CB 2008 Burke Line T+ Albino Nicaraguan Boa. These are a great project, with alot of combo potential. These stay nice and small, are puppy dog tame and actually legitimately become more attractive with age! This male is available for $1,100.00 + $45.00 shipping. EXPORT IS AVAILABLE. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Boa constrictor imperator",$1100.00,"",0,"08matyponi","",0,0,0,1,0,"pp-3218221"
+508,2,5,"Subadult White Rosy Project!","Do you want to make rosies like these? We have the tools to do it (from a very selective and rare bloodline of snow, which produces pure white rosies)! The pair consists of a male snow (just like the babies pictured here) he is 19"" and 55 grams, the female is an anery 66% het albino and she is 20"" and 60 grams. Take the pair for $3,000.00 + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Lichanura trivirgata trivirgata",$3000.00,"",0,"07whrobo","",0,1,0,1,0,"pp-12218216"
+509,1,1,"CB Adult Male Genetic Granite Ball Python","CB Adult Male Genetic Granite Ball Python. This is from a proven line of Genetic Granite. This a subtle morph but combines well with existing morphs. Use him to make unique pastels, cinnamons, spiders or more granites. $550.00 + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$550.00,"",0,"admagegr","",0,0,0,1,0,"pp-12214258"
+510,1,1,"Cb 2008 Unique Female Pastel Ball","CB 2008 Unique Banded Female Pastel Ball Python. Taking fuzzy rats, strong well started juvenile. $325.00 + $45.00 shipping. Email: Info@PrehistoricPets.com Shop: 714.964.3525 Cell: 714.397.0414","Python regius",$325.00,"",0,"08fepaba1","",0,0,0,1,0,"pp-12214247"

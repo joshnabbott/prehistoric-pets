@@ -86,17 +86,21 @@ module Fleximage
         
         # Internal method to ask this class if it stores image in the DB.
         def self.db_store?
-          columns.find do |col|
-            col.name == 'image_file_data'
+          if respond_to?(:columns)
+            columns.find do |col|
+              col.name == 'image_file_data'
+            end
+          else
+            false
           end
         end
         
         def self.has_store?
-          db_store? || image_directory
+          respond_to?(:columns) && (db_store? || image_directory)
         end
         
         # validation callback
-        validate :validate_image
+        validate :validate_image if respond_to?(:validate)
         
         # The filename of the temp image.  Used for storing of good images when validation fails
         # and the form needs to be redisplayed.
@@ -138,9 +142,11 @@ module Fleximage
         dsl_accessor :preprocess_image_operation
         
         # Image related save and destroy callbacks
-        after_destroy :delete_image_file
-        before_save   :pre_save
-        after_save    :post_save
+        if respond_to?(:before_save)
+          after_destroy :delete_image_file
+          before_save   :pre_save
+          after_save    :post_save
+        end
         
         # execute configuration block
         yield if block_given?
@@ -149,10 +155,27 @@ module Fleximage
         image_directory options[:image_directory] if options[:image_directory]
         
         # Require the declaration of a master image storage directory
-        if !image_directory && !db_store? && !default_image && !default_image_path
+        if respond_to?(:validate) && !image_directory && !db_store? && !default_image && !default_image_path
           raise "No place to put images!  Declare this via the :image_directory => 'path/to/directory' option\n"+
-                "Or add a database column named image_file_data for DB storage"
+                "Or add a database column named image_file_data for DB storage\n"+
+                "Or set :virtual to true if this class has no image store at all\n"+
+                "Or set a default image to show with :default_image or :default_image_path"
         end
+      end
+      
+      def image_file_exists(file)
+        # File must be a valid object
+        return false if file.nil?
+        
+        # Get the size of the file.  file.size works for form-uploaded images, file.stat.size works
+        # for file object created by File.open('foo.jpg', 'rb').  It must have a size > 0.
+        return false if (file.respond_to?(:size) ? file.size : file.stat.size) <= 0
+        
+        # object must respond to the read method to fetch its contents.
+        return false if !file.respond_to?(:read)
+        
+        # file validation passed, return true
+        true
       end
     end
     
@@ -213,11 +236,7 @@ module Fleximage
       #   p = Product.find(1)
       #   p.images.create(params[:photo])
       def image_file=(file)
-        # Get the size of the file.  file.size works for form-uploaded images, file.stat.size works
-        # for file object created by File.open('foo.jpg', 'rb')
-        file_size = file.respond_to?(:size) ? file.size : file.stat.size
-        
-        if file.respond_to?(:read) && file_size > 0
+        if self.class.image_file_exists(file)
           
           # Create RMagick Image object from uploaded file
           if file.path
@@ -259,7 +278,7 @@ module Fleximage
       #   @photo.image_file_url = 'http://foo.com/bar.jpg'
       def image_file_url=(file_url)
         @image_file_url = file_url
-        if file_url =~ %r{^https?://}
+        if file_url =~ %r{^(https?|ftp)://}
           file = open(file_url)
           
           # Force a URL based file to have an original_filename
@@ -297,7 +316,7 @@ module Fleximage
           @dont_save_temp = false
         end
       end
-      
+
       # Return the @image_file_url that was previously assigned.  This is not saved
       # in the database, and only exists to make forms happy.
       def image_file_url
@@ -329,7 +348,7 @@ module Fleximage
           @output_image = proxy.image
         end
       end
-      
+
       # Load the image from disk/DB, or return the cached and potentially 
       # processed output image.
       def load_image #:nodoc:
