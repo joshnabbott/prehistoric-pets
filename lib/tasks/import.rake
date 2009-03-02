@@ -75,8 +75,8 @@ namespace :db do
                       :image_file_url => "http://prehistoricpets.com/images/animals/#{attribute_hash['image_path']}.jpg"
                      }
         # Set image_file_url to '' if it returns a 404 since that will blow up in everyone's faces.
-        response = HTTParty.get(attributes[:image_file_url])
-        attributes[:image_file_url] = '' unless response.code.eql?("200")
+        # response = HTTParty.get(attributes[:image_file_url])
+        # attributes[:image_file_url] = '' unless response.code.eql?("200")
         array << Product.new(attributes)
         array
       end
