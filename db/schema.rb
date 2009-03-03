@@ -159,6 +159,8 @@ ActiveRecord::Schema.define(:version => 20090302034918) do
     t.integer  "old_product_id"
   end
 
+  add_index "products", ["permalink"], :name => "index_products_on_permalink"
+
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
     t.text     "data"
