@@ -1,3 +1,4 @@
 @product.operate do |image|
-  image.resize params[:size] if params[:size]
+  image.resize(params[:size]) if params[:size]
+  image.crop(:from => '0x0', :size => params[:size]) if params[:size]
 end
