@@ -6,7 +6,7 @@ namespace :db do
       Category.destroy_all
       csv              = FasterCSV.read("#{RAILS_ROOT}/assets/PrehistoricPets/tblCategories.txt")
       fields           = csv.shift
-      attributes_array = csv.collect { |record| Hash[*(0..(fields.length - 1)).collect {|index| [fields[index],record[index].to_s] }.flatten ] }
+      attributes_array = csv.collect { |record| Hash[*(0..(fields.length - 1)).collect { |index| [fields[index],record[index].to_s] }.flatten ] }
       categories_array = attributes_array.inject([]) do |array, attribute_hash|
         attributes = {
                       :old_category_id => attribute_hash['id'],
@@ -30,7 +30,7 @@ namespace :db do
       Category.destroy_all('parent_id IS NOT NULL')
       csv              = FasterCSV.read("#{RAILS_ROOT}/assets/PrehistoricPets/tblSubCategories.txt")
       fields           = csv.shift
-      attributes_array = csv.collect { |record| Hash[*(0..(fields.length - 1)).collect {|index| [fields[index],record[index].to_s] }.flatten ] }
+      attributes_array = csv.collect { |record| Hash[*(0..(fields.length - 1)).collect { |index| [fields[index],record[index].to_s] }.flatten ] }
       categories_array = attributes_array.inject([]) do |array, attribute_hash|
         attributes = {
                       :old_sub_category_id => attribute_hash['id'],
@@ -52,12 +52,11 @@ namespace :db do
     desc 'This will import the product data from the old site tables to this one.'
     task :products => :environment do
       require 'FasterCSV'
-      require 'httparty'
 
       Product.destroy_all
       csv              = FasterCSV.read("#{RAILS_ROOT}/assets/PrehistoricPets/tblInventory.txt")
       fields           = csv.shift
-      attributes_array = csv.collect { |record| Hash[*(0..(fields.length - 1)).collect {|index| [fields[index],record[index].to_s] }.flatten ] }
+      attributes_array = csv.collect { |record| Hash[*(0..(fields.length - 1)).collect { |index| [fields[index],record[index].to_s] }.flatten ] }
       products_array = attributes_array.inject([]) do |array, attribute_hash|
         attributes = {
                       :old_product_id => attribute_hash['id'],
@@ -71,17 +70,40 @@ namespace :db do
                       :caresheet => Caresheet.find_by_old_caresheet_id(attribute_hash['care_sheet_id']),
                       :is_active => attribute_hash['is_active'],
                       :is_featured => attribute_hash['is_featured'],
-                      :sku => attribute_hash['sku'],
-                      :image_file_url => "http://prehistoricpets.com/images/animals/#{attribute_hash['image_path']}.jpg"
+                      :sku => attribute_hash['sku']
                      }
-        # Set image_file_url to '' if it returns a 404 since that will blow up in everyone's faces.
-        # response = HTTParty.get(attributes[:image_file_url])
-        # attributes[:image_file_url] = '' unless response.code.eql?("200")
         array << Product.new(attributes)
         array
       end
-      products_array.map(&:save!)
+      # Too many errors in the data to validate.
+      products_array.map(&:save)
       puts "#{Product.count} products created."
+    end
+
+    desc 'This will import the product images from the old site using FlexImage\'s image_file_url attribute.'
+    task :product_images => :environment do
+      require 'FasterCSV'
+      require 'httparty'
+
+      FileUtils.rm_rf("#{RAILS_ROOT}/images/uploads")
+
+      csv              = FasterCSV.read("#{RAILS_ROOT}/assets/PrehistoricPets/tblInventory.txt")
+      fields           = csv.shift
+      attributes_array = csv.collect { |record| Hash[*(0..(fields.length - 1)).collect { |index| [fields[index],record[index].to_s] }.flatten ] }
+      products_array = attributes_array.inject([]) do |array, attribute_hash|
+        product = Product.find_by_old_product_id(attribute_hash['id'])
+        if product
+          begin
+            product.image_file_url = "http://prehistoricpets.com/images/animals/#{attribute_hash['image_path']}.jpg"
+          rescue Exception => e
+            puts e.inspect
+          end
+          array << product
+        end
+        array
+      end
+      products_array.map(&:save)
+      puts 'Done.'
     end
   end
 end

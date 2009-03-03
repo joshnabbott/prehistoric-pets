@@ -1,3 +1,4 @@
+id,title_short,body_short,created_at,title_long,body_long,is_featured,is_active,updated_at
 2,"Nov 2007 - Snowball","<br />
                                                     <table width=100%>
                                                         <tr>
