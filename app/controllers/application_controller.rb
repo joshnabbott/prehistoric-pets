@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   rescue_from Error404, :with => :render_404_error
 
-  protect_from_forgery :secret => '5547deee5dffa6aeb3678df88bb8aed5'
+  # protect_from_forgery :secret => '5547deee5dffa6aeb3678df88bb8aed5'
 
   # See ActionController::Base for details 
   # Uncomment this to filter the contents of submitted sensitive data parameters

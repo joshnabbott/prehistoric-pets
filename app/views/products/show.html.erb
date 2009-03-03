@@ -3,7 +3,7 @@
 <%= stylesheet_link_tag "_product_detail" %>
 <%- end -%>
 <div class="product">
-  <p class="image"><%= link_to(image_tag(formatted_product_path(@product, :jpg, :size => '400x239')), formatted_product_path(@product, :jpg), :rel => 'facebox') %></p>
+  <p class="image"><%= link_to(image_tag(product_image_path(@product, '400x239', :jpg)), product_path(@product, :jpg), :rel => 'facebox') %></p>
   <h2><%= @product.name %></h2>
   <p><em><%= @product.scientific_name %></em></p>
   <p class="description">Description:<%= textilize(@product.description) %></p>

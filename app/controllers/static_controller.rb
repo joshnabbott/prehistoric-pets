@@ -1,4 +1,6 @@
 class StaticController < ApplicationController
+  caches_page :show
+
   def show
     page_path = params[:path].join('/')
     if File.exists?("#{RAILS_ROOT}/app/views/static/#{page_path}.html.erb")

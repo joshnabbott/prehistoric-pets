@@ -3,8 +3,8 @@ ActionController::Routing::Routes.draw do |map|
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
-  map.resources :announcements, :users, :products, :caresheets
-  # map.product_image '/products/:id/:size.:format', :controller => 'products', :action => 'show', :format => 'jpg'
+  map.resources :announcements, :users, :caresheets, :products
+  map.product_image '/products/:id/:size.:format', :controller => 'products', :action => 'show'
 
   map.resource :session
   map.root :controller => 'home'
