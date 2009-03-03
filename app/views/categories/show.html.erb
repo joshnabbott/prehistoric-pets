@@ -4,5 +4,9 @@
 <%- end -%>
 <div id="products">
   <%- @count = 0 -%>
-  <%= render :partial => 'product', :collection => @products %>
+  <%- if @products.empty? -%>
+    <p>Currently out of stock, please give us a call.</p>
+  <%- else -%>
+    <%= render :partial => 'product', :collection => @products %>
+  <%- end -%>
 </div>
