@@ -1,6 +1,6 @@
 <div class="product<%= ((@count % 3) == 2) ? ' last' : ''  %>">
   <%- if product.has_image? -%>
-    <p class="image"><%= link_to(image_tag(product_image_path(product, '239x239', :jpg)), product_path(product)) %></p>
+    <p class="image"><%= link_to(image_tag(product_image_path(product, '239x239', :jpg), :alt => product.name), product_path(product)) %></p>
   <%- end -%>
   <p class="name"><%= link_to product.name, product_path(product) %></p>
   <p class="scientific_name"><%= product.scientific_name %></p>

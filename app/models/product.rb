@@ -10,7 +10,7 @@ class Product < ActiveRecord::Base
   belongs_to :caresheet
   has_many :categories, :through => :taxons
   has_many :post_o_matic_postings, :dependent => :destroy
-  has_many :taxons, :dependent => :nullify
+  has_many :taxons #, :dependent => :destroy
   validates_presence_of :name, :sku, :price, :permalink
   validates_uniqueness_of :sku, :allow_nil => true
 

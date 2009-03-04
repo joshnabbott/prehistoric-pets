@@ -14,6 +14,9 @@ protected
     # Expire the product detail page
     expire_page(product_path(product))
 
+    # Expire the raw product image
+    expire_page(product_path(product, :jpg))
+
     # Expire the various product image crops. The way I've set up the routes it will cache product images
     # in a directory structure like this:
     # products/1-some-product-name(using .to_param)/100x100.jpg(the :size option)
