@@ -29,7 +29,7 @@ ActionController::Routing::Routes.draw do |map|
   end
 
   # Categories: using globbed routes since I'm not sure how many categories deep this could go
-  # and I would like a breadcrumb-like url (/snakes/pythons/ball-pythons).
+  # and I would like a breadcrumb-like url (/browse/pythons/ball-pythons).
   map.category 'browse/*categories', :controller => 'categories', :action => 'show'
   map.static '*path', :controller => 'static', :action => 'show'
 end

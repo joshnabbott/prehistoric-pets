@@ -1,4 +1,6 @@
 class Admin::ProductsController < Admin::AdminController
+  cache_sweeper :product_sweeper, :only => [ :create, :update, :destroy ]
+
   # GET /admin/products
   # GET /admin/products.xml
   def index
