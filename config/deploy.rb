@@ -75,7 +75,7 @@ namespace :shared do
 end
 
 after 'deploy:setup' do
-  sudo "chown -R #{user}:#{user} #{shared_path}/db"
+  sudo "chown -R #{user}:#{user} #{shared_path}"
   shared::setup
   apache::add_vhost
   apache::reload
