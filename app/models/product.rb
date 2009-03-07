@@ -2,7 +2,11 @@ class Product < ActiveRecord::Base
   include Prehistoric
   attr_accessor :post_o_matisize, :post_o_matic_category_id
   acts_as_fleximage do
-    image_directory 'public/images/uploads'
+    if RAILS_ENV == 'production'
+      image_directory '/var/www/prehistoricpets/uploads/images'
+    else
+      image_directory 'public/images/uploads'
+    end
     require_image false
   end
   after_save :schedule_for_post_o_matic, :if => Proc.new { |record| record.post_o_matisize }
