@@ -46,7 +46,8 @@ namespace :apache do
   task :add_vhost, :roles => :web do
     set :apache_vhost_aconf, "/etc/apache2/sites-available/#{domain}"
     set :apache_vhost_econf, "/etc/apache2/sites-enabled/#{domain}"
-    server_aliases = [ "www.#{domain}" ]
+    # server_aliases = [ "www.#{domain}" ]
+    server_aliases = []
     set :apache_server_aliases, server_aliases
     File.rm(apache_vhost_aconf) if FileTest.exists?(apache_vhost_aconf)
     File.rm(apache_vhost_econf) if FileTest.exists?(apache_vhost_econf)
