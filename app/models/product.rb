@@ -3,7 +3,7 @@ class Product < ActiveRecord::Base
   attr_accessor :post_o_matisize, :post_o_matic_category_id
   acts_as_fleximage do
     if RAILS_ENV == 'production'
-      image_directory '/var/www/prehistoricpets/uploads/images'
+      image_directory "../shared/uploads/images"
     else
       image_directory 'public/images/uploads'
     end
