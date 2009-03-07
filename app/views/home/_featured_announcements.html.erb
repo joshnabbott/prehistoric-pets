@@ -6,7 +6,7 @@
 </ul>
 <%- @featured_announcements.each_with_index do |announcement, index| -%>
   <div id="announcement_<%= index %>">
-    <%= textilize(announcement.body_short) %>
+    <%= announcement.body_short %>
     <p class="read_more"><%= link_to 'Read more...', announcement_path(announcement) %></p>
   </div>
 <%- end -%>
