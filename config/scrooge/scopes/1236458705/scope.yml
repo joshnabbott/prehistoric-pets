@@ -1,0 +1,10 @@
+--- 
+- home_index_get_public: 
+    :format: text/html
+    :method: :get
+    :action: index
+    :models: 
+    - ActiveRecord::SessionStore::Session: 
+      - session_id
+    :is_public: true
+    :controller: home

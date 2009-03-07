@@ -2,10 +2,10 @@ require 'erb'
 require 'ftools'
 
 # General settings
-set :primary_domain, "67.207.140.95"
+set :primary_domain, "208.64.71.14"
 set :application, "prehistoricpets"
-set :domain, "67.207.140.95"
-set :user, "joshnabbott"
+set :domain, "208.64.71.14"
+set :user, "deploy"
 
 # Apache settings
 set :apache_ctl, "/etc/init.d/apache2"

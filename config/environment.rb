@@ -23,9 +23,7 @@ Rails::Initializer.run do |config|
   # Specify gems that this application depends on. 
   # They can then be installed with "rake gems:install" on new installations.
   # You have to specify the :lib option for libraries, where the Gem name (sqlite3-ruby) differs from the file itself (sqlite3)
-  # config.gem "RedCloth", :lib => "redcloth", :source => "http://code.whytheluckystiff.net"
-  # config.gem "rubyist-aasm", :source => "http://gems.github.com", :lib => 'aasm', :version => "2.0.2"
-  config.gem "mechanize"
+  config.gem "rubyist-aasm", :source => "http://gems.github.com", :lib => 'aasm', :version => '2.0.2'
   # config.gem "bj"
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
@@ -77,5 +75,4 @@ Rails::Initializer.run do |config|
   # Please note that observers generated using script/generate observer need to have an _observer suffix
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 end
-require 'redcloth'
 require 'string'
