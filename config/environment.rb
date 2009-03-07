@@ -76,4 +76,3 @@ Rails::Initializer.run do |config|
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 end
 require 'string'
-ActionController::Base.cache_store = :file_store, "/var/www/prehistoricpets/shared/cache/"
