@@ -23,8 +23,8 @@ Rails::Initializer.run do |config|
   # Specify gems that this application depends on. 
   # They can then be installed with "rake gems:install" on new installations.
   # You have to specify the :lib option for libraries, where the Gem name (sqlite3-ruby) differs from the file itself (sqlite3)
-  config.gem "RedCloth", :lib => "redcloth", :source => "http://code.whytheluckystiff.net"
-  config.gem "rubyist-aasm", :source => "http://gems.github.com", :lib => 'aasm', :version => "2.0.2"
+  # config.gem "RedCloth", :lib => "redcloth", :source => "http://code.whytheluckystiff.net"
+  # config.gem "rubyist-aasm", :source => "http://gems.github.com", :lib => 'aasm', :version => "2.0.2"
   config.gem "mechanize"
   # config.gem "bj"
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
