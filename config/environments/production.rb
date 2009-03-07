@@ -15,7 +15,7 @@ config.action_controller.consider_all_requests_local = false
 config.action_controller.perform_caching             = true
 
 # Use a different cache store in production
-config.cache_store = :file_store, "/var/www/prehistoricpets/shared/cache_store"
+config.action_controller.page_cache_directory = '/var/www/prehistoricpets/shared/cache_store'
 
 # Enable serving of images, stylesheets, and javascripts from an asset server
 # config.action_controller.asset_host                  = "http://assets.example.com"
