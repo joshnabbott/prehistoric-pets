@@ -70,7 +70,7 @@ namespace :shared do
     run <<-CMD
       mkdir -p -m 775 #{shared_path}/db &&
       mkdir -p -m 777 #{shared_path}/log &&
-      mkdir -p -m 777 #{shared_path}/cache &&
+      mkdir -p -m 777 #{shared_path}/cache_store &&
       mkdir -p -m 777 #{shared_path}/uploads && mkdir -p -m 777 #{shared_path}/uploads/images
     CMD
   end
