@@ -2,9 +2,9 @@ require 'erb'
 require 'ftools'
 
 # General settings
-set :primary_domain, "lolmfao.com"
+set :primary_domain, "67.207.140.95"
 set :application, "prehistoricpets"
-set :domain, "pp.lolmfao.com"
+set :domain, "67.207.140.95"
 set :user, "joshnabbott"
 
 # Apache settings
@@ -13,9 +13,15 @@ set :vhost_template, "vhost.erb"
 
 # GIT settings
 set :scm, :git
-set :local_repository, "#{user}@#{primary_domain}:/var/git/#{application}"
-set :repository, "/var/git/#{application}"
+set :repository, "git@github.com:joshnabbott/prehistoric-pets.git"
 set :deploy_to, "/var/www/#{application}"
+set :use_sudo, true
+
+set :ssh_options, { :forward_agent => true }
+set :deploy_via, :remote_cache
+set :git_shallow_clone, 1
+set :git_enable_submodules, 1
+
 
 role :app, primary_domain
 role :web, primary_domain
