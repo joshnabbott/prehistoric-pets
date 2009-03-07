@@ -4,11 +4,13 @@
 #
 # Host: localhost (MySQL 5.0.67)
 # Database: prehistoric_pets_development
-# Generation Time: 2009-03-07 14:02:45 -0800
+# Generation Time: 2009-03-07 14:08:47 -0800
 # ************************************************************
 
 # Dump of table announcements
 # ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `announcements`;
 
 CREATE TABLE `announcements` (
   `id` int(11) NOT NULL auto_increment,
@@ -29,6 +31,8 @@ CREATE TABLE `announcements` (
 
 # Dump of table caresheets
 # ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `caresheets`;
 
 CREATE TABLE `caresheets` (
   `id` int(11) NOT NULL auto_increment,
@@ -53,6 +57,8 @@ VALUES
 
 # Dump of table categories
 # ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `categories`;
 
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL auto_increment,
@@ -98,6 +104,8 @@ VALUES
 # Dump of table images
 # ------------------------------------------------------------
 
+DROP TABLE IF EXISTS `images`;
+
 CREATE TABLE `images` (
   `id` int(11) NOT NULL auto_increment,
   `owner_id` int(11) default NULL,
@@ -115,6 +123,8 @@ CREATE TABLE `images` (
 
 # Dump of table line_items
 # ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `line_items`;
 
 CREATE TABLE `line_items` (
   `id` int(11) NOT NULL auto_increment,
@@ -134,6 +144,8 @@ CREATE TABLE `line_items` (
 
 # Dump of table order_transactions
 # ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `order_transactions`;
 
 CREATE TABLE `order_transactions` (
   `id` int(11) NOT NULL auto_increment,
@@ -155,6 +167,8 @@ CREATE TABLE `order_transactions` (
 
 # Dump of table orders
 # ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `orders`;
 
 CREATE TABLE `orders` (
   `id` int(11) NOT NULL auto_increment,
@@ -184,6 +198,8 @@ VALUES
 
 # Dump of table post_o_matic_categories
 # ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `post_o_matic_categories`;
 
 CREATE TABLE `post_o_matic_categories` (
   `id` int(11) NOT NULL auto_increment,
@@ -220,6 +236,8 @@ VALUES
 # Dump of table post_o_matic_postings
 # ------------------------------------------------------------
 
+DROP TABLE IF EXISTS `post_o_matic_postings`;
+
 CREATE TABLE `post_o_matic_postings` (
   `id` int(11) NOT NULL auto_increment,
   `product_id` int(11) default NULL,
@@ -242,6 +260,8 @@ CREATE TABLE `post_o_matic_postings` (
 
 # Dump of table products
 # ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `products`;
 
 CREATE TABLE `products` (
   `id` int(11) NOT NULL auto_increment,
@@ -498,6 +518,8 @@ VALUES
 # Dump of table schema_migrations
 # ------------------------------------------------------------
 
+DROP TABLE IF EXISTS `schema_migrations`;
+
 CREATE TABLE `schema_migrations` (
   `version` varchar(255) NOT NULL,
   UNIQUE KEY `unique_schema_migrations` (`version`)
@@ -525,6 +547,8 @@ VALUES
 # Dump of table sessions
 # ------------------------------------------------------------
 
+DROP TABLE IF EXISTS `sessions`;
+
 CREATE TABLE `sessions` (
   `id` int(11) NOT NULL auto_increment,
   `session_id` varchar(255) NOT NULL,
@@ -545,6 +569,8 @@ VALUES
 
 # Dump of table taxons
 # ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `taxons`;
 
 CREATE TABLE `taxons` (
   `id` int(11) NOT NULL auto_increment,
@@ -972,6 +998,8 @@ VALUES
 
 # Dump of table users
 # ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `users`;
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL auto_increment,
