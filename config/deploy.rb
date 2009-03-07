@@ -66,7 +66,7 @@ end
 
 desc "A setup task to put shared system, log, and database directories in place"
 namespace :shared do
-  task :setup, :roles => :web do
+  task :setup, :roles => :app do
     run <<-CMD
       mkdir -p -m 775 #{shared_path}/db &&
       mkdir -p -m 777 #{shared_path}/log
