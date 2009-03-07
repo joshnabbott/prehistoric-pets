@@ -2,6 +2,7 @@ namespace :db do
   namespace :import do
     desc 'This will import the category data from the old site tables to this one.'
     task :categories => :environment do
+      require 'rubygems'
       require 'FasterCSV'
       Category.destroy_all
       csv              = FasterCSV.read("#{RAILS_ROOT}/assets/PrehistoricPets/tblCategories.txt")
@@ -26,6 +27,7 @@ namespace :db do
 
     desc 'This will import the sub-category data from the old site tables to this one.'
     task :sub_categories => :environment do
+      require 'rubygems'
       require 'FasterCSV'
       Category.destroy_all('parent_id IS NOT NULL')
       csv              = FasterCSV.read("#{RAILS_ROOT}/assets/PrehistoricPets/tblSubCategories.txt")
@@ -51,6 +53,7 @@ namespace :db do
 
     desc 'This will import the product data from the old site tables to this one.'
     task :products => :environment do
+      require 'rubygems'
       require 'FasterCSV'
 
       Product.destroy_all
@@ -82,6 +85,7 @@ namespace :db do
 
     desc 'This will import the product images from the old site using FlexImage\'s image_file_url attribute.'
     task :product_images => :environment do
+      require 'rubygems'
       require 'FasterCSV'
       require 'httparty'
 
