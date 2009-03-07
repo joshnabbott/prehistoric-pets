@@ -66,7 +66,7 @@ end
 
 desc "A setup task to put shared system, log, and database directories in place"
 namespace :shared do
-  task :setup, :roles => :app do
+  task :setup, :roles => :web do
     run <<-CMD
       mkdir -p -m 775 #{shared_path}/db &&
       mkdir -p -m 777 #{shared_path}/log
@@ -75,6 +75,7 @@ namespace :shared do
 end
 
 after 'deploy:setup' do
+  sudo "chown -R #{user}:#{user} #{shared_path}/db"
   shared::setup
   apache::add_vhost
   apache::reload
