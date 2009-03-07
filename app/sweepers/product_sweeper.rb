@@ -22,8 +22,8 @@ protected
     # products/1-some-product-name(using .to_param)/100x100.jpg(the :size option)
     #
     # P.S.: Rails should have a way to expire a directory.
-    Product.benchmark "Expired directory: #{RAILS_ROOT}/public/products/#{product.to_param}" do
-      FileUtils.rm_rf("#{RAILS_ROOT}/public/products/#{product.to_param}")
+    Product.benchmark "Expired directory: #{ActionController::Base.page_cache_directory}/products/#{product.to_param}" do
+      FileUtils.rm_rf("#{ActionController::Base.page_cache_directory}/products/#{product.to_param}")
     end
 
     # Expire the category page(s) this product is in
