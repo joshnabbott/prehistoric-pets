@@ -16,9 +16,12 @@ jQuery(document).ready(function($) {
 })
 
 function cart_text(item_count) {
-  if(item_count > 1) {
-    return item_count + ' items in cart';
-  } else {
+  if(item_count == null) {
+    item_count = 0;
+  }
+  if(item_count == 1) {
     return item_count + ' item in cart';
+  } else {
+    return item_count + ' items in cart';
   }
 }
