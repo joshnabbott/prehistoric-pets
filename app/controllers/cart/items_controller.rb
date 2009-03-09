@@ -1,4 +1,6 @@
 class Cart::ItemsController < Cart::CartController
+  after_filter :set_items_in_cart, :only => [ :create, :destroy ]
+
   def index
     respond_to do |format|
       format.html
@@ -21,5 +23,10 @@ class Cart::ItemsController < Cart::CartController
     respond_to do |format|
       format.html { redirect_to(cart_items_path) }
     end
+  end
+
+protected
+  def set_items_in_cart
+    cookies[:items_in_cart] = @order.product_count
   end
 end

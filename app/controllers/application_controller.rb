@@ -1,7 +1,7 @@
 class Error404 < StandardError; end
 class ApplicationController < ActionController::Base
   include AuthenticatedSystem
-  before_filter :find_order, :find_items_in_cart
+  before_filter :find_order #, :find_items_in_cart
   helper :all # include all helpers, all the time
   rescue_from Error404, :with => :render_404_error
 
@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
 private
   def find_items_in_cart
-    cookies[:items_in_cart] = @order.product_count
+    cookies[:items_in_cart] = { :value => "#{@order.product_count}" }
   end
 
   def find_order
