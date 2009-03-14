@@ -56,10 +56,20 @@
   <%= f.collection_select :caresheet_id, Caresheet.active, :id, :name, :include_blank => true %>
 </p>
 <p>
-  <%= f.label :post_o_matisize, 'Post-O-Matic' %>
+  <%= f.label :post_o_matisize, 'Post-O-Matisize?' %>
   <%= f.check_box :post_o_matisize, :class => 'check_box' %>
 </p>
-<p>
-  <%= f.label :post_o_matic_category_id, 'Post-O-Matic category' %>
-  <%= f.collection_select :post_o_matic_category_id, PostOMaticCategory.find(:all, :order => 'name asc'), :id, :name, :include_blank => true %>
-</p>
+
+<%- f.fields_for :post_o_matic_postings, @product.post_o_matic_postings.build do |post_o_matic_posting| -%>
+  <div id="post_o_matic_posting" class="hide">
+    <p>
+      <%= post_o_matic_posting.label :post_o_matic_category_id, 'Category' %>
+      <%= post_o_matic_posting.collection_select :post_o_matic_category_id, PostOMaticCategory.find(:all, :order => 'name asc'), :id, :name, :include_blank => true %>
+    </p>
+    <p>
+      <%= post_o_matic_posting.label :ad_duration %>
+      <%= post_o_matic_posting.select :ad_duration, [[], ['2 days', 2], ['7 days', 7], ['15 days', 15], ['30 days', 30]] %>
+    </p>
+    <%= post_o_matic_posting.hidden_field :product_id %>
+  </div>
+<%- end -%>

@@ -33,6 +33,9 @@ div#header h1 {
 .center {
   text-align: center;
 }
+.hide {
+  display: none;
+}
 p img {
   display: block;
 }

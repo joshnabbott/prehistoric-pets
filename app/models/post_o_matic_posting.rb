@@ -1,13 +1,16 @@
 class PostOMaticPosting < ActiveRecord::Base
   include AASM
-  default_scope :order => 'position asc'
   include PostOMatic::KingSnake
+
   # acts_as_list :scope => 'state = \'scheduled\''
   acts_as_list :scope => :post_o_matic_category_id
+  default_scope :order => 'position asc'
+
   before_validation :set_post_to
   belongs_to :product
   belongs_to :post_o_matic_category
   validates_presence_of :product, :post_to, :ad_duration
+  validates_inclusion_of :ad_duration, :in => [2, 7, 15, 30]
 
   aasm_column :state
   aasm_initial_state :scheduled

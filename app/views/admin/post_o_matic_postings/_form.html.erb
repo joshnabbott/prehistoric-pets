@@ -6,7 +6,7 @@
 </p>
 <p>
   <%= f.label :product_id %>
-  <%= f.collection_select :product_id, Product.active.find(:all, :order => 'name asc'), :id, :name %>
+  <%= f.collection_select :product_id, Product.find(:all, :order => 'name asc'), :id, :name %>
 </p>
 <p>
   <%= f.label :ad_duration %>
