@@ -16,10 +16,13 @@ module PostOMatic
     }
 
     def post_ad(options = {}) # options = { :ad_duration => '5 days' }
-      @agent = WWW::Mechanize.new
-      page   = login
-      page   = submit_ad(page)
-      puts page.inspect
+      true
+      # Uncomment below to make posts to kingsnake.com
+      #
+      # @agent = WWW::Mechanize.new
+      # page   = login
+      # page   = submit_ad(page)
+      # validate_post_success(page) # returns true or false
     end
 
   private
@@ -40,7 +43,6 @@ module PostOMatic
       form.descript = self.product.description
       # form.imageurl = "http:/prehistoricpets.com/products/#{self.product.to_param}.jpg" # is this breaking it when I try to post?
       page          = form.submit
-      validate_post_success(page)
     end
 
     def validate_post_success(page)
