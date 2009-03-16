@@ -1,24 +1,37 @@
 <%= controller_options %>
-
-<h1>Listing Post-O-Matic Postings</h1>
-<%- form_tag("/admin/post_o_matic_postings/update_positions") do -%>
-  <%= submit_tag "Update list order", :class => 'submit' %>
-  <table class="six_col">
-    <thead>
-      <tr>
-        <th class="first"><span>Product</span></th>
-        <th>Category</th>
-        <th>Ad duration</th>
-        <th>State</th>
-        <th>Position in queue</th>
-        <th class="last"><span>Actions</span></th>
-      </tr>
-    </thead>
-    <tbody>
-      <%- @post_o_matic_postings.each_with_index do |post_o_matic_posting, index| -%>
-        <%= render :partial => 'post_o_matic_posting', :locals => { :post_o_matic_posting => post_o_matic_posting, :index => index } %>
-      <%- end -%>
-    </tbody>
-  </table>
-  <%= submit_tag "Update list order", :class => 'submit' %>
+<%- content_for :head do -%>
+<script type="text/javascript" charset="utf-8">
+  $().ready(function() {
+    $('#post_o_matic_postings').tableDnD({
+      onDrop: function(table, row) {
+        $.ajax({
+          type: "POST",
+          url: "<%= url_for(:controller => 'admin/post_o_matic_postings', :action => 'update_positions') %>",
+          processData: false,
+          data: $.tableDnD.serialize(),
+          success: function(msg) {
+            alert('Queue successfully updated.');
+          }
+        });
+      }
+    })
+  })
+</script>
 <%- end -%>
+<h1>Listing Post-O-Matic Postings</h1>
+<table class="six_col" id="post_o_matic_postings">
+  <thead>
+    <tr>
+      <th class="first"><span>Product</span></th>
+      <th>Category</th>
+      <th>Ad duration</th>
+      <th>State</th>
+      <th class="last"><span>Actions</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%- @post_o_matic_postings.each_with_index do |post_o_matic_posting, index| -%>
+      <%= render :partial => 'post_o_matic_posting', :locals => { :post_o_matic_posting => post_o_matic_posting, :index => index } %>
+    <%- end -%>
+  </tbody>
+</table>

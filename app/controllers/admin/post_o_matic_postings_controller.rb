@@ -5,9 +5,9 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
   # GET /admin/post_o_matic_postings.xml
   def index
     if @post_o_matic_category
-      @post_o_matic_postings = @post_o_matic_category.post_o_matic_postings
+      @post_o_matic_postings = @post_o_matic_category.scheduled.post_o_matic_postings
     else
-      @post_o_matic_postings = PostOMaticCategory.find(:all, :include => :post_o_matic_postings, :order => 'name asc').map(&:post_o_matic_postings).flatten
+      @post_o_matic_postings = PostOMaticPosting.scheduled.find(:all, :order => 'post_o_matic_category_id asc')
     end
 
     respond_to do |format|
@@ -82,18 +82,17 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
   end
 
   def update_positions
-    params[:post_o_matic_posting].each do |post_o_matic_posting|
-      id       = post_o_matic_posting["id"]
-      position = post_o_matic_posting["list_order"]
-      record   = PostOMaticPosting.find(id)
-      record.insert_at(position)
-    end
-
-    respond_to do |format|
-      flash[:success] = 'Queue successfully updated.'
-      format.html { redirect_to(admin_post_o_matic_postings_url(@post_o_matic_category)) }
+    begin
+      PostOMaticPosting.all.each do |post_o_matic_posting|
+        position = params[:post_o_matic_postings].index(post_o_matic_posting.id.to_s)
+        post_o_matic_posting.insert_at(position + 1)
+      end
+      render :nothing => true, :status => 200
+    rescue Exception => e
+      render :nothing => true, :status => 500
     end
   end
+
 protected
   def find_post_o_matic_category
     @post_o_matic_category = PostOMaticCategory.find_by_id(params[:post_o_matic_category_id])

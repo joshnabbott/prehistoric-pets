@@ -16,7 +16,7 @@ class PostOMaticPosting < ActiveRecord::Base
   aasm_column :state
   aasm_initial_state :scheduled
   aasm_state :expired
-  aasm_state :posted #, :enter => :post_ad
+  aasm_state :posted
   aasm_state :scheduled
 
   aasm_event :post_ad do
@@ -36,40 +36,38 @@ class PostOMaticPosting < ActiveRecord::Base
   named_scope :scheduled, :conditions => { :state => 'scheduled' }
 
   # Methods to extend lib/post_o_matic funcionality
-  def expired?
-    (state.eql?('posted') && expires_at <= Time.now)
-  end
-
   def post_ad
     # the post_ad method is defined in lib/post_o_matic.rb. the method creates a new listing on kingsnake.com
     # and returns true or false, depending on whether or not it was posted.
     is_posted = super
     if is_posted
-      update_posted_ad
+      update_posted_ad!
     end
     is_posted
   end
 
-  def posted?
-    (state.eql?('posted') && expires_at > Time.now)
+  def reschedule
+    update_attributes(:expires_at => nil, :posted_at => nil)
+    schedule! unless scheduled?
+    insert_at(position)
   end
 
 private
   def set_expires_at(time)
-    self.expires_at = Time.now + self.ad_duration.days
+    self.expires_at = time + self.ad_duration.days
   end
 
   def set_posted_at(time)
-    self.posted_at = Time.now
+    self.posted_at = time
   end
 
   def set_post_to
     self.post_to = 'kingsnake.com'
   end
 
-  def update_posted_ad
+  def update_posted_ad!
+    self.send(:decrement_positions_on_lower_items)
     self.post_ad!
-    # move_to_bottom
     time = Time.now
     set_expires_at(time)
     set_posted_at(time)
