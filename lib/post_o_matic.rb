@@ -34,6 +34,7 @@ module PostOMatic
     def submit_ad(page)
       page          = @agent.get(self.post_o_matic_category.url)
       form          = page.forms[1]
+      # Form would be nil if the max postings for the day have been reached.
       return false if form.nil?
       form.subject  = self.product.name
       form.descript = self.product.description

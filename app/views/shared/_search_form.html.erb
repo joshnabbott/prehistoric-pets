@@ -1,0 +1,8 @@
+<div id="search">
+  <% form_tag(search_path, :method => :post) do -%>
+    <fieldset>
+      <%= text_field_tag :keywords, CGI::unescape("#{params[:keywords]}") %>
+      <%= submit_tag 'Search' %>
+    </fieldset>
+  <% end -%>
+</div>

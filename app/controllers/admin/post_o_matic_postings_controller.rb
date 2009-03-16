@@ -1,10 +1,11 @@
 class Admin::PostOMaticPostingsController < Admin::AdminController
+  before_filter :find_post_o_matic_category, :if => Proc.new { |controller| controller.params[:post_o_matic_category_id] }
+
   # GET /admin/post_o_matic_postings
   # GET /admin/post_o_matic_postings.xml
   def index
-    if params[:post_o_matic_category_id]
-      post_o_matic_category = PostOMaticCategory.find(params[:post_o_matic_category_id])
-      @post_o_matic_postings = post_o_matic_category.post_o_matic_postings
+    if @post_o_matic_category
+      @post_o_matic_postings = @post_o_matic_category.post_o_matic_postings
     else
       @post_o_matic_postings = PostOMaticCategory.find(:all, :include => :post_o_matic_postings, :order => 'name asc').map(&:post_o_matic_postings).flatten
     end
@@ -80,9 +81,7 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
     end
   end
 
-  # Non-REST actions
   def update_positions
-    # is this stupid?
     params[:post_o_matic_posting].each do |post_o_matic_posting|
       id       = post_o_matic_posting["id"]
       position = post_o_matic_posting["list_order"]
@@ -92,8 +91,11 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
 
     respond_to do |format|
       flash[:success] = 'Queue successfully updated.'
-      format.html { redirect_to(admin_post_o_matic_postings_url) }
-      format.xml  { head :ok }
+      format.html { redirect_to(admin_post_o_matic_postings_url(@post_o_matic_category)) }
     end
+  end
+protected
+  def find_post_o_matic_category
+    @post_o_matic_category = PostOMaticCategory.find_by_id(params[:post_o_matic_category_id])
   end
 end

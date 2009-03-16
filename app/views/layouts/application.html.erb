@@ -13,6 +13,7 @@
 <body class="<%= controller.controller_name %>">
   <div id="container">
     <div id="header">
+      <%= render '/shared/search_form' %>
       <ul>
         <li class="first"><%= link_to 'Home', root_path %></li>
         <li><%= link_to 'About Us', static_path('about') %></li>

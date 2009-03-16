@@ -56,6 +56,15 @@ div#container div#header {
   background: url(_g/logo.gif) 0 0 no-repeat;
   height: 97px;
 }
+div#container div#header div#search {
+  background-color: #333;
+  float: right;
+  padding: 5px;
+}
+div#container div#header div#search form input {
+  font-size: 16px;
+}
+
 div#container div#header ul {
   background: url(_g/header_nav_right.jpg) right 0 no-repeat;
   height: 33px;

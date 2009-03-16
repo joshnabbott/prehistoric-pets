@@ -5,6 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.resources :announcements, :users, :caresheets, :products
   map.product_image '/products/:id/:size.:format', :controller => 'products', :action => 'show'
+  map.search '/search/:keywords', :controller => 'search', :keywords => nil
 
   map.resource :session
   map.root :controller => 'home'
@@ -21,7 +22,7 @@ ActionController::Routing::Routes.draw do |map|
   map.admin 'admin/', :controller => 'admin/products'
   map.namespace(:admin) do |admin|
     admin.resources :announcements
-    admin.resources :categories
+    admin.resources :categories, :has_many => [ :products ]
     admin.resources :caresheets
     admin.resources :products
     admin.resources :post_o_matic_categories, :has_many => [ :post_o_matic_postings ]

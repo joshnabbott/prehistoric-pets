@@ -1,0 +1,29 @@
+body.search div#products div.product {
+  border: 1px solid #3e3e3e;
+  float: left;
+  height: 350px;
+  margin: 0 10px 10px 0;
+  padding: 10px;
+  width: 239px;
+}
+body.search div#products div.product.last {
+  margin: 0 0 10px 0;
+}
+body.search div#products div.product p.image {
+  display: block;
+  height: 239px;
+  margin: 0 0 20px 0;
+  width: 239px;
+}
+body.search div#products div.product p.image a {
+  display: block;
+  height: 239px;
+  width: 239px;
+}
+body.search div#products div.product p.scientific_name {
+  font-style: italic;
+}
+body.search div#products div.product p.price {
+  color: #f00;
+  font-weight: bold;
+}

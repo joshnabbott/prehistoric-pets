@@ -2,20 +2,19 @@ class PostOMaticPosting < ActiveRecord::Base
   include AASM
   include PostOMatic::KingSnake
 
-  # acts_as_list :scope => 'state = \'scheduled\''
-  acts_as_list :scope => :post_o_matic_category_id
+  acts_as_list :scope => 'post_o_matic_category_id = #{post_o_matic_category_id} AND state = \'scheduled\''
   default_scope :order => 'position asc'
 
   before_validation :set_post_to
   belongs_to :product
   belongs_to :post_o_matic_category
-  validates_presence_of :product, :post_to, :ad_duration
+  validates_presence_of :post_to, :ad_duration
   validates_inclusion_of :ad_duration, :in => [2, 7, 15, 30]
 
   aasm_column :state
   aasm_initial_state :scheduled
   aasm_state :expired
-  aasm_state :posted
+  aasm_state :posted #, :enter => :post_ad
   aasm_state :scheduled
 
   aasm_event :post_ad do
@@ -33,11 +32,10 @@ class PostOMaticPosting < ActiveRecord::Base
   def post_ad
     # the post_ad method is defined in lib/post_o_matic.rb. the method creates a new listing on kingsnake.com
     # and returns true or false, depending on whether or not it was posted.
-    # hence the 'super'
     is_posted = super
     if is_posted
-      # post_ad!
-      move_to_bottom
+      post_ad!
+      # move_to_bottom
       time = Time.now
       set_expires_at(time)
       set_posted_at(time)

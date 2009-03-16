@@ -1,10 +1,16 @@
 class Admin::ProductsController < Admin::AdminController
+  before_filter :find_category, :if => Proc.new { |controller| controller.params[:category_id] }
+
   cache_sweeper :product_sweeper, :only => [ :create, :update, :destroy ]
 
   # GET /admin/products
   # GET /admin/products.xml
   def index
-    @products = Product.find(:all)
+    if @category
+      @products = @category.products
+    else
+      @products = Product.find(:all)
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -75,5 +81,10 @@ class Admin::ProductsController < Admin::AdminController
       format.html { redirect_to(admin_products_url) }
       format.xml  { head :ok }
     end
+  end
+
+protected
+  def find_category
+    @category = Category.find(params[:category_id])
   end
 end

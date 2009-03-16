@@ -1,5 +1,6 @@
 class PostOMaticCategory < ActiveRecord::Base
   include Prehistoric
+  attr_accessor :time_to_post
   before_validation :create_permalink
   has_many :post_o_matic_postings, :order => 'position asc', :dependent => :nullify
   validates_presence_of :name, :permalink, :url
