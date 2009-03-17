@@ -1,21 +1,3 @@
-# == Schema Information
-# Schema version: 20090302034918
-#
-# Table name: post_o_matic_postings
-#
-#  id                       :integer(4)      not null, primary key
-#  product_id               :integer(4)
-#  post_o_matic_category_id :integer(4)
-#  post_to                  :string(255)
-#  ad_duration              :integer(4)
-#  expires_at               :datetime
-#  posted_at                :datetime
-#  state                    :string(255)     default("scheduled")
-#  position                 :integer(4)
-#  created_at               :datetime
-#  updated_at               :datetime
-#
-
 class PostOMaticPosting < ActiveRecord::Base
   include AASM
   include PostOMatic::KingSnake

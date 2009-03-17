@@ -1,21 +1,3 @@
-# == Schema Information
-# Schema version: 20090302034918
-#
-# Table name: order_transactions
-#
-#  id               :integer(4)      not null, primary key
-#  order_id         :integer(4)
-#  amount           :decimal(8, 2)   default(0.0), not null
-#  is_success       :boolean(1)      not null
-#  is_test          :boolean(1)      not null
-#  reference_number :string(255)
-#  action           :string(255)
-#  message          :text
-#  params           :text
-#  created_at       :datetime
-#  updated_at       :datetime
-#
-
 class OrderTransaction < ActiveRecord::Base
   # Initializes a new instance of ActiveMerchant 
   # payment gateway
