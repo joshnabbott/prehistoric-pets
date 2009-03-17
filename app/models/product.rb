@@ -1,3 +1,25 @@
+# == Schema Information
+# Schema version: 20090302034918
+#
+# Table name: products
+#
+#  id              :integer(4)      not null, primary key
+#  caresheet_id    :integer(4)
+#  name            :string(255)
+#  scientific_name :string(255)
+#  permalink       :string(255)
+#  sku             :string(10)      not null
+#  description     :text
+#  comments        :text
+#  price           :decimal(8, 2)   default(0.0), not null
+#  is_featured     :boolean(1)      not null
+#  override        :boolean(1)      not null
+#  is_active       :boolean(1)      not null
+#  created_at      :datetime
+#  updated_at      :datetime
+#  old_product_id  :integer(4)
+#
+
 class Product < ActiveRecord::Base
   include Prehistoric
   acts_as_fleximage do

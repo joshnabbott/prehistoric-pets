@@ -1,3 +1,24 @@
+# == Schema Information
+# Schema version: 20090302034918
+#
+# Table name: categories
+#
+#  id                  :integer(4)      not null, primary key
+#  parent_id           :integer(4)
+#  name                :string(255)
+#  permalink           :string(255)
+#  description         :text
+#  is_active           :boolean(1)      not null
+#  is_price_specific   :boolean(1)      not null
+#  starting_price      :decimal(8, 2)   default(0.0)
+#  ending_price        :decimal(8, 2)   default(0.0)
+#  position            :integer(4)
+#  created_at          :datetime
+#  updated_at          :datetime
+#  old_category_id     :integer(4)
+#  old_sub_category_id :integer(4)
+#
+
 class Category < ActiveRecord::Base
   include Prehistoric
   default_scope :order => 'position asc'

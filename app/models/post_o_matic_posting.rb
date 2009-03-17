@@ -1,8 +1,27 @@
+# == Schema Information
+# Schema version: 20090302034918
+#
+# Table name: post_o_matic_postings
+#
+#  id                       :integer(4)      not null, primary key
+#  product_id               :integer(4)
+#  post_o_matic_category_id :integer(4)
+#  post_to                  :string(255)
+#  ad_duration              :integer(4)
+#  expires_at               :datetime
+#  posted_at                :datetime
+#  state                    :string(255)     default("scheduled")
+#  position                 :integer(4)
+#  created_at               :datetime
+#  updated_at               :datetime
+#
+
 class PostOMaticPosting < ActiveRecord::Base
   include AASM
   include PostOMatic::KingSnake
 
-  acts_as_list :scope => 'post_o_matic_category_id = #{post_o_matic_category_id} AND state = \'scheduled\''
+  # acts_as_list :scope => 'post_o_matic_category_id = #{post_o_matic_category_id} AND state = \'scheduled\''
+  acts_as_list :scope => :post_o_matic_category
   default_scope :order => 'position asc'
 
   # Move to top of list
@@ -52,6 +71,22 @@ class PostOMaticPosting < ActiveRecord::Base
     insert_at(position)
   end
 
+  def self.update_positions(*positions)
+    # positions is an array of PostOMaticPosting ids. => ['1','2','3']
+    # it can be passed in either way:
+    # PostOMaticPosting.update_positions(['1','2','3'])
+    # PostOMaticPosting.update_positions(1,2,3)
+    # Just use Array#flatten to turn this: [['1','2','3']] (when an array is passed in)
+    # to this: ['1','2','3']
+    positions = positions.flatten
+    # Removes blank items from array (jQuery is passing back an empty value for one array item)
+    positions.delete_if { |item| item.blank? }
+    positions.each_with_index do |id, index|
+      position = index + 1
+      self.update(id, :position => position)
+    end
+  end
+
 private
   def set_expires_at(time)
     self.expires_at = time + self.ad_duration.days
@@ -66,7 +101,6 @@ private
   end
 
   def update_posted_ad!
-    self.send(:decrement_positions_on_lower_items)
     self.post_ad!
     time = Time.now
     set_expires_at(time)

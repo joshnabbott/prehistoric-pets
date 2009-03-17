@@ -1,3 +1,22 @@
+# == Schema Information
+# Schema version: 20090302034918
+#
+# Table name: orders
+#
+#  id               :integer(4)      not null, primary key
+#  user_id          :integer(4)
+#  ip_address       :string(255)
+#  reference_number :string(255)
+#  state            :string(255)     default("in_cart"), not null
+#  line_items_count :integer(4)      default(0)
+#  shipping         :decimal(8, 2)   default(0.0), not null
+#  subtotal         :decimal(8, 2)   default(0.0), not null
+#  tax              :decimal(8, 2)   default(0.0), not null
+#  amount           :decimal(8, 2)   default(0.0), not null
+#  created_at       :datetime
+#  updated_at       :datetime
+#
+
 class Order < ActiveRecord::Base
   include AASM
   before_create :create_reference_number

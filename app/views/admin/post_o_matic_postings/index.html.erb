@@ -10,7 +10,7 @@
           processData: false,
           data: $.tableDnD.serialize(),
           success: function(msg) {
-            alert('Queue successfully updated.');
+            // alert('Queue successfully updated.');
           }
         });
       }
@@ -21,17 +21,24 @@
 <h1>Listing Post-O-Matic Postings</h1>
 <table class="six_col" id="post_o_matic_postings">
   <thead>
-    <tr>
+    <tr class="nodrop nodrag">
       <th class="first"><span>Product</span></th>
       <th>Category</th>
       <th>Ad duration</th>
       <th>State</th>
+      <th>Position in queue</th>
       <th class="last"><span>Actions</span></th>
     </tr>
   </thead>
-  <tbody>
-    <%- @post_o_matic_postings.each_with_index do |post_o_matic_posting, index| -%>
-      <%= render :partial => 'post_o_matic_posting', :locals => { :post_o_matic_posting => post_o_matic_posting, :index => index } %>
+  <%- if @post_o_matic_categories -%>
+    <%- @post_o_matic_categories.each do |post_o_matic_category| -%>
+      <tbody>
+        <%= render :partial => 'post_o_matic_posting', :collection => post_o_matic_category.post_o_matic_postings %>
+      </tbody>
     <%- end -%>
-  </tbody>
+  <%- else -%>
+    <tbody>
+      <%= render :partial => 'post_o_matic_posting', :collection => @post_o_matic_postings %>
+    </tbody>
+  <%- end -%>
 </table>

@@ -5,9 +5,9 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
   # GET /admin/post_o_matic_postings.xml
   def index
     if @post_o_matic_category
-      @post_o_matic_postings = @post_o_matic_category.scheduled.post_o_matic_postings
+      @post_o_matic_postings = @post_o_matic_category.post_o_matic_postings
     else
-      @post_o_matic_postings = PostOMaticPosting.scheduled.find(:all, :order => 'post_o_matic_category_id asc')
+      @post_o_matic_categories = PostOMaticCategory.find(:all, :include => :post_o_matic_postings)
     end
 
     respond_to do |format|
@@ -82,13 +82,10 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
   end
 
   def update_positions
-    begin
-      PostOMaticPosting.all.each do |post_o_matic_posting|
-        position = params[:post_o_matic_postings].index(post_o_matic_posting.id.to_s)
-        post_o_matic_posting.insert_at(position + 1)
-      end
+    # params[:post_o_matic_postings] is an array of PostOMaticPosting ids. ['1','2','3']
+    if PostOMaticPosting.update_positions(params[:post_o_matic_postings])
       render :nothing => true, :status => 200
-    rescue Exception => e
+    else
       render :nothing => true, :status => 500
     end
   end
