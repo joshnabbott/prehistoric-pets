@@ -1,4 +1,4 @@
-<%- @page_title = "Search #{' for ' + params[:keywords] if params[:keywords]}" -%>
+<%- @page_title = "Search #{' for "' + CGI::unescape(params[:keywords]) + '"' if params[:keywords]}" -%>
 <%- content_for :stylesheets do -%>
 <%= stylesheet_link_tag "_search" %>
 <%- end -%>
@@ -6,7 +6,7 @@
 
 <div id="products">
   <% if @products.empty? -%>
-    <p>No products were found matching <em>"<%= CGI::unescape(params[:keywords].upcase) %>"</em>.</p>
+    <p>No products were found matching <em>"<%= CGI::unescape(params[:keywords]) %>"</em>.</p>
   <% else -%>
     <%= render :partial => 'product', :collection => @products %>
   <% end -%>

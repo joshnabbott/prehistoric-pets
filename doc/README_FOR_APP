@@ -3,3 +3,9 @@ To build the guides:
 * Install source-highlighter (http://www.gnu.org/software/src-highlite/source-highlight.html)
 * Install the mizuho gem (http://github.com/FooBarWidget/mizuho/tree/master)
 * Run `rake guides` from the railties directory
+
+Cron tasks:
+* Rotate sphinx index - 'RAILS_ENV=production rake thinking_sphinx:index'; every 4 hours.
+* Post-O-Matic-Postings - 'RAILS_ENV=production rake post_o_matic:kingsnake:post'; every hour on the hour from 4:30am - 9:30. See rake task for 
+  more info.
+* Post-O-Matic-Postings - once a posting is expired, if it's set to recur, change state to scheduled again.
