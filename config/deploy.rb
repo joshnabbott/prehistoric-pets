@@ -34,10 +34,34 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "touch #{current_path}/tmp/restart.txt"
   end
-  
+
   [:start, :stop].each do |t|
     desc "#{t} task is a no-op with mod_rails"
     task t, :role => :app do; end
+  end
+
+  desc "Re-establish symlinks"
+  task :after_symlink do
+    run <<-CMD
+      rm -fr #{release_path}/db/sphinx &&
+      ln -nfs #{shared_path}/db/sphinx #{release_path}/db/sphinx
+    CMD
+  end
+
+  desc "Stop the sphinx server"
+  task :stop_sphinx, :roles => :app do
+    run "cd #{current_path} && rake thinking_sphinx:stop RAILS_ENV=production"
+  end
+
+  desc "Start the sphinx server" 
+  task :start_sphinx, :roles => :app do
+    run "cd #{current_path} && rake thinking_sphinx:configure RAILS_ENV=production && rake thinking_sphinx:start RAILS_ENV=production"
+  end
+
+  desc "Restart the sphinx server"
+  task :restart_sphinx, :roles => :app do
+    stop_sphinx
+    start_sphinx
   end
 end
 
@@ -68,7 +92,7 @@ desc "A setup task to put shared system, log, and database directories in place"
 namespace :shared do
   task :setup, :roles => :web do
     run <<-CMD
-      mkdir -p -m 775 #{shared_path}/db &&
+      mkdir -p -m 775 #{shared_path}/db && mkdir -p -m 777 #{shared_path}/db/sphinx &&
       mkdir -p -m 777 #{shared_path}/log &&
       mkdir -p -m 777 #{shared_path}/uploads && mkdir -p -m 777 #{shared_path}/uploads/images
     CMD
