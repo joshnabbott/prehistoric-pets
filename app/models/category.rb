@@ -10,7 +10,7 @@ class Category < ActiveRecord::Base
   validates_uniqueness_of :name, :permalink, :scope => :parent_id, :allow_nil => true
   named_scope :roots, :conditions => { :parent_id => nil }
 
-  def path
-    ancestors.reverse.push(self).map(&:permalink).join('/')
+  def path(column = 'permalink')
+    ancestors.reverse.push(self).map(&:"#{column.to_s}").join('/')
   end
 end

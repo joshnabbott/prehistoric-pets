@@ -1,4 +1,4 @@
-<%- @page_title = @category.path.split('/').map(&:humanize).join(' &raquo; ') -%>
+<%- @page_title = @category.path(:name).split('/').join(' &raquo; ') -%>
 <%- content_for :stylesheets do -%>
 <%= stylesheet_link_tag "_categories" %>
 <%- end -%>
