@@ -5,6 +5,6 @@ module Prehistoric
 
 private
   def create_permalink
-    self.permalink = self.name.to_permalink if self.name_changed?
+    self.permalink = self.name.parameterize if self.name_changed?
   end
 end

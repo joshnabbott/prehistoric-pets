@@ -26,6 +26,6 @@ private
   end
 
   def create_permalink
-    self.permalink = self.title_short.to_permalink if self.title_short_changed?
+    self.permalink = self.title_short.parameterize if self.title_short_changed?
   end
 end
