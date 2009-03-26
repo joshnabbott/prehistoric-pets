@@ -1,4 +1,6 @@
 class Admin::AnnouncementsController < Admin::AdminController
+  cache_sweeper :announcement_sweeper, :only => [ :create, :update, :destroy ]
+
   # GET /admin/announcements
   # GET /admin/announcements.xml
   def index

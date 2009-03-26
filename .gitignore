@@ -3,8 +3,9 @@ log/*.log
 tmp/**/*
 config/database.yml
 db/*.sqlite3
-public/images/uploads
+public/announcements
 public/browse
+public/images/uploads
 public/products
 public/about.html
 public/contact-us.html
