@@ -5,6 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.resources :announcements, :users, :caresheets, :products
   map.product_image '/products/:id/:size.:format', :controller => 'products', :action => 'show'
+  map.announcement_image '/announcements/:id/:size.:format', :controller => 'announcements', :action => 'show'
   map.search '/search/:keywords', :controller => 'search', :keywords => nil
 
   map.resource :session

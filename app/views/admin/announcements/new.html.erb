@@ -1,6 +1,6 @@
 <h1>New announcement</h1>
 
-<% form_for([:admin, @announcement]) do |f| %>
+<% form_for([:admin, @announcement], :html => { :multipart => true }) do |f| %>
   <fieldset>
     <%= render :partial => 'form', :locals => { :f => f } %>
     <p>

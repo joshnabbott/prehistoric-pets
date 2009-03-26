@@ -5,6 +5,17 @@
   <%= f.text_field :title_short, :class => 'text_field' %>
 </p>
 <p>
+  <%= f.label :image_file %>
+  <%= f.file_field :image_file %>
+  <%= f.hidden_field :image_file_temp %>
+</p>
+<%- if @announcement.has_image? -%>
+  <p>
+    Current image:
+    <%= embedded_image_tag(@announcement.operate { |img| img.resize 100 }) %>
+  </p>
+<%- end -%>
+<p>
   <%= f.label :body_short, 'Summary' %>
   <%= f.text_area :body_short %>
 </p>

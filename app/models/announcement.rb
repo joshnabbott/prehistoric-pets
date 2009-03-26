@@ -1,5 +1,17 @@
 class Announcement < ActiveRecord::Base
   include Prehistoric
+
+  acts_as_fleximage do
+    if RAILS_ENV == 'production'
+      image_directory "../../shared/uploads/images"
+    else
+      image_directory 'public/images/uploads'
+    end
+    require_image false
+    default_image_path 'public/images/smiley.gif'
+    default_image 'smiley.gif'
+  end
+
   default_scope :order => 'created_at desc'
   before_validation :create_permalink
   validates_presence_of :title_short, :body_short, :permalink

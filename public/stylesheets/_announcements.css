@@ -8,3 +8,7 @@ body.announcements table tr th {
 body.announcements table tr td {
   text-align: center;
 }
+body.announcements div#right_column div.announcement p.image {
+  float: left;
+  margin: 0 10px 10px 0;
+}
