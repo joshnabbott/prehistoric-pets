@@ -42,7 +42,8 @@ class Admin::ProductsController < Admin::AdminController
     respond_to do |format|
       if @product.save
         flash[:success] = 'Product was successfully created.'
-        format.html { redirect_to(admin_products_url) }
+        # What the hackery?
+        format.html { redirect_to(@category ? admin_category_products_url : admin_products_url) }
         format.xml  { render :xml => @product, :status => :created, :location => @product }
       else
         flash[:error] = 'Product could not be created. See errors below.'
@@ -60,7 +61,8 @@ class Admin::ProductsController < Admin::AdminController
     respond_to do |format|
       if @product.update_attributes(params[:product])
         flash[:success] = 'Product was successfully updated.'
-        format.html { redirect_to(admin_products_url) }
+        # What the hackery?
+        format.html { redirect_to(@category ? admin_category_products_url : admin_products_url) }
         format.xml  { head :ok }
       else
         flash[:error] = 'Category could not be created. See errors below.'
@@ -78,7 +80,8 @@ class Admin::ProductsController < Admin::AdminController
 
     respond_to do |format|
       flash[:success] = 'Product was deleted.'
-      format.html { redirect_to(admin_products_url) }
+      # What the hackery?
+      format.html { redirect_to(@category ? admin_category_products_url : admin_products_url) }
       format.xml  { head :ok }
     end
   end

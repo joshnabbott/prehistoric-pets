@@ -1,4 +1,3 @@
-<%= controller_options %>
 <%- content_for :head do -%>
 <script type="text/javascript" charset="utf-8">
   $().ready(function() {
@@ -18,6 +17,9 @@
   })
 </script>
 <%- end -%>
+
+<%= sub_navigation(['New post-o-matic posting', new_admin_post_o_matic_posting_path]) %>
+
 <h1>Listing Post-O-Matic Postings</h1>
 <table class="six_col" id="post_o_matic_postings">
   <thead>

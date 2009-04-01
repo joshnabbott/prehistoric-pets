@@ -297,19 +297,19 @@ div#content:after {
   height: 1%;
 }
 
-ul.controller_options {
+ul.sub_navigation {
   font-size: 14px;
   height: 14px;
   list-style-type: none;
   margin: 0 0 25px 0;
 }
-ul.controller_options li {
+ul.sub_navigation li {
   float: left;
   padding: 0 10px;
   line-height: 14px;
   border-right: 1px solid;
 }
-ul.controller_options li.last {
+ul.sub_navigation li.last {
   border-width: 0;
 }
 ul#sorter {

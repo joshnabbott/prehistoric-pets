@@ -1,9 +1,10 @@
 module Admin::AdminHelper
-  def controller_options
-    links = [
-        content_tag(:li, link_to("New #{self.controller.controller_name.singularize.gsub(/_/,'-').humanize}", __send__("new_admin_#{self.controller.controller_name.singularize}_path")), :class => 'last')
-      ].join
-    content_tag(:ul, links, :class => "controller_options")
+  def sub_navigation(*args)
+    links = args.inject([]) do |array, arg|
+      array << content_tag(:li, link_to(arg.first, arg.last), :class => "#{args.last.eql?(arg) ? 'last' : ''}")
+      array
+    end.join
+    content_tag(:ul, links, :class => "sub_navigation")
   end
 
   def navigation
