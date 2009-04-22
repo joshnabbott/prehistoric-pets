@@ -20,7 +20,7 @@ ActionController::Routing::Routes.draw do |map|
   end
 
   # Admin
-  map.admin 'admin/', :controller => 'admin/products'
+  map.admin 'admin/', :controller => 'admin/categories'
   map.namespace(:admin) do |admin|
     admin.resources :announcements
     admin.resources :categories, :has_many => [ :products ]
