@@ -128,7 +128,8 @@ table.four_col,
 table.five_col,
 table.six_col,
 table.seven_col,
-table.eight_col {
+table.eight_col,
+table.nine_col {
   width: 100%;
   border-collapse: collapse;
 }
@@ -158,6 +159,9 @@ table.seven_col td {
 }
 table.eight_col th {
   width: 12%;
+}
+table.nine_col th {
+  width: 11%;
 }
 table {
   font-size: 14px;

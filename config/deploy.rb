@@ -43,8 +43,9 @@ namespace :deploy do
   desc "Re-establish symlinks"
   task :after_symlink do
     run <<-CMD
-      rm -fr #{release_path}/db/sphinx &&
-      ln -nfs #{shared_path}/db/sphinx #{release_path}/db/sphinx
+      ln -sf #{shared_path}/db/sphinx #{release_path}/db/sphinx
+      ln -sf #{shared_path}/log #{release_path}/log && 
+      ln -sf /var/assets #{release_path}/public/assets
     CMD
   end
 
@@ -94,7 +95,7 @@ namespace :shared do
     run <<-CMD
       mkdir -p -m 775 #{shared_path}/db && mkdir -p -m 777 #{shared_path}/db/sphinx &&
       mkdir -p -m 777 #{shared_path}/log &&
-      mkdir -p -m 777 #{shared_path}/uploads && mkdir -p -m 777 #{shared_path}/uploads/images
+      mkdir -p -m 777 /var/assets
     CMD
   end
 end

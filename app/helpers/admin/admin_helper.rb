@@ -10,7 +10,7 @@ module Admin::AdminHelper
   def navigation
     links = logged_in? ? [
       content_tag(:li, link_to_unless_current('Categories', admin_categories_path)),
-      content_tag(:li, link_to_unless_current('Products', admin_products_path)),
+      # content_tag(:li, link_to_unless_current('Products', admin_products_path)),
       content_tag(:li, link_to_unless_current('Caresheets', admin_caresheets_path)),
       content_tag(:li, link_to_unless_current('Announcements', admin_announcements_path)),
       content_tag(:li, link_to_unless_current('Post Categories', admin_post_o_matic_categories_path)),

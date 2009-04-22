@@ -25,7 +25,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :announcements
     admin.resources :categories, :has_many => [ :products ]
     admin.resources :caresheets
-    admin.resources :products
+    # admin.resources :products
     admin.resources :post_o_matic_categories, :has_many => [ :post_o_matic_postings ]
     admin.resources :post_o_matic_postings, :collection => { :update_positions => :post }
   end

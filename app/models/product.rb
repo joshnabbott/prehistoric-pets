@@ -1,14 +1,11 @@
 class Product < ActiveRecord::Base
   include Prehistoric
   acts_as_fleximage do
-    if RAILS_ENV == 'production'
-      image_directory "../../shared/uploads/images"
-    else
-      image_directory 'public/images/uploads'
-    end
-    require_image false
-    default_image_path 'public/images/smiley.gif'
+    image_directory 'public/assets/images'
     default_image 'smiley.gif'
+    default_image_path 'public/images/smiley.gif'
+    image_storage_format :jpg
+    require_image false
   end
 
   # Thinking Sphinx configuration
