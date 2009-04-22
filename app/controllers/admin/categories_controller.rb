@@ -4,7 +4,8 @@ class Admin::CategoriesController < Admin::AdminController
   # GET /admin/categories
   # GET /admin/categories.xml
   def index
-    @categories = Category.find(:all)
+    @roots = Category.roots
+    @categories = Category.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -74,6 +75,15 @@ class Admin::CategoriesController < Admin::AdminController
       flash[:success] = 'Category was deleted.'
       format.html { redirect_to(admin_categories_url) }
       format.xml  { head :ok }
+    end
+  end
+
+  def update_positions
+    # params[:sortable] is an array of Category ids. ['1','2','3']
+    if Category.update_positions(params[:sortable])
+      render :nothing => true, :status => 200
+    else
+      render :nothing => true, :status => 500
     end
   end
 end

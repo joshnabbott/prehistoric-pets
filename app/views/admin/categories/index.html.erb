@@ -1,8 +1,28 @@
+<%- content_for :head do -%>
+<script type="text/javascript" charset="utf-8">
+  $().ready(function() {
+    $('#sortable').tableDnD({
+      onDrop: function(table, row) {
+        $.ajax({
+          type: "POST",
+          url: "<%= update_positions_admin_categories_url %>",
+          processData: false,
+          data: $.tableDnD.serialize(),
+          success: function(msg) {
+            // alert('Queue successfully updated.');
+          }
+        });
+      }
+    })
+  })
+</script>
+<%- end -%>
+
 <%= sub_navigation(['New category', new_admin_category_path]) %>
 
 <h1>Listing categories</h1>
 
-<table class="three_col">
+<table class="three_col" id="sortable">
   <thead>
     <tr>
       <th class="first"><span>Name</span></th>

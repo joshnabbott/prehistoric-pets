@@ -23,7 +23,7 @@ ActionController::Routing::Routes.draw do |map|
   map.admin 'admin/', :controller => 'admin/categories'
   map.namespace(:admin) do |admin|
     admin.resources :announcements
-    admin.resources :categories, :has_many => [ :products ]
+    admin.resources :categories, :collection => { :update_positions => :post }, :has_many => [ :products ]
     admin.resources :caresheets
     # admin.resources :products
     admin.resources :post_o_matic_categories, :has_many => [ :post_o_matic_postings ]

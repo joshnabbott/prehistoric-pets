@@ -1,11 +1,11 @@
 <%- content_for :head do -%>
 <script type="text/javascript" charset="utf-8">
   $().ready(function() {
-    $('#post_o_matic_postings').tableDnD({
+    $('#sortable').tableDnD({
       onDrop: function(table, row) {
         $.ajax({
           type: "POST",
-          url: "<%= url_for(:controller => 'admin/post_o_matic_postings', :action => 'update_positions') %>",
+          url: "<%= update_positions_admin_post_o_matic_postings_url %>",
           processData: false,
           data: $.tableDnD.serialize(),
           success: function(msg) {
@@ -21,7 +21,7 @@
 <%= sub_navigation(['New post-o-matic posting', new_admin_post_o_matic_posting_path]) %>
 
 <h1>Listing Post-O-Matic Postings</h1>
-<table class="six_col" id="post_o_matic_postings">
+<table class="six_col" id="sortable">
   <thead>
     <tr class="nodrop nodrag">
       <th class="first"><span>Product</span></th>

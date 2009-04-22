@@ -13,4 +13,20 @@ class Category < ActiveRecord::Base
   def path(column = 'permalink')
     ancestors.reverse.push(self).map(&:"#{column.to_s}").join('/')
   end
+
+  def self.update_positions(*positions)
+    # positions is an array of Category ids. => ['1','2','3']
+    # it can be passed in either way:
+    # Category.update_positions(['1','2','3'])
+    # Category.update_positions(1,2,3)
+    # Just use Array#flatten to turn this: [['1','2','3']] (when an array is passed in)
+    # to this: ['1','2','3']
+    positions = positions.flatten
+    # Removes blank items from array (jQuery is passing back an empty value for one array item)
+    positions.delete_if { |item| item.blank? }
+    positions.each_with_index do |id, index|
+      position = index + 1
+      self.update(id, :position => position)
+    end
+  end
 end

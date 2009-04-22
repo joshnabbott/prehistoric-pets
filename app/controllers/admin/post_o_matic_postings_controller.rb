@@ -82,8 +82,8 @@ class Admin::PostOMaticPostingsController < Admin::AdminController
   end
 
   def update_positions
-    # params[:post_o_matic_postings] is an array of PostOMaticPosting ids. ['1','2','3']
-    if PostOMaticPosting.update_positions(params[:post_o_matic_postings])
+    # params[:sortable] is an array of PostOMaticPosting ids. ['1','2','3']
+    if PostOMaticPosting.update_positions(params[:sortable])
       render :nothing => true, :status => 200
     else
       render :nothing => true, :status => 500
