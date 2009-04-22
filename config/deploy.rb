@@ -56,7 +56,8 @@ namespace :deploy do
 
   desc "Start the sphinx server" 
   task :start_sphinx, :roles => :app do
-    run "cd #{current_path} && rake thinking_sphinx:configure RAILS_ENV=production && rake thinking_sphinx:start RAILS_ENV=production"
+    # run "cd #{current_path} && rake thinking_sphinx:configure RAILS_ENV=production && rake thinking_sphinx:start RAILS_ENV=production"
+    run "cd #{current_path} && RAILS_ENV=production && rake thinking_sphinx:start RAILS_ENV=production"
   end
 
   desc "Restart the sphinx server"
