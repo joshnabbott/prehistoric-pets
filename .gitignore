@@ -4,7 +4,7 @@ db/*.sqlite3
 log/*.log
 public/announcements
 public/browse
-public/images/uploads
+public/assets
 public/products
 public/about.html
 public/contact-us.html
