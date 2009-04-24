@@ -4,8 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.resources :announcements, :users, :caresheets, :products
-  map.product_image '/products/:id/:size.:format', :controller => 'products', :action => 'show'
-  map.announcement_image '/announcements/:id/:size.:format', :controller => 'announcements', :action => 'show'
+
   map.search '/search/:keywords', :controller => 'search', :keywords => nil
 
   map.resource :session
@@ -18,6 +17,10 @@ ActionController::Routing::Routes.draw do |map|
     cart.resources :items
     cart.resources :orders
   end
+
+  # Path for crop
+  map.cropped_product_image '/products/:id/:size.:format', :controller => 'products', :action => 'show', :requirements => { :size => /\d+x\d+/ }
+  map.cropped_announcement_image '/announcements/:id/:size.:format', :controller => 'announcements', :action => 'show', :requirements => { :size => /\d+x\d+/ }
 
   # Admin
   map.admin 'admin/', :controller => 'admin/categories'

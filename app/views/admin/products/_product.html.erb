@@ -1,6 +1,6 @@
 <tr class="<%= cycle('even','odd') %>">
   <td class="center"><%=h product.categories.map(&:name).join('; ') %></td>
-  <td class="center"><%= product.has_image? ? image_tag(product_image_path(product, '100x100', :jpg), :alt => product.name) : 'No image for this product.' %></td>
+  <td class="center"><%= product.has_image? ? image_tag(cropped_product_image_path(product, '100x100', :jpg), :alt => product.name) : 'No image for this product.' %></td>
   <td class="center"><%=h product.name %></td>
   <td class="center"><%=h number_to_currency(product.price) %></td>
   <td class="center"><%=h product.is_active %></td>

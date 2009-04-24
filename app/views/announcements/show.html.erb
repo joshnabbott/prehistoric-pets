@@ -5,7 +5,7 @@
 <div class="announcement">
   <h2><%= @announcement.title_long %></h2>
   <%- if @announcement.has_image? -%>
-    <p class="image"><%= image_tag(announcement_image_path(@announcement, '400x239', :jpg), :alt => @announcement.title_short) %></p>
+    <p class="image"><%= image_tag(cropped_announcement_image_path(@announcement, '400x239', :jpg), :alt => @announcement.title_short) %></p>
   <%- end -%>
   <%= @announcement.body_long %>
 </div>
