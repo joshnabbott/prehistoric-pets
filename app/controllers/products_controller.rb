@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  caches_page :show
+  # caches_page :show
 
   def show
     @product = Product.find(params[:id])
