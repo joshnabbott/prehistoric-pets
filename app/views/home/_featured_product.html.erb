@@ -1,9 +1,9 @@
 <div class="featured">
   <p class="image">
-    <%= link_to(image_tag(cropped_product_image_path(@featured_product, '160x160', :jpg)), product_path(@featured_product)) %>
-    <span><%= link_to 'More info', product_path(@featured_product) %></span>
+    <%= link_to(image_tag(cropped_product_image_path(@featured_product, '160x160', :jpg)), product_path(@featured_product, :format => :html)) %>
+    <span><%= link_to 'More info', product_path(@featured_product, :format => :html) %></span>
   </p>
   <h3><%= @featured_product.name %></h3>
   <%= @featured_product.description %>
-  <p class="more_info"><%= link_to 'More info', product_path(@featured_product) %></p>
+  <p class="more_info"><%= link_to 'More info', product_path(@featured_product, :format => :html) %></p>
 </div>
