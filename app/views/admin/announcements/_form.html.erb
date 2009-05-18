@@ -12,7 +12,7 @@
 <%- if @announcement.has_image? -%>
   <p>
     Current image:
-    <%= image_tag(cropped_announcement_image_path(@announcement, '100x100', :jpg), :alt => @announcement.title_short) %>
+    <%= image_tag(cropped_announcement_image_path(@announcement, '100x100', :jpg), :alt => @announcement.title_short) if @announcement.has_image? %>
   </p>
 <%- end -%>
 <p>
