@@ -4,6 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.resources :announcements, :users, :caresheets, :products
+  map.resources :caresheets, :only => :show
 
   map.search '/search/:keywords', :controller => 'search', :keywords => nil
 
