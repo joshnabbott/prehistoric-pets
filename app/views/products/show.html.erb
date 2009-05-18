@@ -6,7 +6,8 @@
   <p class="image"><%= link_to(image_tag(product_path(@product, :size => '400x239', :format => :jpg), :alt => @product.name), product_path(@product, :jpg), :rel => 'facebox') %></p>
   <h2><%= @product.name %></h2>
   <p><em><%= @product.scientific_name %></em></p>
-  <p class="description">Description:<%= @product.description %></p>
+  <p class="description"><strong>Description:</strong> <%= @product.description %></p>
+  <p class="comments"><strong>Comments/notes:</strong> <%= @product.comments %></p>
   <p class="price"><strong>Price:</strong> <%= number_to_currency(@product.price) %></p>
   <%- form_tag(cart_items_path) do -%>
     <fieldset>
