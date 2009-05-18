@@ -18,10 +18,6 @@ ActionController::Routing::Routes.draw do |map|
     cart.resources :orders
   end
 
-  # Path for crop
-  map.cropped_product_image '/products/:id/:size.:format', :controller => 'products', :action => 'show', :requirements => { :size => /\d+x\d+/ }
-  map.cropped_announcement_image '/announcements/:id/:size.:format', :controller => 'announcements', :action => 'show', :requirements => { :size => /\d+x\d+/ }
-
   # Admin
   map.admin 'admin/', :controller => 'admin/categories'
   map.namespace(:admin) do |admin|
@@ -32,6 +28,10 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :post_o_matic_categories, :has_many => [ :post_o_matic_postings ]
     admin.resources :post_o_matic_postings, :collection => { :update_positions => :post }
   end
+
+  # Path for crop
+  map.cropped_product_image '/products/:id/:size.:format', :controller => 'products', :action => 'show', :requirements => { :size => /\d+x\d+/ }
+  map.cropped_announcement_image '/announcements/:id/:size.:format', :controller => 'announcements', :action => 'show', :requirements => { :size => /\d+x\d+/ }
 
   # Categories: using globbed routes since I'm not sure how many categories deep this could go
   # and I would like a breadcrumb-like url (/browse/pythons/ball-pythons).

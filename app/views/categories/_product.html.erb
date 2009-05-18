@@ -1,9 +1,9 @@
 <div class="product<%= ((product_counter % 3) == 2) ? ' last' : ''  %>">
   <%- if product.has_image? -%>
-    <p class="image"><%= link_to(image_tag(cropped_product_image_path(product, '239x239', :jpg), :alt => product.name), product_path(product)) %></p>
+    <p class="image"><%= link_to(image_tag(cropped_product_image_path(product, '239x239', :jpg), :alt => product.name), product_path(product, :format => :html)) %></p>
   <%- end -%>
-  <p class="name"><%= link_to product.name, product_path(product) %></p>
+  <p class="name"><%= link_to product.name, product_path(product, :format => :html) %></p>
   <p class="scientific_name"><%= product.scientific_name %></p>
   <p class="price"><%= number_to_currency(product.price) %></p>
-  <p><%= link_to 'Click for details', product_path(product) %></p>
+  <p><%= link_to 'Click for details', product_path(product, :format => :html) %></p>
 </div>

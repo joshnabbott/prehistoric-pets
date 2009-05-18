@@ -12,7 +12,7 @@
 <%- if @product.has_image? -%>
   <p>
     Current image:
-    <%= embedded_image_tag(@product.operate { |img| img.resize 100 }) %>
+    <%= image_tag(cropped_product_image_path(@product, '100x100', :jpg), :alt => @product.name) %>
   </p>
 <%- end -%>
 <p>

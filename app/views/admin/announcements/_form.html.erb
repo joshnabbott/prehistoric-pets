@@ -12,7 +12,7 @@
 <%- if @announcement.has_image? -%>
   <p>
     Current image:
-    <%= embedded_image_tag(@announcement.operate { |img| img.resize 100 }) %>
+    <%= image_tag(cropped_announcement_image_path(@announcement, '100x100', :jpg), :alt => @announcement.title_short) %>
   </p>
 <%- end -%>
 <p>
