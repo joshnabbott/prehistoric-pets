@@ -9,7 +9,9 @@
   <p class="description"><strong>Description:</strong> <%= @product.description %></p>
   <p class="comments"><strong>Comments/notes:</strong> <%= @product.comments %></p>
   <p class="price"><strong>Price:</strong> <%= number_to_currency(@product.price) %></p>
-  <p class="caresheet"><%= link_to('View caresheet', caresheet_path(@product.caresheet)) %></p>
+  <%- if @product.caresheet -%>
+    <p class="caresheet"><%= link_to('View caresheet', caresheet_path(@product.caresheet)) %></p>
+  <%- end -%>
   <%- form_tag(cart_items_path) do -%>
     <fieldset>
       <%= hidden_field_tag 'quantity', 1 %>
