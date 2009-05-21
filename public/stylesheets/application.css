@@ -228,7 +228,8 @@ div#right_column div#left_column_blocks div.featured p.image span {
 */
 div#content:after,
 body.products div#right_column div.product:after,
-div#right_column div#left_column_blocks div#care_sheets ul:after {
+div#right_column div#left_column_blocks div#care_sheets ul:after,
+div#right_column div#left_column_blocks div.featured:after {
   clear: both;
   color: #1e1e1e;
   content: ".";
@@ -238,7 +239,8 @@ div#right_column div#left_column_blocks div#care_sheets ul:after {
 }
 * html div#content,
 * html body.products div#right_column div.product,
-* html div#right_column div#left_column_blocks div#care_sheets ul {
+* html div#right_column div#left_column_blocks div#care_sheets ul,
+* html div#right_column div#left_column_blocks div.featured:after {
   height: 1%;
 }
 div#footer {
