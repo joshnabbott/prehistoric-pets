@@ -1,3 +1,21 @@
 <%- @page_title = 'Contact us' -%>
+<%- content_for :stylesheets do -%>
+<%= stylesheet_link_tag('_static_pages') %>
+<%- end -%>
+
 <h2>Contact us</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<ul>
+  <li>Prehistoric Pets
+    <ul>
+      <li>714-964-3525</li>
+      <li><%= mail_to 'info@prehistoricpets.com', nil, :encode => :javascript %></li>
+      <li>18822 Brookhurst Street</li>
+      <li>Fountain Valley, CA 982708</li>
+    </ul>
+  </li>
+</ul>
+
+<p>You can also find us, friend us, and recommend us on the following sites.</p>
+
+<p>We have been trying over the past couple months to expand and enhance our online community of friends and fans, now we are looking for your input. If there is anything you want to see on our featured sites or profiles let us know and hopefully we can start improving our pages.</p>

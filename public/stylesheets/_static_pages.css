@@ -1,0 +1,10 @@
+div#right_column ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+div#right_column ul li ul li {
+  margin-left: 10px;
+}
+div#right_column p {
+  margin-bottom: 20px;
+}
