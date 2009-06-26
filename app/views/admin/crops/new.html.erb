@@ -1,0 +1,20 @@
+<%- content_for :stylesheets do -%>
+<%= stylesheet_link_tag 'jquery.jcrop' %>
+<%- end -%>
+
+<%- content_for :document_ready do -%>
+<%= jcrop_initializer(@crop) %>
+<%- end -%>
+
+<p><%= image_tag(formatted_image_path(@image, :png), :id => 'jcrop_target') %></p>
+
+<h1>New crop</h1>
+
+<% form_for([:admin, @parents, @crop]) do |f| %>
+  <fieldset>
+    <%= render :partial => 'form', :locals => { :f => f } %>
+    <p>
+      <%= f.submit "Create" %> - or - <%= link_to 'Cancel', [:admin, @parents, :crops] %>
+    </p>
+  </fieldset>
+<% end %>

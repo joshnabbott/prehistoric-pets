@@ -1,0 +1,14 @@
+<%- if @image.has_image? -%>
+  <p>
+    <b>Image:</b><br/>
+    <%= asset_tag(@image, :resize_to => '800x0') %>
+  </p>
+<%- end -%>
+
+<p>
+  <b>Name:</b>
+  <%=h @image.name %>
+</p>
+
+<%= link_to 'Edit', [:edit, :admin, @parents, @image] %> |
+<%= link_to 'Back', [:admin, @parents, :images] %>

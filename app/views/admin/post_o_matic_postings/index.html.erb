@@ -1,21 +1,17 @@
-<%- content_for :head do -%>
-<script type="text/javascript" charset="utf-8">
-  $().ready(function() {
-    $('#sortable').tableDnD({
-      onDrop: function(table, row) {
-        $.ajax({
-          type: "POST",
-          url: "<%= update_positions_admin_post_o_matic_postings_url %>",
-          processData: false,
-          data: $.tableDnD.serialize(),
-          success: function(msg) {
-            // alert('Queue successfully updated.');
-          }
-        });
+<%- content_for :admin_document_ready do -%>
+$('#sortable').tableDnD({
+  onDrop: function(table, row) {
+    $.ajax({
+      type: "POST",
+      url: "<%= update_positions_admin_post_o_matic_postings_url %>",
+      processData: false,
+      data: $.tableDnD.serialize(),
+      success: function(msg) {
+        // alert('Queue successfully updated.');
       }
-    })
-  })
-</script>
+    });
+  }
+})
 <%- end -%>
 
 <%= sub_navigation(['New post-o-matic posting', new_admin_post_o_matic_posting_path]) %>

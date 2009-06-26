@@ -1,0 +1,30 @@
+<%= asset_tag(@image) %>
+
+<p>
+  <b>Crop definition:</b>
+  <%=h @crop.crop_definition.name %>
+</p>
+
+<p>
+  <b>X:</b>
+  <%=h @crop.x %>
+</p>
+
+<p>
+  <b>Y:</b>
+  <%=h @crop.y %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%=h @crop.width %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%=h @crop.height %>
+</p>
+
+
+<%= link_to 'Edit', [:edit, :admin, @parents, @crop] %> |
+<%= link_to 'Back', [:admin, @parents, :crops] %>

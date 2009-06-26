@@ -1,5 +1,2 @@
-test/rails_root/log/*
+*.log
 test/rails_root/public/uploads/*
-test/rails_root/tmp/**/*
-.DS_Store
-*.sqlite3

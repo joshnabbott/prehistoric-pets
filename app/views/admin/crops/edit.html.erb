@@ -1,0 +1,26 @@
+<%- content_for :admin_stylesheets do -%>
+<%= stylesheet_link_tag 'jquery.jcrop' %>
+<%- end -%>
+
+<%- content_for :admin_javascripts do -%>
+<%= javascript_include_tag 'jquery.jcrop' %>
+<%- end -%>
+
+<%- content_for :admin_document_ready do -%>
+<%= jcrop_initializer(@crop, :box_width => 'window.innerWidth - 57') %>
+<%- end -%>
+
+<h1>Editing crop: <%= @crop.name %></h1>
+
+<div id="crop_image">
+  <%= image_tag(admin_image_path(@image, :png), :id => 'jcrop_target') %>
+</div>
+
+<% form_for([:admin, @parents, @crop]) do |f| %>
+  <fieldset>
+    <%= render :partial => 'form', :locals => { :f => f } %>
+    <p>
+      <%= f.submit "Update" %> - or - <%= link_to 'Cancel', [:admin, @parents, :crops] %>
+    </p>
+  </fieldset>
+<% end %>

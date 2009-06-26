@@ -1,0 +1,7 @@
+<tr class="<%= cycle('even','odd') %>">
+  <td class="center"><%= asset_category.name %></td>
+  <td class="center">
+    <%= link_to 'Edit', [:edit, :admin, asset_category] %> | 
+    <%= link_to 'Delete', [:admin, asset_category], :confirm => 'Are you sure?', :method => :delete %>
+  </td>
+</tr>

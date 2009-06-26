@@ -1,0 +1,9 @@
+<%= sub_navigation(['&laquo; Back', [:admin, @parents, :images]]) %>
+
+<h1>New image</h1>
+
+<% form_for([:admin, @parents, @image], :html => { :multipart => true }) do |f| %>
+  <fieldset>
+    <%= render :partial => 'form', :locals => { :f => f } %>
+  </fieldset>
+<% end %>

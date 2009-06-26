@@ -4,12 +4,13 @@
 }
 body {
   color: #333;
-  font: 24px normal medium "Trebuchet MS", sans-serif;
+  font: 18px normal medium "Trebuchet MS", sans-serif;
   line-height: 150%;
 }
 div#header {
-  height: 97px;
   background: #000 url("_g/BG_admin_header.jpg") 0 0 repeat-x;
+  height: 97px;
+  position: relative;
 }
 div#header h1 {
   color: #fff;
@@ -18,6 +19,9 @@ div#header h1 {
   margin: 10px 0 0 10px;
   font-size: 24px;
 }
+/*
+  Some generic css classes
+*/
 .left {
   text-align: left;
 }
@@ -74,8 +78,21 @@ a:active {
   text-decoration: underline;
 }
 form {
-  width: 400px;
+  width: 500px;
   margin: 0 auto;
+}
+table form {
+  width: auto;
+}
+form div#errorExplanation {
+  background: #ffa9a9 url(_g/error.png) 5px center no-repeat;
+  border-color: #d10303;
+  border-style: solid;
+  border-width: 1px;
+  color: #ab0000;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 0 0 0 35px;
 }
 form div#errorExplanation h2 {
   display: none;
@@ -94,15 +111,20 @@ form label {
   display: block;
   line-height: 200%;
 }
+form label span.info {
+  background: #F0E3A1;
+  font-size: 70%;
+  padding: 1px;
+}
 form fieldset input.check_box {
-  font-size: 32px;
+  font-size: 24px;
   margin: 0 0 15px 0;
 }
 form fieldset input.text_field,
 form fieldset textarea,
 form fieldset select {
   border: #cacaca 2px solid;
-  font-size: 32px;
+  font-size: 24px;
   margin: 0 0 15px 0;
   width: 100%;
 }
@@ -112,15 +134,9 @@ form fieldset textarea {
 form input.submit {
   font-size: 24px;
 }
-body.post_o_matic_postings_index form {
-  width: 100%;
-}
-body.post_o_matic_postings_index form input.text_field {
-  border: #cacaca 2px solid;
-  font-size: 24px;
-  margin: 0 0 15px 0;
-  text-align: center;
-  width: 50%;
+form fieldset span.mulitple select {
+  float: left;
+  width: 30%;
 }
 table.two_col,
 table.three_col,
@@ -157,10 +173,12 @@ table.seven_col th,
 table.seven_col td {
   width: 14%;
 }
-table.eight_col th {
+table.eight_col th,
+table.eight_col td {
   width: 12%;
 }
-table.nine_col th {
+table.nine_col th,
+table.nine_col td {
   width: 11%;
 }
 table {
@@ -203,14 +221,34 @@ h1 {
   text-align: center;
   margin: 0 0 25px 0;
 }
-div#header ul {
+div#header ul#navigation {
+  color: #fff;
+  float: right;
+  font-size: 80%;
+  list-style-type: none;
+  margin: 0 15px 0 0;
+}
+div#header ul#navigation li {
+  font-weight: bold;
+  float: left;
+  margin: 0 10px 0 0;
+}
+div#header ul#navigation li a {
+  color: #cacaca;
+  font-size: 80%;
+}
+div#header div#navigation a:hover,
+div#header div#navigation a:active {
+  color: #fff;
+}
+div#header ul#tabbed_navigation {
   position: absolute;
   height: 30px;
   list-style-type: none;
   margin: 67px 0 0 10px;
   font-size: 14px;
 }
-div#header ul li {
+div#header ul#tabbed_navigation li {
   background: #fff url("_g/BG_admin_nav.jpg") 0 -30px no-repeat;
   color: #000;
   font-weight: bold;
@@ -222,8 +260,8 @@ div#header ul li {
   margin: 0 10px 0 0;
   font-size: 90%;
 }
-div#header ul li a:link,
-div#header ul li a:visited {
+div#header ul#tabbed_navigation li a:link,
+div#header ul#tabbed_navigation li a:visited {
   font-weight: normal;
   height: 30px;
   line-height: 35px;
@@ -234,10 +272,27 @@ div#header ul li a:visited {
   text-decoration: none;
   background: #000 url("_g/BG_admin_nav.jpg") 0 0 no-repeat;
 }
-div#header ul li a:hover,
-div#header ul li a:active {
+div#header ul#tabbed_navigation li a:hover,
+div#header ul#tabbed_navigation li a:active,
+div#header ul#tabbed_navigation li a.active {
   color: #000;
   background: #fff url("_g/BG_admin_nav.jpg") 0 -30px no-repeat;
+}
+div#header #search {
+  bottom: 7px;
+  position: absolute;
+  right: 20px;
+}
+div#header #search form {
+  width: 100%;
+}
+div#header #search form input {
+  float: left;
+  font-size: 16px;
+}
+div#header #search form input.text_field {
+  margin: 0 10px 0 0;
+  width: auto;
 }
 div#content_container {
   padding: 2px 0;
@@ -292,6 +347,7 @@ div#content_container div#bottom_right {
 }
 div#content:after {
   clear: both;
+  color: #fff;
   content: ".";
   display: block;
   height: 0;

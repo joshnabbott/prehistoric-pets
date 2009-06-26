@@ -2,19 +2,8 @@
 
 <p>
   <%= f.label :category_ids %>
-  <%= f.collection_select :category_ids, Category.find(:all), :id, :name, {}, { :multiple => true } %>
+  <%= nested_select :product, :category_ids, Category.roots, {}, :multiple => true %>
 </p>
-<p>
-  <%= f.label :image_file %>
-  <%= f.file_field :image_file %>
-  <%= f.hidden_field :image_file_temp %>
-</p>
-<%- if @product.has_image? -%>
-  <p>
-    Current image:
-    <%= image_tag(cropped_product_image_path(@product, '100x100', :jpg), :alt => @product.name) if @product.has_image?  %>
-  </p>
-<%- end -%>
 <p>
   <%= f.label :name %>
   <%= f.text_field :name, :class => 'text_field' %>

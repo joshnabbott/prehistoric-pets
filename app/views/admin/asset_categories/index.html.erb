@@ -1,0 +1,11 @@
+<%= sub_navigation(['New asset category',new_admin_asset_category_path]) %>
+
+<h1>Listing asset categories</h1>
+
+<table class="three_col">
+  <tr>
+    <th class="first center">Name</th>
+    <th class="last">Actions</th>
+  </tr>
+  <%= render @asset_categories %>
+</table>

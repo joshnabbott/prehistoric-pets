@@ -1,6 +1,6 @@
 <tr class="<%= cycle('even','odd') %>">
   <td class="center"><%=h product.categories.map(&:name).join('; ') %></td>
-  <td class="center"><%= product.has_image? ? link_to(image_tag(cropped_product_image_path(product, '100x100', :jpg), :alt => product.name), [:edit, :admin, @category, product]) : 'No image for this product.' %></td>
+  <td class="center"><%= asset_tag(product.images.default, :crop => "Product Images::Thumbnail", :resize_to => '125x125', :exact => true) if product.images.default && product.images.default.has_image? %></td>
   <td class="center"><%=h product.name %></td>
   <td class="center"><%=h number_to_currency(product.price) %></td>
   <td class="center"><%=h product.is_active %></td>
@@ -8,6 +8,7 @@
   <td class="center"><%=h product.post_o_matic_postings.posted.count %></td>
   <td class="center"><%=h product.post_o_matic_postings.scheduled.count %></td>
   <td class="center">
+    <%= link_to 'Images', admin_category_product_images_path(@category, product) %> | 
     <%= link_to 'Edit', [:edit, :admin, @category, product] %> | 
     <%= link_to 'Destroy', [:admin, @category, product], :confirm => 'Are you sure?', :method => :delete %>
   </td>

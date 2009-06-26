@@ -266,7 +266,7 @@ controller:
     if @photo.save
       redirect_to photo_url(@photo)
     else
-      flash[:notice] = 'Your photo did not pass validation!'
+      flash[:success] = 'Your photo did not pass validation!'
       render :action =&gt; 'new'
     end
   end

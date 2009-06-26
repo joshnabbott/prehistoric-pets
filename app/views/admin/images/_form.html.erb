@@ -1,26 +1,19 @@
 <%= f.error_messages %>
 
 <p>
-  <%= f.label :image_file %><br />
-  <%= f.file_field :image_file %>
+  <%= f.label :asset_category_ids, 'Asset Category' %>
+  <%= f.collection_select :asset_category_ids, AssetCategory.all, :id, :name %>
 </p>
-<p>
-  <%= f.label :owner_id %><br />
-  <%= f.text_field :owner_id %>
-</p>
-<p>
-  <%= f.label :owner_type %><br />
-  <%= f.text_field :owner_type %>
-</p>
-<p>
-  <%= f.label :description %><br />
-  <%= f.text_area :description %>
-</p>
-<p>
-  <%= f.label :is_active %><br />
-  <%= f.check_box :is_active %>
-</p>
-<p>
-  <%= f.label :is_default %><br />
-  <%= f.check_box :is_default %>
-</p>
+
+<%- if @image.new_record? -%>
+  <%= swfupload_tag(:upload_url => url_for([:swfupload, :admin, @parents, :images])) %>
+<%- else -%>
+  <p>
+    <%= f.label :image_file %>
+    <%= f.file_field :image_file %>
+  </p>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+<%- end -%>

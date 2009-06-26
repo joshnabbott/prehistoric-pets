@@ -23,7 +23,17 @@ ActionController::Routing::Routes.draw do |map|
   map.admin 'admin/', :controller => 'admin/categories'
   map.namespace(:admin) do |admin|
     admin.resources :announcements
-    admin.resources :categories, :collection => { :update_positions => :post }, :has_many => [ :products ]
+    admin.resources :categories, :collection => { :update_positions => :post } do |category|
+      category.resources :products do |product|
+        product.resources :images, :collection => { :swfupload => :post }  do |image|
+          image.resources :crops
+        end
+      end
+    end
+    admin.resources :images, :collection => { :swfupload => :post }, :has_many => [ :crops ]
+    admin.resources :asset_categories
+    admin.resources :crop_definitions
+
     admin.resources :caresheets
     # admin.resources :products
     admin.resources :post_o_matic_categories, :has_many => [ :post_o_matic_postings ]
@@ -33,6 +43,9 @@ ActionController::Routing::Routes.draw do |map|
   # Path for crop
   map.cropped_product_image '/products/:id/:size.:format', :controller => 'products', :action => 'show', :requirements => { :size => /\d+x\d+/ }
   map.cropped_announcement_image '/announcements/:id/:size.:format', :controller => 'announcements', :action => 'show', :requirements => { :size => /\d+x\d+/ }
+
+  # Asset manager
+  map.cropped_image '/images/:id/:name.:format', :controller => 'admin/images', :action => 'show', :requirements => { :name => /[0-9a-z]{32}/ }
 
   # Categories: using globbed routes since I'm not sure how many categories deep this could go
   # and I would like a breadcrumb-like url (/browse/pythons/ball-pythons).

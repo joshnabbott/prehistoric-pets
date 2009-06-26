@@ -1,0 +1,17 @@
+<%= sub_navigation(['New crop definition',new_admin_crop_definition_path]) %>
+
+<h1>Listing crop definitions</h1>
+
+<table class="eight_col">
+  <tr>
+    <th class="first center">Asset category</th>
+    <th class="center">Name</th>
+    <th class="center">Minimum width</th>
+    <th class="center">Minimum height</th>
+    <th class="center">X</th>
+    <th class="center">Y</th>
+    <th class="center">Is specific</th>
+    <th class="last">Actions</th>
+  </tr>
+  <%= render @crop_definitions %>
+</table>

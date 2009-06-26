@@ -1,0 +1,30 @@
+<%= f.error_messages %>
+
+<p>
+  <%= f.label :asset_category_id %>
+  <%= f.collection_select :asset_category_id, AssetCategory.all, :id, :name %>
+</p>
+<p>
+  <%= f.label :name %>
+  <%= f.text_field :name, :class => 'text_field' %>
+</p>
+<p>
+  <%= f.label :minimum_width %>
+  <%= f.text_field :minimum_width, :class => 'text_field' %>
+</p>
+<p>
+  <%= f.label :minimum_height %>
+  <%= f.text_field :minimum_height, :class => 'text_field' %>
+</p>
+<p>
+  <%= f.label :x %>
+  <%= f.text_field :x, :class => 'text_field' %>
+</p>
+<p>
+  <%= f.label :y %>
+  <%= f.text_field :y, :class => 'text_field' %>
+</p>
+<p>
+  <%= f.label :is_specific %>
+  <%= f.check_box :is_specific, :class => 'check_box' %>
+</p>

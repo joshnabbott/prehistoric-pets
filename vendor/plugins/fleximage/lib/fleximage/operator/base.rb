@@ -128,8 +128,6 @@ module Fleximage
           raise ArgumentError, ":#{gravity_name} is not a valid gravity name.\n\nValid names are :center, :top, :top_right, :right, :bottom_right, :bottom, :bottom_left, :left, :top_left"
         end
       end
-      
-        
     end # Base
     
     # Conversion table for mapping alignment symbols to their equivalent RMagick gravity constants.

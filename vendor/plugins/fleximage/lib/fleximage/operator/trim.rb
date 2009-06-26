@@ -6,7 +6,7 @@ module Fleximage
     #   image.trim
     class Trim < Operator::Base
       def operate()
-        @image.trim!(true)
+        @image.trim!
       end
     end
     

@@ -1,0 +1,14 @@
+<%- content_for :stylesheets do -%>
+<%= stylesheet_link_tag 'jquery.jcrop' %>
+<%- end -%>
+
+<h1>Editing image</h1>
+
+<% form_for([:admin, @parents, @image], :html => { :multipart => true }) do |f| %>
+  <fieldset>
+    <%= render :partial => 'form', :locals => { :f => f } %>
+    <p>
+      <%= f.submit "Update" %> - or - <%= link_to 'Cancel', [:admin, @parents, :images] %>
+    </p>
+  </fieldset>
+<% end %>

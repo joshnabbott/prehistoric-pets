@@ -44,7 +44,7 @@ class PhotoFilesController < ApplicationController
 
     respond_to do |format|
       if @photo_file.save
-        flash[:notice] = 'PhotoFile was successfully created.'
+        flash[:success] = 'PhotoFile was successfully created.'
         format.html { redirect_to(@photo_file) }
         format.xml  { render :xml => @photo_file, :status => :created, :location => @photo_file }
       else
@@ -61,7 +61,7 @@ class PhotoFilesController < ApplicationController
 
     respond_to do |format|
       if @photo_file.update_attributes(params[:photo_file])
-        flash[:notice] = 'PhotoFile was successfully updated.'
+        flash[:success] = 'PhotoFile was successfully updated.'
         format.html { redirect_to(@photo_file) }
         format.xml  { head :ok }
       else

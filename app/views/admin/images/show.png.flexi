@@ -1,0 +1,27 @@
+# TODO: Clean up and move this logic to ImageHelper.
+@image.operate do |image|
+  # Example: asset_tag(@image, :size => '150x0')
+  # Returns the image sized to either 150px wide or tall, depending on which is matches first.
+  # Probably not something you'll see used very often for exact measurements, but it may or may not come in handy.
+  if params[:resize_to] =~ /\b0x|x0\b/
+    size = params[:resize_to].gsub(/\b0x|x0\b/,'')
+    image.resize(size)
+  elsif params[:size] && params[:from] && params[:resize_to]
+    # Example: asset_tag(@image, :crop => "Product Image::Thumbnail")
+    # :crop - Is actually the name of a crop definition. The helper will attempt to find the crop definition by the name passed to it
+    # and will also find the crop of that image for the specified crop definition (if it exists).
+    # <tt>size</tt> and <tt>from</tt> are derived from the width/height of the crop if it exists. If not the crop definition's 
+    # width/height x/y are used.
+    #
+    # :resize_to - Additional sizing can be performed by passing a custom widthxheight in the <tt>resize_to</tt> option.
+    # The specified crop of the image will be used, but then resized to match the parameters for <tt>resize_to</tt>. To get the exact
+    # size specified, pass :exact => true. The image will be filled out with extra padding to match the dimensions of <tt>resize_to</tt>
+    exact = params[:exact].eql?('true')
+    image.crop(:from => params[:from], :size => params[:size])
+    image.resize(params[:resize_to], :padding => exact)
+  else
+    # Example: asset_tag(@image)
+    # Will just render the original image.
+    image
+  end
+end

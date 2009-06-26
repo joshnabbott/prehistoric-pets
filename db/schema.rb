@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090302034918) do
+ActiveRecord::Schema.define(:version => 20090327195117) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title_short"
@@ -22,6 +22,43 @@ ActiveRecord::Schema.define(:version => 20090302034918) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "old_announcement_id"
+  end
+
+  create_table "asset_categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "asset_categories", ["name"], :name => "index_asset_categories_on_name"
+
+  create_table "asset_categories_assets", :id => false, :force => true do |t|
+    t.integer "asset_id"
+    t.integer "asset_category_id"
+  end
+
+  create_table "asset_resources", :force => true do |t|
+    t.integer  "asset_id",                      :null => false
+    t.integer  "owner_id",                      :null => false
+    t.string   "owner_type",                    :null => false
+    t.boolean  "is_active",  :default => false, :null => false
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "asset_resources", ["asset_id"], :name => "index_asset_resources_on_asset_id"
+  add_index "asset_resources", ["owner_id", "owner_type"], :name => "index_asset_resources_on_owner_id_and_owner_type"
+
+  create_table "assets", :force => true do |t|
+    t.string   "type"
+    t.string   "name"
+    t.text     "description"
+    t.integer  "size"
+    t.integer  "image_width"
+    t.integer  "image_height"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "caresheets", :force => true do |t|
@@ -54,6 +91,33 @@ ActiveRecord::Schema.define(:version => 20090302034918) do
   end
 
   add_index "categories", ["permalink"], :name => "index_categories_on_permalink", :unique => true
+
+  create_table "crop_definitions", :force => true do |t|
+    t.integer  "asset_category_id"
+    t.string   "name"
+    t.integer  "minimum_width",     :default => 0,     :null => false
+    t.integer  "minimum_height",    :default => 0,     :null => false
+    t.integer  "x",                 :default => 0,     :null => false
+    t.integer  "y",                 :default => 0,     :null => false
+    t.boolean  "is_specific",       :default => false, :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "crop_definitions", ["name", "asset_category_id"], :name => "index_crop_definitions_on_name_and_asset_category_id"
+
+  create_table "crops", :force => true do |t|
+    t.integer  "image_id",           :null => false
+    t.integer  "crop_definition_id"
+    t.integer  "x",                  :null => false
+    t.integer  "y",                  :null => false
+    t.integer  "width",              :null => false
+    t.integer  "height",             :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "crops", ["crop_definition_id", "image_id"], :name => "index_crops_on_crop_definition_id_and_image_id"
 
   create_table "images", :force => true do |t|
     t.integer  "owner_id"

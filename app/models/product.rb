@@ -1,12 +1,12 @@
 class Product < ActiveRecord::Base
   include Prehistoric
-  acts_as_fleximage do
-    image_directory 'public/assets/images'
-    default_image 'smiley.gif'
-    default_image_path 'public/images/smiley.gif'
-    image_storage_format :jpg
-    require_image false
-  end
+  # acts_as_fleximage do
+  #   image_directory 'public/assets/images'
+  #   default_image 'smiley.gif'
+  #   default_image_path 'public/images/smiley.gif'
+  #   image_storage_format :jpg
+  #   require_image false
+  # end
 
   # Thinking Sphinx configuration
   define_index do
@@ -27,6 +27,15 @@ class Product < ActiveRecord::Base
   has_many :taxons, :dependent => :nullify
   validates_presence_of :name, :sku, :price, :permalink
   validates_uniqueness_of :sku, :allow_nil => true
+
+  # Asset associations
+  has_many :asset_resources, :as => :owner, :dependent => :destroy
+  has_many :images, :through => :asset_resources, :source => :asset, :class_name => 'Image' do
+    def default(reload = false)
+      @default = nil if reload
+      @default ||= find(:first)
+    end
+  end
 
   named_scope :active, :conditions => { :is_active => true }
   named_scope :featured, :conditions => { :is_featured => true }

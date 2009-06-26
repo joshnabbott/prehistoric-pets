@@ -1,0 +1,13 @@
+<tr class="<%= cycle('even','odd') %>">
+  <td class="center"><%=h crop_definition.asset_category.name %></td>
+  <td class="center"><%=h crop_definition.name %></td>
+  <td class="center"><%=h crop_definition.minimum_width %></td>
+  <td class="center"><%=h crop_definition.minimum_height %></td>
+  <td class="center"><%=h crop_definition.x %></td>
+  <td class="center"><%=h crop_definition.y %></td>
+  <td class="center"><%=h crop_definition.is_specific %></td>
+  <td class="center">
+    <%= link_to 'Edit', [:edit, :admin, crop_definition] %> | 
+    <%= link_to 'Delete', [:admin, crop_definition], :confirm => 'Are you sure?', :method => :delete %>
+  </td>
+</tr>

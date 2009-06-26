@@ -1,0 +1,10 @@
+<tr class="<%= cycle('even','odd') %>">
+  <td class="center"><%= asset_tag(image, :resize_to => '125x0') if image.has_image? %></td>
+  <td class="center"><%=h image.name %></td>
+  <td class="center">
+    <%= link_to 'Crops', [:admin, @parents, image, :crops] %> | 
+    <%= link_to 'Show', [:admin, @parents, image] %> | 
+    <%= link_to 'Edit', [:edit, :admin, @parents, image] %> | 
+    <%= link_to 'Delete', [:admin, @parents, image], :confirm => 'Are you sure?', :method => :delete %>
+  </td>
+</tr>

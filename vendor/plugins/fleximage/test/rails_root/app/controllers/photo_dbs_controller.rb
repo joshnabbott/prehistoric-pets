@@ -44,7 +44,7 @@ class PhotoDbsController < ApplicationController
 
     respond_to do |format|
       if @photo_db.save
-        flash[:notice] = 'PhotoDb was successfully created.'
+        flash[:success] = 'PhotoDb was successfully created.'
         format.html { redirect_to(@photo_db) }
         format.xml  { render :xml => @photo_db, :status => :created, :location => @photo_db }
       else
@@ -61,7 +61,7 @@ class PhotoDbsController < ApplicationController
 
     respond_to do |format|
       if @photo_db.update_attributes(params[:photo_db])
-        flash[:notice] = 'PhotoDb was successfully updated.'
+        flash[:success] = 'PhotoDb was successfully updated.'
         format.html { redirect_to(@photo_db) }
         format.xml  { head :ok }
       else

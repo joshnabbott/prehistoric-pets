@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @crop_definition.name %>
+</p>
+
+<p>
+  <b>Minimum width:</b>
+  <%=h @crop_definition.minimum_width %>
+</p>
+
+<p>
+  <b>Minimum height:</b>
+  <%=h @crop_definition.minimum_height %>
+</p>
+
+<p>
+  <b>X:</b>
+  <%=h @crop_definition.x %>
+</p>
+
+<p>
+  <b>Y:</b>
+  <%=h @crop_definition.y %>
+</p>
+
+<p>
+  <b>Is specific:</b>
+  <%=h @crop_definition.is_specific %>
+</p>
+
+
+<%= link_to 'Edit', [:edit, :admin, @crop_definition] %> |
+<%= link_to 'Back', admin_crop_definitions_path %>

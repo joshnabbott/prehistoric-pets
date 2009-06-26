@@ -1,0 +1,10 @@
+<h1>Editing asset category</h1>
+
+<% form_for([:admin, @asset_category]) do |f| %>
+  <fieldset>
+    <%= render :partial => 'form', :locals => { :f => f } %>
+    <p>
+      <%= f.submit "Update", :class => 'submit' %> - or - <%= link_to 'Cancel', admin_asset_categories_path %>
+    </p>
+  </fieldset>
+<% end %>

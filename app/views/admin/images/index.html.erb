@@ -1,0 +1,12 @@
+<%= sub_navigation(['New image', [:new, :admin, @parents, :image]]) %>
+
+<h1>Listing images</h1>
+
+<table class="three_col">
+  <tr>
+    <th class="first">Image</th>
+    <th>Name</th>
+    <th class="last">Actions</th>
+  </tr>
+  <%= render @images %>
+</table>

@@ -1,0 +1,16 @@
+<%= sub_navigation(['&laquo; Back', [:admin, @parents - [@image], :images]]) %>
+
+<h1>Listing crops</h1>
+
+<table class="eight_col">
+  <tr>
+    <th class="first center">Image</th>
+    <th class="center">Crop definition</th>
+    <th class="center">X</th>
+    <th class="center">Y</th>
+    <th class="center">Width</th>
+    <th class="center">Height</th>
+    <th class="last">Actions</th>
+  </tr>
+  <%= render @crops %>
+</table>

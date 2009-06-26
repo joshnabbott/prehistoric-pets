@@ -44,7 +44,7 @@ class PhotoBaresController < ApplicationController
 
     respond_to do |format|
       if @photo_bare.save
-        flash[:notice] = 'PhotoBare was successfully created.'
+        flash[:success] = 'PhotoBare was successfully created.'
         format.html { redirect_to(@photo_bare) }
         format.xml  { render :xml => @photo_bare, :status => :created, :location => @photo_bare }
       else
@@ -61,7 +61,7 @@ class PhotoBaresController < ApplicationController
 
     respond_to do |format|
       if @photo_bare.update_attributes(params[:photo_bare])
-        flash[:notice] = 'PhotoBare was successfully updated.'
+        flash[:success] = 'PhotoBare was successfully updated.'
         format.html { redirect_to(@photo_bare) }
         format.xml  { head :ok }
       else

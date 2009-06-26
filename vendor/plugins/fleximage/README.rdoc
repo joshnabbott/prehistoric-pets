@@ -111,7 +111,7 @@ When the user submits the form, all you have to do is assign the form contents t
     if @photo.save
       redirect_to photo_url(@photo)
     else
-      flash[:notice] = 'Your photo did not pass validation!'
+      flash[:success] = 'Your photo did not pass validation!'
       render :action => 'new'
     end
   end

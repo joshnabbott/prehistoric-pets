@@ -7,14 +7,28 @@
 
   <title>PrehistoricPets.com - <%= "#{controller.controller_name.humanize} // #{controller.action_name.humanize}" %></title>
   <%= stylesheet_link_tag 'admin/admin' %>
+  <%= stylesheet_for_controller %>
+  <%- if @content_for_admin_stylesheets -%>
+    <%= yield :admin_stylesheets %>
+  <%- end -%>
   <%= javascript_include_tag 'jquery','jquery.tablednd.js','admin/admin' %>
-  <%= yield :head %>
+  <%- if @content_for_admin_javascripts -%>
+    <%= yield :admin_javascripts %>
+  <%- end -%>
+
+  <%- if @content_for_admin_document_ready -%>
+    <script type="text/javascript" charset="utf-8">
+      jQuery(window).load(function(){
+        <%= yield :admin_document_ready %>
+      });
+    </script>
+  <%- end -%>
 </head>
 
 <body class="<%= "#{controller.controller_name}_#{controller.action_name}" %>">
   <div id="header">
     <h1>Prehistoric Pets</h1>
-    <%= navigation %>
+    <%= tabbed_navigation %>
   </div>
 
   <div id="content_container">
