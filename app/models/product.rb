@@ -1,12 +1,12 @@
 class Product < ActiveRecord::Base
   include Prehistoric
-  # acts_as_fleximage do
-  #   image_directory 'public/assets/images'
-  #   default_image 'smiley.gif'
-  #   default_image_path 'public/images/smiley.gif'
-  #   image_storage_format :jpg
-  #   require_image false
-  # end
+  acts_as_fleximage do
+    image_directory 'public/assets/images'
+    default_image 'smiley.gif'
+    default_image_path 'public/images/smiley.gif'
+    image_storage_format :jpg
+    require_image false
+  end
 
   # Thinking Sphinx configuration
   define_index do

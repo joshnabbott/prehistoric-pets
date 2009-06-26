@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090327195117) do
+ActiveRecord::Schema.define(:version => 20090626164817) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title_short"
@@ -118,17 +118,6 @@ ActiveRecord::Schema.define(:version => 20090327195117) do
   end
 
   add_index "crops", ["crop_definition_id", "image_id"], :name => "index_crops_on_crop_definition_id_and_image_id"
-
-  create_table "images", :force => true do |t|
-    t.integer  "owner_id"
-    t.string   "owner_type",                     :null => false
-    t.text     "description"
-    t.boolean  "is_active",   :default => false, :null => false
-    t.boolean  "is_default",  :default => false, :null => false
-    t.integer  "position"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "line_items", :force => true do |t|
     t.integer  "order_id"
