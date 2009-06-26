@@ -1,4 +1,4 @@
-<%= asset_tag(@image) %>
+<%= asset_tag(@image, :crop => @crop.name, :resize_to => '800x0') %>
 
 <p>
   <b>Crop definition:</b>

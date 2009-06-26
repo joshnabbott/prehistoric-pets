@@ -3,7 +3,7 @@
 <%= stylesheet_link_tag "_product_detail" %>
 <%- end -%>
 <div class="product">
-  <p class="image"><%= link_to(asset_tag(@product.images.default, :crop => 'Product Images::Main', :resize_to => '400x239', :exact => true, :format => :jpg, :alt => @product.name), asset_path(@product.images.default, :crop => 'Product Images::Main', :format => :png, :resize_to => '800x0'), :rel => 'facebox') %></p>
+  <p class="image"><%= link_to(asset_tag(@product.images.default, :crop => 'Product Images::Main', :resize_to => '400x239', :format => :jpg, :exact => true, :alt => @product.name), asset_path(@product.images.default, :crop => 'Product Images::Main', :format => :png, :resize_to => '800x0'), :rel => 'facebox') %></p>
   <h2><%= @product.name %></h2>
   <p><em><%= @product.scientific_name %></em></p>
   <p class="description"><strong>Description:</strong> <%= @product.description %></p>

@@ -67,7 +67,7 @@ module Fleximage
         # apply padding if necesary
         if padding_color = options[:padding]
           # get color
-          padding_color = 'white' if padding_color == true
+          padding_color = 'black' if padding_color == true
 
           # get original x and y.  This makes it play nice if the requested size is larger 
           # than the image and upsampling is not allowed.
