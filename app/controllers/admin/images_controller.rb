@@ -1,7 +1,4 @@
 class Admin::ImagesController < Admin::AdminController
-  # Cache the images for quicker rendering
-  caches_page :show, :if => Proc.new { |controller| controller.request.format.to_s =~ /image/ }
-  cache_sweeper :image_sweeper, :only => [:create, :update, :destroy]
   skip_before_filter :login_required, :only => [:swfupload]
 
   include PolyParent
