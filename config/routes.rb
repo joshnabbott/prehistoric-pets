@@ -23,6 +23,7 @@ ActionController::Routing::Routes.draw do |map|
   map.admin 'admin/', :controller => 'admin/categories'
   map.namespace(:admin) do |admin|
     admin.resources :announcements
+
     admin.resources :categories, :collection => { :update_positions => :post } do |category|
       category.resources :products do |product|
         product.resources :images, :collection => { :swfupload => :post }  do |image|
@@ -30,6 +31,7 @@ ActionController::Routing::Routes.draw do |map|
         end
       end
     end
+
     admin.resources :images, :collection => { :swfupload => :post }, :has_many => [ :crops ]
     admin.resources :asset_categories
     admin.resources :crop_definitions
@@ -45,7 +47,7 @@ ActionController::Routing::Routes.draw do |map|
   map.cropped_announcement_image '/announcements/:id/:size.:format', :controller => 'announcements', :action => 'show', :requirements => { :size => /\d+x\d+/ }
 
   # Asset manager
-  map.cropped_image '/images/:id/:name.:format', :controller => 'admin/images', :action => 'show', :requirements => { :name => /[0-9a-z]{32}/ }
+  map.cropped_image '/images/:id/:name.:format', :controller => 'images', :action => 'show', :requirements => { :name => /[0-9a-z]{32}/ }
 
   # Categories: using globbed routes since I'm not sure how many categories deep this could go
   # and I would like a breadcrumb-like url (/browse/pythons/ball-pythons).

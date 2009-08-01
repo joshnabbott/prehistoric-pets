@@ -1,6 +1,6 @@
 <div class="featured">
   <p class="image">
-    <%= link_to(image_tag(cropped_product_image_path(@featured_product, '160x160', :jpg)), product_path(@featured_product, :format => :html)) %>
+    <%= link_to(asset_tag(@featured_product.images.default, :crop => 'Product Images::Thumbnail', :resize_to => '160x160', :exact => true), product_path(@featured_product, :format => :html)) %>
     <span><%= link_to 'More info', product_path(@featured_product, :format => :html) %></span>
   </p>
   <h3><%= @featured_product.name %></h3>
