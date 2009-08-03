@@ -29,15 +29,17 @@ role :db, primary_domain , :primary => true
 
 set :runner, user
 
+after 'deploy:restart', 'deploy:symlink', 'deploy:update_crontab'
+
 namespace :deploy do
   desc "Restarting mod_rails with restart.txt"
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "touch #{current_path}/tmp/restart.txt"
   end
 
-  [:start, :stop].each do |t|
-    desc "#{t} task is a no-op with mod_rails"
-    task t, :role => :app do; end
+  [:start, :stop].each do |task|
+    desc "#{task} task is a no-op with mod_rails"
+    task task, :role => :app do; end
   end
 
   desc "Re-establish symlinks"
@@ -76,7 +78,6 @@ namespace :apache do
   task :add_vhost, :roles => :web do
     set :apache_vhost_aconf, "/etc/apache2/sites-available/#{domain}"
     set :apache_vhost_econf, "/etc/apache2/sites-enabled/#{domain}"
-    # server_aliases = [ "www.#{domain}" ]
     server_aliases = []
     set :apache_server_aliases, server_aliases
     File.rm(apache_vhost_aconf) if FileTest.exists?(apache_vhost_aconf)
@@ -112,5 +113,3 @@ after 'deploy:setup' do
   apache::reload
   sudo "chown -R #{user}:#{user} #{deploy_to}"
 end
-
-after "deploy:symlink", "deploy:update_crontab"
