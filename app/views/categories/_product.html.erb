@@ -1,9 +1,9 @@
 <div class="product<%= ((product_counter % 3) == 2) ? ' last' : ''  %>">
   <%- if product.images.default && product.images.default.has_image? -%>
-    <p class="image"><%= link_to(asset_tag(product.images.default, :crop => 'Product Images::Thumbnail', :resize_to => '239x239', :exact => true, :background_color => 'black', :alt => product.name), product_path(product, :format => :html)) %></p>
+    <p class="image"><%= link_to(asset_tag(product.images.default, :crop => 'Product Images::Thumbnail', :resize_to => '239x239', :exact => true, :background_color => 'black', :alt => product.name), product_path(product)) %></p>
   <%- end -%>
-  <p class="name"><%= link_to product.name, product_path(product, :format => :html) %></p>
+  <p class="name"><%= link_to product.name, product_path(product) %></p>
   <p class="scientific_name"><%= product.scientific_name %></p>
   <p class="price"><%= number_to_currency(product.price) %></p>
-  <p><%= link_to 'Click for details', product_path(product, :format => :html) %></p>
+  <p><%= link_to 'Click for details', product_path(product) %></p>
 </div>

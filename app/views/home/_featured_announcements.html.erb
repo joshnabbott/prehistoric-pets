@@ -7,9 +7,9 @@
 <%- @featured_announcements.each_with_index do |announcement, index| -%>
   <div class="featured" id="announcement_<%= index %>">
     <%- if announcement.has_image? -%>
-      <p class="image"><%= link_to(image_tag(cropped_announcement_image_path(announcement, '100x100', :jpg), :alt => announcement.title_short), announcement_path(announcement, :format => :html)) %></p>
+      <p class="image"><%= link_to(image_tag(cropped_announcement_image_path(announcement, '100x100', :jpg), :alt => announcement.title_short), announcement_path(announcement)) %></p>
     <%- end -%>
     <%= announcement.body_short %>
-    <p class="read_more"><%= link_to 'Read more...', announcement_path(announcement, :format => :html) %></p>
+    <p class="read_more"><%= link_to 'Read more...', announcement_path(announcement) %></p>
   </div>
 <%- end -%>
