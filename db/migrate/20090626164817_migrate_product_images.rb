@@ -23,32 +23,36 @@ class MigrateProductImages < ActiveRecord::Migration
           product.delete_image_file
           puts product.save!
         end
-
-        ########################################
-        # Update the crops to be all the same width and height as the images
-        crops = Crop.all(:include => :image)
-        crops.each do |crop|
-          next if crop.image.nil?
-          crop.width  = crop.image.image_width
-          crop.height = crop.image.image_height
-          crop.save!
-        end
       rescue Exception => e
         puts e.inspect
+      end
+
+      ########################################
+      # Update the crops to be all the same width and height as the images
+      crops = Crop.all(:include => :image)
+      crops.each do |crop|
+        next if crop.image.nil?
+        crop.width  = crop.image.image_width
+        crop.height = crop.image.image_height
+        crop.save!
       end
     end
   end
 
   def self.down
-    products = Product.all
-    products.each do |product|
-      image              = product.images.default
-      product.image_file = File.new(image.file_path)
-      image.delete_image_file
-      puts product.save!
-      puts product.save!
+    begin
+      products = Product.all
+      products.each do |product|
+        image              = product.images.default
+        next unless image
+        product.image_file = File.new(image.file_path)
+        image.delete_image_file
+        puts product.save!
+        puts product.save!
+      end
+      AssetCategory.destroy_all
+    rescue Exception => e
+      puts e.inspect
     end
-
-    AssetCategory.destroy_all
   end
 end
