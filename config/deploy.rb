@@ -41,7 +41,7 @@ namespace :deploy do
   end
 
   desc "Re-establish symlinks"
-  task :after_symlink do
+  task :symlink do
     run <<-CMD
       ln -sf #{shared_path}/db/sphinx #{release_path}/db/sphinx
       ln -sf #{shared_path}/log #{release_path}/log && 
@@ -56,7 +56,6 @@ namespace :deploy do
 
   desc "Start the sphinx server" 
   task :start_sphinx, :roles => :app do
-    # run "cd #{current_path} && RAILS_ENV=production rake thinking_sphinx:configure && rake thinking_sphinx:start RAILS_ENV=production"
     sudo "cd #{current_path} && RAILS_ENV=production rake thinking_sphinx:start"
   end
 
@@ -64,6 +63,11 @@ namespace :deploy do
   task :restart_sphinx, :roles => :app do
     stop_sphinx
     start_sphinx
+  end
+
+  desc 'Update crontab.'
+  task :update_crontab, :roles => :app do
+    run "cd #{release_path} && whenever --update-crontab #{application}"
   end
 end
 
@@ -108,3 +112,5 @@ after 'deploy:setup' do
   apache::reload
   sudo "chown -R #{user}:#{user} #{deploy_to}"
 end
+
+after "deploy:symlink", "deploy:update_crontab"

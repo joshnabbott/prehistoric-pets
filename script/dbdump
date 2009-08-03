@@ -1,0 +1,58 @@
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/../config/boot'
+require 'erb'
+require 'yaml'
+require 'optparse'
+
+include_password = false
+options = {}
+
+OptionParser.new do |opt|
+  opt.banner = "Usage: dbdump [options] [environment]"
+  opt.on("-p", "--include-password", "Automatically provide the password from database.yml") do |v|
+    include_password = true
+  end
+
+  opt.parse!(ARGV)
+  abort opt.to_s unless (0..1).include?(ARGV.size)
+end
+
+
+env = ARGV.first || ENV['RAILS_ENV'] || 'development'
+unless config = YAML::load(ERB.new(IO.read(RAILS_ROOT + "/config/database.yml")).result)[env]
+  abort "No database is configured for the environment '#{env}'"
+end
+
+args = {
+  'host'      => '--host',
+  'port'      => '--port',
+  'socket'    => '--socket',
+  'username'  => '--user',
+  'encoding'  => '--default-character-set'
+}
+
+args = args.map { |opt, arg| "#{arg}=#{config[opt]}" if config[opt] }.compact
+
+if config['password'] && include_password
+  args << "--password=#{config['password']}"
+elsif config['password'] && !config['password'].to_s.empty?
+  args << "-p"
+end
+
+args << config['database']
+
+# Saves file to / by default.
+# Specify a file path with
+# FILEPATH=tmp
+# to save file to tmp/<default_name>
+# Specify a file name with
+# FILENAME='db.backup'
+# to save file to /db.backup
+# Or specify both with
+# FILEPATH=tmp FILENAME='db.backup'
+# saves file to tmp/db.backup
+file_path = ENV['FILEPATH'] || ''
+dump_file = ENV['FILENAME'] || "#{config['database']}.backup.#{Time.now.strftime("%m-%d-%Y_%H-%M-%S")}"
+
+args << "> #{[file_path, dump_file].join('/')}"
+exec("mysqldump #{args.join(' ')}")
