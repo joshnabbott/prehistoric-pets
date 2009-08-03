@@ -1,6 +1,4 @@
 class AnnouncementsController < ApplicationController
-  caches_page :show
-
   def index
     @announcements = Announcement.active.find(:all)
   end

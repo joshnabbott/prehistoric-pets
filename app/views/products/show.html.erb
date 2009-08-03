@@ -2,6 +2,8 @@
 <%- content_for :stylesheets do -%>
 <%= stylesheet_link_tag "_product_detail" %>
 <%- end -%>
+
+<%- cache(@product.cache_key) do -%>
 <div class="product">
   <p class="image"><%= link_to(asset_tag(@product.images.default, :crop => 'Product Images::Main', :resize_to => '400x239', :format => :jpg, :exact => true, :alt => @product.name), asset_path(@product.images.default, :crop => 'Product Images::Main', :format => :png, :resize_to => '800x0'), :rel => 'facebox') %></p>
   <h2><%= @product.name %></h2>
@@ -20,3 +22,4 @@
     </fieldset>
   <%- end -%>
 </div>
+<%- end -%>

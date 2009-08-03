@@ -1,3 +1,4 @@
+<%- cache(['featured_product', @featured_product.updated_at.to_s(:number)].join('-')) do -%>
 <div class="featured">
   <p class="image">
     <%= link_to(asset_tag(@featured_product.images.default, :crop => 'Product Images::Thumbnail', :resize_to => '160x160', :exact => true), product_path(@featured_product, :format => :html)) %>
@@ -7,3 +8,4 @@
   <%= @featured_product.description %>
   <p class="more_info"><%= link_to 'More info', product_path(@featured_product, :format => :html) %></p>
 </div>
+<%- end -%>

@@ -1,7 +1,6 @@
 class ImagesController < ApplicationController
-  # Cache the images for quicker rendering
-  caches_page :show, :if => Proc.new { |controller| controller.request.format.to_s =~ /image/ }
-  cache_sweeper :image_sweeper, :only => [:create, :update, :destroy]
+  skip_before_filter :find_order
+  caches_action :show, :if => Proc.new { |controller| controller.request.format.to_s =~ /image/ }
 
   # GET /images/1
   # GET /images/1.xml

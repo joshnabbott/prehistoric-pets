@@ -2,6 +2,8 @@
 <%- content_for :stylesheets do -%>
 <%= stylesheet_link_tag "_announcements" %>
 <%- end -%>
+
+<%- cache(@announcement.cache_key) do -%>
 <div class="announcement">
   <h2><%= @announcement.title_long %></h2>
   <%- if @announcement.has_image? -%>
@@ -9,3 +11,4 @@
   <%- end -%>
   <%= @announcement.body_long %>
 </div>
+<%- end -%>

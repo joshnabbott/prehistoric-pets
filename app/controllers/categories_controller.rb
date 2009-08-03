@@ -1,6 +1,4 @@
 class CategoriesController < ApplicationController
-  caches_page :show
-
   def show
     @category = Category.find_by_permalink(params[:categories].last)
     raise Error404 unless @category

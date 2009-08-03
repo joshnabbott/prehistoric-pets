@@ -53,7 +53,9 @@ module AssetsHelper
     resize_to = options.delete(:resize_to)
     exact     = options.delete(:exact)
     format    = options.delete(:format)
-    name      = MD5.hexdigest([from, size, resize_to, exact].join.to_s)
+    # Create a unique name based off the options being passed to asset_tag
+    # This is necessary to ensure proper caching of images
+    name      = MD5.hexdigest([asset.updated_at.to_s(:number), from, size, resize_to, exact].join.to_s)
 
     options.merge!(:asset_options => {:name => name, :from => from, :size => size, :resize_to => resize_to, :exact => exact, :format => format})
   end
