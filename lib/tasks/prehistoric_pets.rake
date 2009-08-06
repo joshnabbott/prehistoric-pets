@@ -3,10 +3,12 @@ namespace :prehistoric_pets do
     desc 'Removes image records that are missing image files on the server'
     task :prune_orders => :environment do
       time = Benchmark.measure do
-        @records_deleted = 0
-        Order.destroy_all("updated_at < '#{(Time.now - 1.week).to_s(:db)}' AND state IN ('in_cart', 'pending')")
+        time = (Time.now - 1.week).to_s(:db)
+        Order.find_in_batches(:conditions => "updated_at < '#{time}' AND state IN ('in_cart', 'pending')") do |orders|
+          orders.map(&:destroy)
+        end
       end # Benchmark
-      puts "Deleted #{@records_deleted} out-of-date order records in %.4fs" % time.real
+      puts "Purged all out of date order records in %.4fs" % time.real
     end # prune_orders
   end # db
 
