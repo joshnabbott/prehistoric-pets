@@ -6,6 +6,7 @@ set :primary_domain, "208.64.71.88"
 set :application, "prehistoricpets"
 set :domain, "208.64.71.88"
 set :user, "deploy"
+set :branch, "master"
 
 # Apache settings
 set :apache_ctl, "/etc/init.d/apache2"
