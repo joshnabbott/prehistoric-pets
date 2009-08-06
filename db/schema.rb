@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090806175237) do
+ActiveRecord::Schema.define(:version => 20090806201330) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title_short"
@@ -172,6 +172,7 @@ ActiveRecord::Schema.define(:version => 20090806175237) do
   add_index "orders", ["ip_address"], :name => "index_orders_on_ip_address"
   add_index "orders", ["reference_number", "state"], :name => "index_orders_on_reference_number_and_state"
   add_index "orders", ["state"], :name => "index_orders_on_state"
+  add_index "orders", ["updated_at", "state"], :name => "index_orders_on_updated_at_and_state"
 
   create_table "post_o_matic_categories", :force => true do |t|
     t.string   "name"
