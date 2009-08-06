@@ -6,7 +6,7 @@ namespace :prehistoric_pets do
         @records_deleted = 0
         Order.destroy_all("updated_at < '#{(Time.now - 1.week).to_s(:db)}' AND state IN ('in_cart', 'pending')")
       end # Benchmark
-      puts "Deleted #{@records_deleted} bad image records in %.4fs" % time.real
+      puts "Deleted #{@records_deleted} out-of-date order records in %.4fs" % time.real
     end # prune_orders
   end # db
 
