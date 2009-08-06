@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090626164817) do
+ActiveRecord::Schema.define(:version => 20090806175237) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title_short"
@@ -23,6 +23,9 @@ ActiveRecord::Schema.define(:version => 20090626164817) do
     t.datetime "updated_at"
     t.integer  "old_announcement_id"
   end
+
+  add_index "announcements", ["is_active"], :name => "index_announcements_on_is_active"
+  add_index "announcements", ["is_featured", "is_active"], :name => "index_announcements_on_is_featured_and_is_active"
 
   create_table "asset_categories", :force => true do |t|
     t.string   "name"
@@ -61,6 +64,9 @@ ActiveRecord::Schema.define(:version => 20090626164817) do
     t.datetime "updated_at"
   end
 
+  add_index "assets", ["id", "type"], :name => "index_assets_on_id_and_type"
+  add_index "assets", ["type"], :name => "index_assets_on_type"
+
   create_table "caresheets", :force => true do |t|
     t.string   "name"
     t.string   "scientific_name"
@@ -72,6 +78,7 @@ ActiveRecord::Schema.define(:version => 20090626164817) do
     t.integer  "old_caresheet_id"
   end
 
+  add_index "caresheets", ["is_active"], :name => "index_caresheets_on_is_active"
   add_index "caresheets", ["permalink"], :name => "index_caresheets_on_permalink", :unique => true
 
   create_table "categories", :force => true do |t|
@@ -90,6 +97,7 @@ ActiveRecord::Schema.define(:version => 20090626164817) do
     t.integer  "old_sub_category_id"
   end
 
+  add_index "categories", ["parent_id"], :name => "index_categories_on_parent_id"
   add_index "categories", ["permalink"], :name => "index_categories_on_permalink", :unique => true
 
   create_table "crop_definitions", :force => true do |t|
@@ -163,7 +171,6 @@ ActiveRecord::Schema.define(:version => 20090626164817) do
 
   add_index "orders", ["ip_address"], :name => "index_orders_on_ip_address"
   add_index "orders", ["reference_number", "state"], :name => "index_orders_on_reference_number_and_state"
-  add_index "orders", ["reference_number"], :name => "index_orders_on_reference_number", :unique => true
   add_index "orders", ["state"], :name => "index_orders_on_state"
 
   create_table "post_o_matic_categories", :force => true do |t|
@@ -212,6 +219,8 @@ ActiveRecord::Schema.define(:version => 20090626164817) do
     t.integer  "old_product_id"
   end
 
+  add_index "products", ["is_active", "is_featured"], :name => "index_products_on_is_active_and_is_featured"
+  add_index "products", ["is_active"], :name => "index_products_on_is_active"
   add_index "products", ["permalink"], :name => "index_products_on_permalink"
 
   create_table "sessions", :force => true do |t|
@@ -230,6 +239,9 @@ ActiveRecord::Schema.define(:version => 20090626164817) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "taxons", ["category_id"], :name => "index_taxons_on_category_id"
+  add_index "taxons", ["product_id"], :name => "index_taxons_on_product_id"
 
   create_table "users", :force => true do |t|
     t.string   "login",                     :limit => 40

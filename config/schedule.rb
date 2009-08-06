@@ -5,6 +5,7 @@ every 1.day, :at => '2:00am' do
 end
 
 every 1.week, :at => '1:00am' do
+  rake 'prehistoric_pets:db:prune_orders'
   rake 'prehistoric_pets:images:prune'
 end
 
