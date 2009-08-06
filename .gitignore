@@ -3,11 +3,12 @@ config/database.yml
 db/*.sqlite3
 db/sphinx/*
 log/*
-public/announcements
-public/browse
-public/assets
-public/products
 public/about.html
 public/contact-us.html
+public/announcements
+public/assets
+public/browse
+public/cache/*
+public/products
 public/cart
 tmp/*

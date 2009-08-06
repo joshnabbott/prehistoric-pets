@@ -16,6 +16,7 @@ config.action_controller.perform_caching             = true
 
 # Use a different cache store in production
 config.cache_store = :mem_cache_store, 'localhost:10000'
+# config.action_controller.page_cache_directory = RAILS_ROOT + '/public/cache/'
 
 # Enable serving of images, stylesheets, and javascripts from an asset server
 # config.action_controller.asset_host                  = "http://assets.example.com"
