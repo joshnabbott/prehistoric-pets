@@ -8,7 +8,15 @@ every 1.week, :at => '1:00am' do
   rake 'prehistoric_pets:images:prune'
 end
 
+# Search engine
 every 4.hours do
   rake 'thinking_sphinx:index'
-  rake 'thinking_sphinx:restart'
+end
+
+every 1.day, :at => '2:30am' do
+  rake 'thinking_sphinx:stop'
+end
+
+every 1.day, :at => '2:31am' do
+  rake 'thinking_sphinx:start'
 end

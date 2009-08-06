@@ -1,0 +1,66 @@
+--- !ruby/object:Gem::Specification 
+name: tatyree-query-analyzer
+version: !ruby/object:Gem::Version 
+  version: 0.1.0
+platform: ruby
+authors: 
+- John Eberly and Todd Tyree
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-02-07 00:00:00 -08:00
+default_executable: 
+dependencies: []
+
+description: Run explain on all the sql queries rails generates.
+email: todd@snappl.co.uk
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- lib/query_analyzer.rb
+- README.rdoc
+files: 
+- init.rb
+- lib/query_analyzer.rb
+- Rakefile
+- README.rdoc
+- Manifest
+- query-analyzer.gemspec
+has_rdoc: true
+homepage: http://github.com/tatyree/cookieless_sessions
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --line-numbers
+- --inline-source
+- --title
+- Query-analyzer
+- --main
+- README.rdoc
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "1.2"
+  version: 
+requirements: []
+
+rubyforge_project: query-analyzer
+rubygems_version: 1.3.3
+signing_key: 
+specification_version: 2
+summary: Run explain on all the sql queries rails generates.
+test_files: []
+
