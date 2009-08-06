@@ -30,7 +30,7 @@ class Product < ActiveRecord::Base
     end
   end
 
-  named_scope :active, :conditions => { :is_active => true }
+  named_scope :active, :conditions => ['products.is_active = ? AND ((SELECT COUNT(*) FROM `assets`) > ?)', true, 0]
   named_scope :featured, :conditions => { :is_featured => true }
   named_scope :by_price_range, lambda { |*args| { :conditions => { :price => [args.first,args.last] } } }
 end
