@@ -1,7 +1,8 @@
 .DS_Store
 config/database.yml
 db/*.sqlite3
-log/*.log
+db/sphinx/*
+log/*
 public/announcements
 public/browse
 public/assets
