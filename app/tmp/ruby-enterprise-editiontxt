@@ -1,0 +1,23 @@
+--------------------------------------------
+Ruby Enterprise Edition is successfully installed!
+If want to use Phusion Passenger (http://www.modrails.com) in combination
+with Ruby Enterprise Edition, then you must reinstall Phusion Passenger against
+Ruby Enterprise Edition, as follows:
+
+  /usr/bin/ruby-enterprise/bin/passenger-install-apache2-module
+
+Make sure you don't forget to paste the Apache configuration directives that
+the installer gives you.
+
+
+If you ever want to uninstall Ruby Enterprise Edition, simply remove this
+directory:
+
+  /usr/bin/ruby-enterprise
+
+If you have any questions, feel free to visit our website:
+
+  http://www.rubyenterpriseedition.com
+
+Enjoy Ruby Enterprise Edition, a product of Phusion (www.phusion.nl) :-)
+root@PrehistoricPets:/home/deploy/sources# 
