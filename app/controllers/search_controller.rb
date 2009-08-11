@@ -8,6 +8,8 @@ class SearchController < ApplicationController
       return
     end
 
-    @products = Product.search(params[:keywords], :conditions => { :is_active => true }, :match_mode => :boolean)
+    @products = Product.search(params[:keywords], :with => { :is_active => true }, :match_mode => :boolean)
+    # Tmp hack to only show active products
+    @products = @products.select { |product| product.can_display? }
   end
 end
