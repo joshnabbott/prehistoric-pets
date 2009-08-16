@@ -9,9 +9,9 @@ class ImagesController < ApplicationController
     @image = Image.find(params[:id])
 
     respond_to do |format|
-      format.jpg   # show.jpg.flexi
+      format.jpg  # show.jpg.flexi
       format.html # show.html.erb
-      format.png # show.png.flexi
+      format.png  # show.png.flexi
       format.xml  { render :xml => @image }
     end
   end

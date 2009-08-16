@@ -9,7 +9,7 @@ class SearchController < ApplicationController
     end
 
     @products = Product.search(params[:keywords], :with => { :is_active => true }, :match_mode => :boolean)
-    # Tmp hack to only show active products
+    # Temporary hack to only show active products
     @products = @products.select { |product| product.can_display? }
   end
 end

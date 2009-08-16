@@ -1,5 +1,5 @@
 class Crop < ActiveRecord::Base
-  belongs_to :image
+  belongs_to :image, :touch => true
   belongs_to :crop_definition
   validates_presence_of :crop_definition
   validates_uniqueness_of :image_id, :scope => :crop_definition_id
@@ -11,7 +11,7 @@ class Crop < ActiveRecord::Base
   end
 
   def has_valid_sizes?
-    !(x.blank? && y.blank? && width.blank? && height.blank?)
+    x.present? && y.present? && width.present? && height.present?
   end
 
   def size
