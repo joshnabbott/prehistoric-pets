@@ -54,3 +54,5 @@ module PostOMatic
     end
   end
 end
+include PostOMatic::KingSnake
+puts post_ad
