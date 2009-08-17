@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :shipping_categories
+
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
@@ -40,6 +42,7 @@ ActionController::Routing::Routes.draw do |map|
     # admin.resources :products
     admin.resources :post_o_matic_categories, :has_many => [ :post_o_matic_postings ]
     admin.resources :post_o_matic_postings, :collection => { :update_positions => :post }
+    admin.resources :shipping_categories
   end
 
   # Path for crop

@@ -21,6 +21,13 @@
       <%= hidden_field_tag :itemquant, line_item.quantity %>
       <%= hidden_field_tag :itemtax, '0' %>
     <%- end -%>
+    <!-- Create a line item for shipping cost -->
+    <%= hidden_field_tag :itemid, 'Shipping' %>
+    <%= hidden_field_tag :itemname, 'Shipping' %>
+    <%= hidden_field_tag :itemdesc, 'PP Shipping' %>
+    <%= hidden_field_tag :itemprice, @order.shipping_cost %>
+    <%= hidden_field_tag :itemquant, '1' %>
+    <%= hidden_field_tag :itemtax, '0' %>
     <input type="hidden" name="fname" value="" />
     <input type="hidden" name="" value="">
     <input type="hidden" name="ci_billaddr1" value="">

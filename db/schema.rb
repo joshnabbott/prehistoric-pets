@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090806201330) do
+ActiveRecord::Schema.define(:version => 20090817015942) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title_short"
@@ -208,16 +208,17 @@ ActiveRecord::Schema.define(:version => 20090806201330) do
     t.string   "name"
     t.string   "scientific_name"
     t.string   "permalink"
-    t.string   "sku",             :limit => 10,                                                  :null => false
+    t.string   "sku",                  :limit => 10,                                                  :null => false
     t.text     "description"
     t.text     "comments"
-    t.decimal  "price",                         :precision => 8, :scale => 2, :default => 0.0,   :null => false
-    t.boolean  "is_featured",                                                 :default => false, :null => false
-    t.boolean  "override",                                                    :default => false, :null => false
-    t.boolean  "is_active",                                                   :default => false, :null => false
+    t.decimal  "price",                              :precision => 8, :scale => 2, :default => 0.0,   :null => false
+    t.boolean  "is_featured",                                                      :default => false, :null => false
+    t.boolean  "override",                                                         :default => false, :null => false
+    t.boolean  "is_active",                                                        :default => false, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "old_product_id"
+    t.integer  "shipping_category_id"
   end
 
   add_index "products", ["is_active", "is_featured"], :name => "index_products_on_is_active_and_is_featured"
@@ -233,6 +234,15 @@ ActiveRecord::Schema.define(:version => 20090806201330) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "shipping_categories", :force => true do |t|
+    t.string   "name"
+    t.decimal  "price",      :precision => 8, :scale => 2, :default => 0.0, :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "shipping_categories", ["name"], :name => "index_shipping_categories_on_name"
 
   create_table "taxons", :force => true do |t|
     t.integer  "category_id"

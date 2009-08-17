@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
   })
 
   // handle items in cart with cached pages
-  $('li#cart_link').html('<a href="/cart/items">' + cart_text($.cookie('items_in_cart')) + '</a>');
+  // $('li#cart_link').html('<a href="/cart/items">' + cart_text($.cookie('items_in_cart')) + '</a>');
 })
 
 function cart_text(item_count) {

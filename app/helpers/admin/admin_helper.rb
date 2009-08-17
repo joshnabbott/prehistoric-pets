@@ -1,17 +1,7 @@
 module Admin::AdminHelper
   def navigation
-    links = current_user ? [
-        # content_tag(:li, link_to_unless_current('Asset Categories', asset_categories_path)),
-        # content_tag(:li, link_to_unless_current('Availabilities', availabilities_path)),
-        # content_tag(:li, link_to_unless_current('Color Grids', color_grids_path)),
-        # content_tag(:li, link_to_unless_current('Crop Definitions', crop_definitions_path)),
-        # content_tag(:li, link_to_unless_current('Key/Value Pairs', key_value_pairs_path)),
-        # content_tag(:li, link_to_unless_current('Overlays', overlays_path)),
-        # content_tag(:li, link_to_unless_current('Size Grids', size_grids_path)),
-        # content_tag(:li, link_to_unless_current('My account', account_path)),
-        # content_tag(:li, link_to_unless_current('Log out', user_session_path, :method => :delete, :confirm => 'Are you sure you want to log out?')),
-      ] : []
-      content_tag(:ul, links, :id => 'navigation')
+    links = current_user ? [] : []
+    content_tag(:ul, links, :id => 'navigation')
   end
 
   def nested_as_options(acts_as_tree_set, level = 0, &block)
@@ -51,11 +41,11 @@ module Admin::AdminHelper
   def tabbed_navigation
     links = logged_in? ? [
       content_tag(:li, link_to_unless_current('Categories', admin_categories_path)),
-      # content_tag(:li, link_to_unless_current('Products', admin_products_path)),
       content_tag(:li, link_to_unless_current('Caresheets', admin_caresheets_path)),
       content_tag(:li, link_to_unless_current('Announcements', admin_announcements_path)),
       content_tag(:li, link_to_unless_current('Post Categories', admin_post_o_matic_categories_path)),
       content_tag(:li, link_to_unless_current('Post Postings', admin_post_o_matic_postings_path)),
+      content_tag(:li, link_to_unless_current('Shipping Categories', admin_shipping_categories_path)),
       content_tag(:li, link_to_unless_current("Log out", logout_path))
     ] : []
     content_tag(:ul, links, :id => 'tabbed_navigation')

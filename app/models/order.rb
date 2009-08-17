@@ -18,12 +18,12 @@ class Order < ActiveRecord::Base
     transitions :to => :completed, :from => :pending
   end
 
-  def add_to_cart(product, options={})
-    current_product = line_items.detect { |item| item.product == product }
+  def add_to_cart(product, options = {})
+    current_product = line_items.detect { |line_item| line_item.product == product }
     if current_product
       current_product.increment_quantity
     else
-      line_items.create(:product_id => product.id, :price => product.price, :quantity => options[:quantity])
+      line_items.create(:product => product, :price => product.price, :quantity => options[:quantity])
     end
   end
 
@@ -31,12 +31,16 @@ class Order < ActiveRecord::Base
     line_items.inject(0) { |sum, item| sum + item.quantity }
   end
 
-  def subtotal
+  def shipping_cost
+    line_items.map { |line_item| line_item.product.shipping_category.price }.max
+  end
+
+  def sub_total
     line_items.inject(0) { |sum, item| (item.price * item.quantity) + sum }
   end
 
   def total
-    subtotal + tax
+    sub_total + shipping_cost
   end
 
 private

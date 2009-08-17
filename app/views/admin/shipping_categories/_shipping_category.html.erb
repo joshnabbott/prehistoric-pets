@@ -1,0 +1,8 @@
+<tr class="<%= cycle('even','odd') %>">
+  <td class="center"><%=h shipping_category.name %></td>
+  <td class="center"><%=h number_to_currency(shipping_category.price) %></td>
+  <td class="center">
+    <%= link_to 'Edit', [:edit, :admin, shipping_category] %> | 
+    <%= link_to 'Destroy', [:admin, shipping_category], :confirm => 'Are you sure?', :method => :delete %>
+  </td>
+</tr>

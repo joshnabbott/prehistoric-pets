@@ -1,0 +1,16 @@
+<%= sub_navigation(['New shipping category', new_admin_shipping_category_path]) %>
+
+<h1>Listing shipping categories</h1>
+
+<table class="three_col">
+  <thead>
+    <tr>
+      <th class="first"><span>Name</span></th>
+      <th><span>Price</span></th>
+      <th class="last"><span>Actions</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @shipping_categories %>
+  </tbody>
+</table>

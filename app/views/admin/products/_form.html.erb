@@ -41,6 +41,10 @@
   <%= f.check_box :is_featured, :class => 'check_box' %>
 </p>
 <p>
+  <%= f.label :shipping_category_id %>
+  <%= f.collection_select :shipping_category_id, ShippingCategory.all, :id, :name %>
+</p>
+<p>
   <%= f.label :caresheet_id %>
   <%= f.collection_select :caresheet_id, Caresheet.active, :id, :name, :include_blank => true %>
 </p>

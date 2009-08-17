@@ -1,0 +1,10 @@
+<h1>New shipping category</h1>
+
+<% form_for([:admin, @shipping_category]) do |f| %>
+  <fieldset>
+    <%= render :partial => 'form', :locals => { :f => f } %>
+    <p>
+      <%= f.submit 'Create' %> - or - <%= link_to 'Cancel', admin_shipping_categories_path %>
+    </p>
+  </fieldset>
+<% end %>

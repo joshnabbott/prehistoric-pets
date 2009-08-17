@@ -4,6 +4,7 @@ class Product < ActiveRecord::Base
   attr_accessor :post_o_matisize
   before_validation :create_permalink
   belongs_to :caresheet
+  belongs_to :shipping_category
   has_many :categories, :through => :taxons
   has_many :post_o_matic_postings, :dependent => :destroy
   accepts_nested_attributes_for :post_o_matic_postings, :reject_if => Proc.new { |attributes| attributes.any? { |key,value| value.blank? } }

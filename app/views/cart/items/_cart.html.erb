@@ -12,6 +12,16 @@
     <%= render :partial => 'cart_item', :collection => @order.line_items %>
     <tr>
       <td colspan="2">&nbsp;</td>
+      <td class="center total"><strong>Sub-total:</strong></td>
+      <td class="center total"><%= number_to_currency(@order.sub_total) %></td>
+    </tr>
+    <tr>
+      <td colspan="2">&nbsp;</td>
+      <td class="center total"><strong>Estimated shipping:</strong></td>
+      <td class="center total"><%= number_to_currency(@order.shipping_cost) %></td>
+    </tr>
+    <tr>
+      <td colspan="2">&nbsp;</td>
       <td class="center total"><strong>Total:</strong></td>
       <td class="center total"><%= number_to_currency(@order.total) %></td>
     </tr>
