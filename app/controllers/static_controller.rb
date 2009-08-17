@@ -1,12 +1,13 @@
 class StaticController < ApplicationController
+  STATIC_PATH = File.join(RAILS_ROOT, 'app', 'views', 'static')
   caches_page :show
 
   def show
     page_path = params[:path].join('/')
-    if File.exists?("#{RAILS_ROOT}/app/views/static/#{page_path}.html.erb")
+    if File.exists?(File.join(STATIC_PATH, "#{page_path}.html.erb"))
       render :template => "static/#{page_path}"
-    elsif File.exists?("#{RAILS_ROOT}/app/views/static/#{page_path}/index.html.erb")
-      render :template => "static/#{page_path}/index"
+    elsif File.exists?(File.join(STATIC_PATH, page_path, 'index.html.erb'))
+      render :template => "static/#{page_path}/index.html.erb"
     else
       raise Error404
     end

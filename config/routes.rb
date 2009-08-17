@@ -25,7 +25,8 @@ ActionController::Routing::Routes.draw do |map|
   map.admin 'admin/', :controller => 'admin/categories'
   map.namespace(:admin) do |admin|
     admin.resources :announcements
-
+    admin.resources :asset_categories
+    admin.resources :caresheets
     admin.resources :categories, :collection => { :update_positions => :post } do |category|
       category.resources :products do |product|
         product.resources :images, :collection => { :swfupload => :post }  do |image|
@@ -33,13 +34,8 @@ ActionController::Routing::Routes.draw do |map|
         end
       end
     end
-
-    admin.resources :images, :collection => { :swfupload => :post }, :has_many => [ :crops ]
-    admin.resources :asset_categories
     admin.resources :crop_definitions
-
-    admin.resources :caresheets
-    # admin.resources :products
+    admin.resources :images, :collection => { :swfupload => :post }, :has_many => [ :crops ]
     admin.resources :post_o_matic_categories, :has_many => [ :post_o_matic_postings ]
     admin.resources :post_o_matic_postings, :collection => { :update_positions => :post }
     admin.resources :shipping_categories
