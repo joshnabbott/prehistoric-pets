@@ -16,13 +16,12 @@ module PostOMatic
     }
 
     def post_ad(options = {}) # options = { :ad_duration => '5 days' }
-      true
+      # true
       # Uncomment below to make posts to kingsnake.com
-      #
-      # @agent = WWW::Mechanize.new
-      # page   = login
-      # page   = submit_ad(page)
-      # validate_post_success(page) # returns true or false
+      @agent = WWW::Mechanize.new
+      page   = login
+      page   = submit_ad(page)
+      validate_post_success(page) # returns true or false
     end
 
   private
