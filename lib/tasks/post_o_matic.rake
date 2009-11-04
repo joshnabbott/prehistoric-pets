@@ -1,6 +1,6 @@
 namespace :post_o_matic do
   namespace :kingsnake do
-    desc 'Post the first 3 Post-O-Matic Postings for the category listed.'
+    desc 'Post the first Post-O-Matic Postings for the category listed.'
     task :post, :category_name, :needs => :environment do |task, args|
       time = Benchmark.measure do
         category_name = args.category_name
