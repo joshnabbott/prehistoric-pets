@@ -40,6 +40,7 @@ module PostOMatic
       return false if form.nil?
       form.subject  = self.product.name
       form.descript = self.product.description
+      form.days     = self.ad_duration
       # form.imageurl = "http:/prehistoricpets.com/products/#{self.product.to_param}.jpg" # is this breaking it when I try to post?
       page          = form.submit
     end
